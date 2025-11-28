@@ -1,0 +1,6 @@
+requests 
+beautifulsoup4 
+langgraph
+ddgs
+langchain
+langchain-ollama

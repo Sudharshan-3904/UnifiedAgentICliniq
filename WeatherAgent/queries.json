@@ -1,0 +1,31 @@
+{
+    "queries": [
+        {
+            "query": "Show me a breakdown of PM2.5 and PM10 levels.",
+            "lat": 48.8566,
+            "lon": 2.3522,
+            "include_air_quality": true
+        },
+
+        {
+            "query": "What is the weather right now?",
+            "lat": 40.7128,
+            "lon": -74.006
+        },
+
+        {
+            "query": "Will it rain this afternoon?",
+            "lat": 40.7128,
+            "lon": -74.006,
+            "include_air_quality": true
+        },
+
+        {
+            "query": "Will it rain?",
+            "lat": 8.7033,
+            "lon": 77.415,
+            "_comment": "Current location",
+            "include_air_quality": true
+        }
+    ]
+}
