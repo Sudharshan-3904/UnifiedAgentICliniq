@@ -1,0 +1,7 @@
+🌤️ Environmental Symptom Agent
+
+
+AI: Based on the provided data, your cough could potentially be influenced by environmental factors in Coimbatore. The air quality index (AQI) 
+    is currently at 2, indicating moderate levels of pollutants. Specifically, the PM2.5 concentration is elevated at 32.95 µg/m³, which is a 
+    key indicator of particulate matter that can irritate the respiratory system. The temperature is high (30.3°C / 86.5°F) and combined with 
+    humidity (49%) could exacerbate respiratory symptoms. The presence of mist and NE wind may also contribute to the cough.       

@@ -1,0 +1,62 @@
+{
+  "location": {
+    "name": "Coimbatore",
+    "region": "Tamil Nadu",
+    "country": "India",
+    "lat": 10.9925,
+    "lon": 76.9614,
+    "tz_id": "Asia/Kolkata",
+    "localtime_epoch": 1764146125,
+    "localtime": "2025-11-26 14:05"
+  },
+
+  "current": {
+    "last_updated_epoch": 1764145800,
+    "last_updated": "2025-11-26 14:00",
+    "temp_c": 30.2,
+    "temp_f": 86.4,
+    "is_day": 1,
+    "condition": {
+      "text": "Mist",
+      "icon": "//cdn.weatherapi.com/weather/64x64/day/143.png",
+      "code": 1030
+    },
+    "wind_mph": 10.3,
+    "wind_kph": 16.6,
+    "wind_degree": 62,
+    "wind_dir": "ENE",
+    "pressure_mb": 1014.0,
+    "pressure_in": 29.94,
+    "precip_mm": 0.0,
+    "precip_in": 0.0,
+    "humidity": 49,
+    "cloud": 50,
+    "feelslike_c": 34.3,
+    "feelslike_f": 93.7,
+    "windchill_c": 25.7,
+    "windchill_f": 78.2,
+    "heatindex_c": 27.1,
+    "heatindex_f": 80.8,
+    "dewpoint_c": 18.5,
+    "dewpoint_f": 65.3,
+    "vis_km": 5.0,
+    "vis_miles": 3.0,
+    "uv": 5.8,
+    "gust_mph": 11.8,
+    "gust_kph": 19.0,
+    "air_quality": {
+      "co": 444.85,
+      "no2": 7.05,
+      "o3": 112.0,
+      "so2": 12.05,
+      "pm2_5": 32.05,
+      "pm10": 33.65,
+      "us-epa-index": 2,
+      "gb-defra-index": 3
+    },
+    "short_rad": 722.9,
+    "diff_rad": 290.19,
+    "dni": 613.28,
+    "gti": 654.87
+  }
+}
