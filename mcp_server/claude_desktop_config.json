@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "deno-files": {
+      "command": "deno",
+      "args": [
+        "run",
+        "--allow-read",
+        "--allow-write",
+        "D:\\mcp-server\\server.ts"
+      ]
+    }
+  }
+}
