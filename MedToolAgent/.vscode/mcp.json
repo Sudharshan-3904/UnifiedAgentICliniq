@@ -1,0 +1,10 @@
+{
+    "servers": {
+        "my-mcp-server-medtools": {
+            "type": "stdio",
+            "command": "python",
+            "args": ["backend\\src\\tools\\mcp_server.py"]
+        }
+    },
+    "inputs": []
+}
