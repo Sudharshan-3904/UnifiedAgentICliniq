@@ -1,24 +1,34 @@
+"""Streamlit UI (refactored) for the Blog Agent.
+
+This file replaces the previous monolithic UI and routes side-effect
+operations through the focused service classes in `AgentOrchestration/services.py`.
+The goal is to apply SRP and DI while preserving the UI experience.
+"""
+
 import streamlit as st
-from blog_agent import (
-    process_blog_request, 
-    get_metrics, 
-    get_checkpoints, 
-    recover_from_checkpoint,
-    clear_checkpoints,
-    login,
-    enable_chaos_testing,
-    disable_chaos_testing,
-    get_chaos_metrics,
-    reset_chaos_metrics
-)
-from blog_agent import (
-    get_debug_logs,
-    clear_debug_logs,
-    get_masked_langsmith_key,
-    save_event_to_langsmith,
-)
 import json
 from datetime import datetime
+
+from blog_agent import process_blog_request
+from AgentOrchestration.services import (
+    AuthService,
+    MetricsService,
+    ChaosService,
+    RecoveryService,
+    DebugService,
+)
+
+# Instantiate services
+auth_service = AuthService()
+metrics_service = MetricsService()
+chaos_service = ChaosService()
+recovery_service = RecoveryService()
+debug_service = DebugService()
+
+# Session defaults
+st.set_page_config(page_title="Blog Agent Interface", layout="wide")
+st.title("AI Blog Agent")
+st.markdown("---")
 
 if 'blog_post' not in st.session_state:
     st.session_state.blog_post = None
@@ -31,14 +41,249 @@ if 'chaos_enabled' not in st.session_state:
 if 'chaos_failure_rate' not in st.session_state:
     st.session_state.chaos_failure_rate = 0.3
 
-st.set_page_config(
-    page_title="Blog Agent Interface",
-    page_icon="📝",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
+with st.sidebar:
+    st.header("Navigation")
+    page = st.radio("Select Action", ["Create Blog", "Post Blog", "View Blogs", "Monitoring & Recovery"])
 
-st.title("AI Blog Agent")
+    st.markdown("---")
+    st.subheader("System Info")
+    try:
+        m = metrics_service.get_metrics()
+        st.metric("Total Requests", m.get('total_requests', 0))
+        st.metric("Success Rate", f"{m.get('generation_success_rate', 0)}%")
+        st.metric("Recovery Rate", f"{m.get('recovery_success_rate', 0)}%")
+    except Exception as e:
+        st.error(f"Error loading metrics: {e}")
+
+    st.markdown("---")
+    st.subheader("Chaos Control")
+    chaos_quick_toggle = st.checkbox("Quick Enable/Disable", value=st.session_state.chaos_enabled, key="chaos_quick_toggle")
+    if chaos_quick_toggle != st.session_state.chaos_enabled:
+        st.session_state.chaos_enabled = chaos_quick_toggle
+        st.rerun()
+
+try:
+    auth_service.login()
+except Exception as e:
+    st.warning(f"Login required: {e}")
+
+if page == "Create Blog":
+    st.subheader("Create New Blog Post")
+    col1, col2 = st.columns(2)
+    with col1:
+        blog_title = st.text_input("Blog Title", placeholder="Enter blog post title", key="create_title")
+    with col2:
+        blog_category = st.selectbox("Category", ["Technology", "Business", "Lifestyle", "Education", "Other"], key="category")
+
+    instructions = st.text_area("Content Instructions", placeholder="Describe what you want in the blog post", height=150, key="instructions")
+
+    if st.button("Generate Blog", key="generate_btn"):
+        if blog_title and instructions:
+            with st.spinner("Generating blog post..."):
+                try:
+                    user_message = f"Create a blog post titled '{blog_title}' in the {blog_category} category with the following instructions: {instructions}"
+                    response = process_blog_request(user_message)
+                    if response.get('success'):
+                        st.session_state.response = response
+                        st.success("Blog post generated successfully!")
+                        with st.expander("View Generated Content", expanded=True):
+                            st.write(response.get('content'))
+                        # Try to parse JSON
+                        try:
+                            if isinstance(response.get('content'), str):
+                                blog_data = json.loads(response.get('content'))
+                                st.session_state.blog_post = blog_data
+                        except Exception:
+                            st.session_state.blog_post = {"title": blog_title, "content": response.get('content')}
+                    else:
+                        st.error(f"Error: {response.get('content')}")
+                except Exception as e:
+                    st.error(f"Error generating blog: {e}")
+        else:
+            st.warning("Please fill in all required fields.")
+
+elif page == "Post Blog":
+    st.subheader("Post Blog to Platform")
+    if st.session_state.blog_post:
+        st.success("Blog post ready to post")
+        with st.expander("Preview Blog Post"):
+            if isinstance(st.session_state.blog_post, dict):
+                st.write(f"**Title:** {st.session_state.blog_post.get('title','N/A')}")
+                st.write(f"**Content:** {st.session_state.blog_post.get('content','N/A')[:200]}...")
+            else:
+                st.write(st.session_state.blog_post)
+
+        if st.button("Post Blog Now", key="post_btn"):
+            with st.spinner("Posting blog..."):
+                try:
+                    blog_post_json = json.dumps(st.session_state.blog_post) if isinstance(st.session_state.blog_post, dict) else st.session_state.blog_post
+                    user_message = f"Post this blog to the platform: {blog_post_json}"
+                    response = process_blog_request(user_message)
+                    if response.get('success'):
+                        st.success("Blog posted successfully!")
+                        st.write(response.get('content'))
+                    else:
+                        st.error(f"Error posting blog: {response.get('content')}")
+                except Exception as e:
+                    st.error(f"Error: {e}")
+    else:
+        st.warning("No blog post to post. Please create one first.")
+
+elif page == "View Blogs":
+    st.subheader("View Recent Blogs")
+    num_blogs = st.slider("Number of blogs to retrieve", 1, 10, 3, key="num_blogs")
+    if st.button("Retrieve Blogs", key="retrieve_btn"):
+        with st.spinner(f"Retrieving last {num_blogs} blogs..."):
+            try:
+                user_message = f"Retrieve the last {num_blogs} blog posts"
+                response = process_blog_request(user_message)
+                if response.get('success'):
+                    st.success("Blogs retrieved successfully!")
+                    st.session_state.last_blogs = response.get('content')
+                    with st.expander("View Content", expanded=True):
+                        st.write(response.get('content'))
+                else:
+                    st.error(f"Error retrieving blogs: {response.get('content')}")
+            except Exception as e:
+                st.error(f"Error: {e}")
+
+elif page == "Monitoring & Recovery":
+    st.subheader("System Monitoring & Recovery")
+    tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["Metrics", "Checkpoints", "Recovery", "Chaos", "Logs", "Debugging"])
+
+    with tab1:
+        st.subheader("System Metrics")
+        try:
+            cm = metrics_service.get_metrics()
+            st.metric("Total Requests", cm.get('total_requests', 0))
+            st.metric("Success Rate", f"{cm.get('generation_success_rate',0)}%")
+        except Exception as e:
+            st.error(f"Error loading metrics: {e}")
+
+    with tab2:
+        st.subheader("Checkpoint Management")
+        try:
+            cps = recovery_service.get_checkpoints()
+            if cps:
+                st.success(f"Found {len(cps)} checkpoints")
+                with st.expander("Checkpoint List", expanded=True):
+                    for i, cp in enumerate(cps, 1):
+                        st.write(f"{i}. {cp}")
+            else:
+                st.info("No checkpoints found yet.")
+        except Exception as e:
+            st.error(f"Error loading checkpoints: {e}")
+
+        col1, col2 = st.columns(2)
+        with col1:
+            if st.button("Clear All Checkpoints", key="clear_cp"):
+                with st.spinner("Clearing checkpoints..."):
+                    try:
+                        result = recovery_service.clear()
+                        if result.get('status') == 'success':
+                            st.success(result.get('message'))
+                        else:
+                            st.error(result.get('error'))
+                    except Exception as e:
+                        st.error(f"Error clearing checkpoints: {e}")
+
+    with tab3:
+        st.subheader("Manual Recovery")
+        try:
+            cps = recovery_service.get_checkpoints()
+            if cps:
+                sel = st.selectbox("Select checkpoint to recover from", cps, key="recovery_cp")
+                if st.button("Recover", key="recover_btn"):
+                    with st.spinner(f"Recovering from '{sel}'..."):
+                        resp = recovery_service.recover(sel)
+                        if resp.get('success'):
+                            st.success("Recovery successful!")
+                            with st.expander("Recovery Content"):
+                                st.write(resp.get('content'))
+                        else:
+                            st.error(f"Recovery failed: {resp.get('content')}")
+            else:
+                st.warning("No checkpoints available for recovery.")
+        except Exception as e:
+            st.error(f"Error during recovery: {e}")
+
+    with tab4:
+        st.subheader("Chaos Testing")
+        failure_rate = st.slider("Failure Rate (%)", 0, 100, int(st.session_state.chaos_failure_rate*100), step=5, key="failure_rate_slider")
+        if failure_rate / 100 != st.session_state.chaos_failure_rate:
+            st.session_state.chaos_failure_rate = failure_rate / 100
+            st.rerun()
+
+        chaos_enabled_toggle = st.checkbox("Enable Chaos Testing", value=st.session_state.chaos_enabled, key="chaos_toggle_main")
+        if chaos_enabled_toggle != st.session_state.chaos_enabled:
+            st.session_state.chaos_enabled = chaos_enabled_toggle
+            st.rerun()
+
+        if st.session_state.chaos_enabled:
+            chaos_service.enable(st.session_state.chaos_failure_rate)
+        else:
+            chaos_service.disable()
+
+        try:
+            cm = chaos_service.get_metrics()
+            col1, col2, col3 = st.columns(3)
+            col1.metric("Current Status", "ACTIVE" if cm.get('chaos_enabled') else "INACTIVE")
+            col2.metric("Configured Failure Rate", f"{cm.get('failure_rate',0)}%")
+            col3.metric("Session Failure Rate", f"{st.session_state.chaos_failure_rate*100:.0f}%")
+            if st.button("Reset Chaos Metrics", key="reset_chaos_metrics"):
+                res = chaos_service.reset_metrics()
+                st.success(res.get('message','Reset'))
+                st.rerun()
+        except Exception as e:
+            st.error(f"Error loading chaos metrics: {e}")
+
+    with tab5:
+        st.subheader("System Logs")
+        from pathlib import Path
+        log_dir = Path("logs")
+        if log_dir.exists():
+            files = list(log_dir.glob("*.log"))
+            if files:
+                sel = st.selectbox("Select log file", [f.name for f in sorted(files, reverse=True)], key="log_file")
+                try:
+                    content = (log_dir/sel).read_text()
+                    st.text_area("Log Content", value=content, height=400, disabled=True)
+                    st.download_button("Download Log", data=content, file_name=sel)
+                except Exception as e:
+                    st.error(f"Error reading log file: {e}")
+            else:
+                st.info("No log files found yet.")
+        else:
+            st.warning("Logs directory not found.")
+
+    with tab6:
+        st.subheader("Debugging & Raw Traces")
+        try:
+            masked = debug_service.get_masked_key()
+            st.text_input("LangSmith API Key (masked)", value=masked, disabled=True, key="ls_key_masked")
+        except Exception as e:
+            st.error(f"Error reading LangSmith key: {e}")
+
+        try:
+            logs = debug_service.get_debug_logs()
+            st.write(f"Total debug entries: {len(logs)}")
+            if logs:
+                if st.button("Download Debug Logs", key="download_debug_logs"):
+                    dump = json.dumps(logs, indent=2, ensure_ascii=False)
+                    st.download_button(label="Download JSON", data=dump, file_name=f"debug_logs_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json", mime="application/json")
+                with st.expander("Show latest logs", expanded=False):
+                    for entry in reversed(logs[-50:]):
+                        st.markdown(f"**{entry.get('timestamp','-')} | {entry.get('model','-')}**")
+                        st.code(json.dumps(entry, indent=2, ensure_ascii=False), language='json')
+                if st.button("Clear Debug Logs", key="clear_debug_logs"):
+                    debug_service.clear_debug_logs()
+                    st.success("Debug logs cleared")
+                    st.rerun()
+            else:
+                st.info("No debug logs yet.")
+        except Exception as e:
+            st.error(f"Error loading debug logs: {e}")
+
 st.markdown("---")
 
 with st.sidebar:
