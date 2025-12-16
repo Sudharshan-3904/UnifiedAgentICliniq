@@ -1,14 +1,11 @@
-"""Refactored Weather AQI agent entrypoint.
+"""Refactored runner using service abstractions (SRP, DI).
 
-This file replaces the previous monolithic script and composes the
-`WeatherService` and `LLMAdapter` from `WeatherAagent/services.py`.
-It preserves the agent behavior but depends on focused services (SRP/DI).
+This is a compact entrypoint demonstrating how the agent depends on
+well-scoped services rather than monolithic functions.
 """
-
 from typing import TypedDict, List, Dict, Any
 from langgraph.graph import StateGraph, END
 from WeatherAagent.services import make_services
-import json
 
 
 class AgentState(TypedDict):
@@ -20,6 +17,7 @@ class AgentState(TypedDict):
 def agent_node_factory(weather_service, llm):
     def agent_node(state: AgentState):
         messages = state["messages"]
+
         if len(messages) == 0:
             weather = weather_service.fetch_weather(state["location"])
             messages.append({"role": "tool", "result": weather})
@@ -67,4 +65,5 @@ def run_agent(question, location=None):
 
 
 if __name__ == '__main__':
+    import json
     print(run_agent('How does weather affect asthma?', 'San Francisco'))
