@@ -1,10 +1,12 @@
 from langchain_core.tools import tool
-from typing import Optional
+from typing import Optional, List, Dict
 from ..utils.logger import logger
 from dotenv import load_dotenv
 import os
 from Bio import Entrez
 import requests
+from urllib.parse import quote
+from bs4 import BeautifulSoup
 
 
 load_dotenv()
@@ -27,6 +29,7 @@ def setup_pubmed_api() -> None:
 def search_pubmed(query: str, num_articles: int = 10, top_n: int = 3) -> str:
     """
     Search PubMed for medical literature and return top relevant articles.
+    Falls back to DuckDuckGo search if no PubMed results are found.
     
     Args:
         query: Search query for PubMed
@@ -49,10 +52,12 @@ def search_pubmed(query: str, num_articles: int = 10, top_n: int = 3) -> str:
     )
     
     if result["status"] == "error":
-        return f"Error searching PubMed: {result['message']}"
+        logger.warning(f"PubMed error: {result['message']}. Falling back to DuckDuckGo search.")
+        return search_duckduckgo.invoke({"query": query, "num_results": 5})
     
     if result["status"] == "no_results":
-        return f"No articles found for query: {query}"
+        logger.info(f"No PubMed articles found for: {query}. Falling back to DuckDuckGo search.")
+        return search_duckduckgo.invoke({"query": query, "num_results": 5})
     
     # Format the best articles for output
     best_articles = result["best_articles"]
@@ -284,9 +289,89 @@ def calculate_cholesterol_ldl(total: float, hdl: float, triglycerides: float, un
         
     return f"Estimated LDL Cholesterol: {ldl:.2f} {unit}"
 
+@tool
+def search_duckduckgo(query: str, num_results: int = 5) -> str:
+    """
+    Search DuckDuckGo for general web information when PubMed returns no results.
+    
+    Args:
+        query: Search query for DuckDuckGo
+        num_results: Number of results to return (default: 5)
+    
+    Returns:
+        Formatted string with search results including titles, snippets, and URLs
+    """
+    logger.info(f"Searching DuckDuckGo for: {query}")
+    
+    try:
+        # DuckDuckGo search using HTML scraping method
+        user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        headers = {
+            "User-Agent": user_agent
+        }
+        
+        # Using DuckDuckGo's HTML search endpoint
+        search_url = f"https://duckduckgo.com/html/?q={quote(query)}"
+        
+        response = requests.get(search_url, headers=headers, timeout=10)
+        response.raise_for_status()
+        
+        # Parse HTML response
+        soup = BeautifulSoup(response.content, 'html.parser')
+        results = []
+        
+        # Find all result blocks
+        for idx, result in enumerate(soup.find_all('div', class_='result'), 1):
+            if idx > num_results:
+                break
+            
+            # Extract title and URL
+            title_elem = result.find('a', class_='result__a')
+            if not title_elem:
+                continue
+                
+            title = title_elem.get_text(strip=True)
+            url = title_elem.get('href', '')
+            
+            # Extract snippet
+            snippet_elem = result.find('a', class_='result__snippet')
+            snippet = snippet_elem.get_text(strip=True) if snippet_elem else "No description available"
+            
+            if title and url:
+                results.append({
+                    'title': title,
+                    'url': url,
+                    'snippet': snippet
+                })
+        
+        if not results:
+            return f"No results found on DuckDuckGo for: {query}"
+        
+        # Format output
+        output_lines = [
+            f"DuckDuckGo Search Results for: '{query}'",
+            f"Found {len(results)} results:\n"
+        ]
+        
+        for idx, result in enumerate(results, 1):
+            output_lines.append(f"\n--- Result #{idx} ---")
+            output_lines.append(f"Title: {result['title']}")
+            output_lines.append(f"URL: {result['url']}")
+            output_lines.append(f"Summary: {result['snippet']}")
+        
+        return "\n".join(output_lines)
+    
+    except requests.exceptions.RequestException as e:
+        logger.error(f"Error searching DuckDuckGo: {str(e)}")
+        return f"Error searching DuckDuckGo: {str(e)}"
+    except Exception as e:
+        logger.error(f"Unexpected error in DuckDuckGo search: {str(e)}")
+        return f"Unexpected error in DuckDuckGo search: {str(e)}"
+
 # List of tools available to the agent
 agent_tools = [
     search_pubmed, 
+    search_duckduckgo,
     fetch_ehr_data, 
     rag_clinical_data,
     calculate_bmi,
