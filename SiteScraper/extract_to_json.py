@@ -4,6 +4,7 @@ import csv
 import json
 import os
 import re
+from sheets_sync import update_status, update_sheet_with_csv_data
 
 
 CSV_FILE = r"data\url_status.csv"
@@ -160,7 +161,35 @@ def update_csv(csv_file, rows):
         writer.writerows(rows)
 
 
-def process_urls(batch_size=10):
+def update_csv_file(csv_file, rows):
+    """Update the CSV file with current row data."""
+    try:
+        update_csv(csv_file, rows)
+        print("CSV file updated successfully.")
+    except Exception as e:
+        print(f"Error updating CSV file: {e}")
+
+
+def update_sheets_data(rows):
+    """Update Google Sheets with current row data."""
+    try:
+        update_sheet_with_csv_data(rows)
+        print("Google Sheets updated successfully.")
+    except Exception as e:
+        print(f"Error updating Google Sheets: {e}")
+
+
+def process_urls(batch_size=10, update_csv=True):
+    """
+    Process URLs and extract article data.
+    
+    Args:
+        batch_size (int): Number of URLs to process per batch.
+        update_csv (bool or None): 
+            - True: Update CSV file only
+            - False: Update Google Sheets only
+            - None: Update both CSV and Google Sheets
+    """
     articles = load_existing_json(JSON_FILE)
     existing_ids = {a["id"] for a in articles}
 
@@ -183,7 +212,18 @@ def process_urls(batch_size=10):
                         break
 
         save_to_json(JSON_FILE, articles)
-        update_csv(CSV_FILE, updated_rows)
+        
+        # Handle different update_csv scenarios
+        if update_csv is True:
+            # Update CSV file only
+            update_csv_file(CSV_FILE, updated_rows)
+        elif update_csv is False:
+            # Update Google Sheets only
+            update_sheets_data(updated_rows)
+        elif update_csv is None:
+            # Update both CSV and Google Sheets
+            update_csv_file(CSV_FILE, updated_rows)
+            update_sheets_data(updated_rows)
 
         print(f"Batch {i // batch_size + 1} processed.")
 
@@ -191,4 +231,8 @@ def process_urls(batch_size=10):
 
 
 if __name__ == "__main__":
-    process_urls(batch_size=10)
+    # Usage examples:
+    # process_urls(batch_size=10, update_csv=True)   # Update CSV only
+    # process_urls(batch_size=10, update_csv=False)  # Update Google Sheets only
+    # process_urls(batch_size=10, update_csv=None)   # Update both CSV and Sheets
+    process_urls(batch_size=10, update_csv=None)
