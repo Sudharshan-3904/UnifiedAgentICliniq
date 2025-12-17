@@ -4,6 +4,7 @@ import csv
 import json
 import os
 import re
+import sheets_sync
 
 STORAGE_DIR = "md_files"
 os.makedirs(STORAGE_DIR, exist_ok=True)
@@ -36,12 +37,23 @@ def sanitize_filename(text):
     return re.sub(r'[^a-zA-Z0-9_-]', '_', text)
 
 
-def extract_medlineplus_page(url, article_id, updated_rows):
-    response = requests.get(url, timeout=30)
+def get_headers():
+    return {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.5',
+    }
+
+def extract_article(url, article_id, updated_rows):
+    try:
+        response = requests.get(url, headers=get_headers(), timeout=30)
+    except Exception as e:
+        print(f"Error fetching {url}: {e}")
+        return False
     
     if response.status_code != 200:
-        print(f"Failed to fetch {url}")
-        return
+        print(f"Failed to fetch {url} (Status: {response.status_code})")
+        return False
 
     soup = BeautifulSoup(response.text, "html.parser")
 
@@ -55,15 +67,41 @@ def extract_medlineplus_page(url, article_id, updated_rows):
         "sections": []
     }
 
-    article_tag = soup.find("article")
-    if not article_tag:
-        print("Main article content not found.")
-        return
+    # Generic content extraction: look for article, main, or specific PMC classes
+    content_root = soup.find("article")
+    if not content_root:
+        content_root = soup.find("main")
+    if not content_root:
+        content_root = soup.find(class_="jig-ncbi-inpagenav") # Common in PMC
+    if not content_root:
+        # Fallback for some PMC layouts or simple pages
+        content_root = soup.find(id="maincontent") 
 
-    sections = article_tag.find_all(["h2", "h3", "p", "ul"])
+    if not content_root:
+        print(f"Main content container not found for {url}")
+        return False
+
+    # Extract clean text sections
+    # Targeted tags: h2, h3 for headers; p, ul for content
+    # We might want to exclude common non-content sections like 'References' or 'shield'
+    
+    sections = content_root.find_all(["h2", "h3", "p", "ul"])
     current_section = None
 
+    # Handle abstract specifically if easily identifiable (often in PMC or PubMed)
+    abstract_div = soup.select_one(".abstract, #abstract, .abstract-content, .editor-summary")
+    if abstract_div:
+        # Treat abstract as a section
+        data["sections"].append({
+            "section_title": "Abstract",
+            "content": [{"type": "paragraph", "text": abstract_div.get_text(strip=True)}]
+        })
+
     for elem in sections:
+        # Skip elements inside navigation or footers if possible
+        if elem.find_parent(class_=["ref-list", "ack", "app-group", "fn-group"]):
+            continue
+
         if elem.name in ["h2", "h3"]:
             if current_section:
                 data["sections"].append(current_section)
@@ -76,7 +114,11 @@ def extract_medlineplus_page(url, article_id, updated_rows):
         
         elif elem.name == "p":
             paragraph_text = elem.get_text(strip=True)
-            if current_section:
+            if paragraph_text: # Skip empty paragraphs
+                if current_section is None:
+                     # Create a default section if content comes before any header
+                    current_section = {"section_title": "Introduction", "content": []}
+                
                 current_section["content"].append({
                     "type": "paragraph",
                     "text": paragraph_text
@@ -84,7 +126,10 @@ def extract_medlineplus_page(url, article_id, updated_rows):
 
         elif elem.name == "ul":
             list_items = [li.get_text(strip=True) for li in elem.find_all("li")]
-            if current_section and list_items:
+            if list_items:
+                if current_section is None:
+                    current_section = {"section_title": "Introduction", "content": []}
+                
                 current_section["content"].append({
                     "type": "list",
                     "items": list_items
@@ -94,8 +139,10 @@ def extract_medlineplus_page(url, article_id, updated_rows):
         data["sections"].append(current_section)
 
     if not data["sections"]:
-        print(f"No content extracted for {url}")
-        return
+        print(f"No structured content extracted for {url}")
+        # Create a fallback dump if structured failed but some text exists?
+        # For now, return False as requested
+        return False
 
     markdown_filename = f"{article_id}_{sanitize_filename(title)}.md"
     markdown_filepath = os.path.join(STORAGE_DIR, markdown_filename)
@@ -121,17 +168,27 @@ def extract_medlineplus_page(url, article_id, updated_rows):
         if row['link'] == url:
             row['status'] = 'extracted'
             break
+    
+    return True
 
-formatted_data, updated_rows = convert_csv_to_list(CSV_FILE)
+# Alias for backward compatibility if needed, or update calls
+extract_medlineplus_page = extract_article
 
-for article_id, url in formatted_data:
-    extract_medlineplus_page(url, article_id, updated_rows)
+if __name__ == "__main__":
+    formatted_data, updated_rows = convert_csv_to_list(CSV_FILE)
 
-with open(CSV_FILE, mode='w', newline='', encoding='utf-8') as file:
-    fieldnames = ['id', 'link', 'status']
-    writer = csv.DictWriter(file, fieldnames=fieldnames)
+    for article_id, url in formatted_data:
+        extract_medlineplus_page(url, article_id, updated_rows)
 
-    writer.writeheader()
-    writer.writerows(updated_rows)
+    with open(CSV_FILE, mode='w', newline='', encoding='utf-8') as file:
+        fieldnames = ['id', 'link', 'status']
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
 
-print("CSV file updated successfully.")
+        writer.writeheader()
+        writer.writerows(updated_rows)
+
+    print("CSV file updated successfully.")
+
+    # Sync data to Google Sheets
+    # print("Syncing data to Google Sheets...")
+    # sheets_sync.update_sheet_with_csv_data(updated_rows)
