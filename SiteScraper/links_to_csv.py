@@ -2,7 +2,7 @@ import pandas as pd
 import pdfx 
 
 
-PDF_FILE = "data\\Unified Tes - References - Cardiovascular System.pdf"
+PDF_FILES = ["data\\Conditioned Tes - Knowledge Source - Links.pdf", "data\\Conditioned Tes - Knowledge Source - Links.pdf", "data\\Unified Tes - References - Cardiovascular System.pdf"]
 CSV_FILE = "data\\url_status.csv"
 
 def get_url_list(filename: str = ""):
@@ -22,7 +22,7 @@ def create_csv(url_list: list = [], csv_filename: str = ""):
             df.loc[len(df)] = [i+1, url_list[i], "yet"]
         
         print(df.shape)
-        df.to_csv(csv_filename, index=False)
+        df.to_csv(csv_filename, index=False, mode="a")
 
 
 create_csv(get_url_list(PDF_FILE), CSV_FILE)
