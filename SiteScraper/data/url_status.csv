@@ -1,4 +1,5 @@
 id,link,status
+<<<<<<< HEAD
 1,https://medlineplus.gov/genetics/condition/mitochondrial-complex-i-deficiency,yet
 2,https://medlineplus.gov/genetics/condition/microphthalmia-with-linear-skin-def,yet
 3,https://medlineplus.gov/genetics/condition/prothrombin-thrombophilia/,yet
@@ -1770,3 +1771,25 @@ id,link,status
 1769,https://medlineplus.gov/genetics/condition/dyskeratosis-congenita/,yet
 1770,https://medlineplus.gov/genetics/condition/microcephaly-seizures-and-developmental-delay/,yet
 1771,https://medlineplus.gov/genetics/condition/vitelliform-macular-dystrophy/,yet
+=======
+1,https://medlineplus.gov/genetics/condition/idiopathic-infantile-hypercalcemia/,yet
+2,https://medlineplus.gov/genetics/condition/jervell-and-lange-nielsen-syndrom,yet
+3,https://medlineplus.gov/genetics/condition/kabuki-syndrome/,yet
+4,https://pmc.ncbi.nlm.nih.gov/articles/PMC5910509/,yet
+5,https://medlineplus.gov/genetics/condition/hsd10-disease/,yet
+6,https://medlineplus.gov/genetics/condition/trichorhinophalangeal-syndrome-type-i/,yet
+7,https://medlineplus.gov/genetics/condition/wagr-syndrome/,yet
+8,https://medlineplus.gov/genetics/condition/adcy5-related-dyskinesia/,yet
+9,https://medlineplus.gov/genetics/condition/multiple-endocrine-neoplasia/,yet
+10,https://pubmed.ncbi.nlm.nih.gov/19309503/,yet
+11,https://medlineplus.gov/genetics/condition/jervell-and-lange-nielsen-syndrome/,yet
+12,https://medlineplus.gov/genetics/condition/alpha-1-antitrypsin-deficiency/,yet
+13,https://medlineplus.gov/genetics/condition/esophageal-atresia-tracheoesopha,yet
+14,https://medlineplus.gov/genetics/condition/malonyl-coa-decarboxylase-deficie,yet
+15,https://medlineplus.gov/genetics/condition/clcn2-related-leukoencephalopathy,yet
+16,https://medlineplus.gov/genetics/condition/hereditary-paraganglioma-pheochr,yet
+17,https://medlineplus.gov/genetics/condition/pdgfrb-associated-chronic-eosinop,yet
+18,https://medlineplus.gov/genetics/condition/kcnk9-imprinting-syndrome/,yet
+19,https://medlineplus.gov/genetics/condition/progressive-pseudorheumatoid-dy,yet
+20,https://medlineplus.gov/genetics/condition/renal-coloboma-syndrome/,yet
+>>>>>>> 8f313c458f5740a6c5536df9f95a69682b7f9e51

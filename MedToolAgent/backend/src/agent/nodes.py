@@ -3,21 +3,21 @@ from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 from langchain_core.prompts import ChatPromptTemplate
 from ..config.settings import settings
 from ..agent.state import AgentState
-from ..tools.base import agent_tools, search_pubmed, fetch_ehr_data, rag_clinical_data
+from ..tools.base import agent_tools, search_pubmed, search_duckduckgo, fetch_ehr_data, rag_clinical_data
 from ..utils.logger import logger
 import os
 import re
 
 # Initialize Models
 llm = ChatOllama(base_url=settings.OLLAMA_BASE_URL, model=settings.AGENT_MODEL)
-safety_llm = ChatOllama(base_url=settings.OLLAMA_BASE_URL, model=settings.SAFETY_MODEL)
+safety_llm = llm  # Reuse the same LLM instance to avoid resource exhaustion
 
 # Since gemma3 doesn't support tool binding, we'll use a prompt-based approach
 TOOL_PROMPT = """You are a medical AI assistant participating in a multi-turn conversation with a user. Use the conversation history to decide whether a tool is needed on a given turn.
 
 You have access to the following tools:
 
-1. search_pubmed(query: str, num_articles: int = 10, top_n: int = 3) - Search PubMed for medical literature and return top relevant articles ranked by semantic similarity
+1. search_pubmed(query: str, num_articles: int = 10, top_n: int = 3) - Search PubMed for medical literature and return top relevant articles ranked by semantic similarity. Automatically falls back to DuckDuckGo if no PubMed results found.
    USE THIS TOOL ONLY WHEN:
    - The user explicitly asks for recent research, studies, or publications
    - The query requires evidence-based medical literature or clinical trials
@@ -30,10 +30,20 @@ You have access to the following tools:
    - Patient-specific queries (use fetch_ehr_data instead)
    - Clinical guidelines already in your knowledge base (use rag_clinical_data instead)
 
-2. fetch_ehr_data(patient_id: str) - Fetch Electronic Health Records for a patient
+2. search_duckduckgo(query: str, num_results: int = 5) - Search the web using DuckDuckGo for general medical information
+   USE THIS TOOL WHEN:
+   - You need to find general web information about a medical topic
+   - A specific medical query doesn't return academic results
+   - The user wants current news, updates, or general knowledge about health topics
+   
+   DO NOT USE THIS TOOL FOR:
+   - Academic research (use search_pubmed instead)
+   - Patient-specific queries (use fetch_ehr_data instead)
+
+3. fetch_ehr_data(patient_id: str) - Fetch Electronic Health Records for a patient
    USE THIS TOOL WHEN: The user asks about a specific patient's medical history or records
 
-3. rag_clinical_data(query: str) - Retrieve clinical data from local knowledge base
+4. rag_clinical_data(query: str) - Retrieve clinical data from local knowledge base
    USE THIS TOOL WHEN: The user asks about clinical guidelines or protocols that might be in the local database
 
 IMPORTANT: First try to answer the question directly using your medical knowledge. Only use tools when specifically needed for evidence, patient data access, or local knowledge retrieval.
@@ -48,6 +58,7 @@ TOOL_CALL: search_pubmed("asthma treatment")
 Notes:
 - If you call a tool, wait for the tool result and then produce your assistant reply based on that result in the next message.
 - For `search_pubmed`, you can optionally specify `num_articles` and `top_n` like: search_pubmed("query", num_articles=20, top_n=5)
+- For `search_duckduckgo`, you can optionally specify `num_results` like: search_duckduckgo("query", num_results=10)
 - If you can answer without external tools, return a direct, concise answer.
 """
 
@@ -115,7 +126,7 @@ def llm_agent(state: AgentState):
         tool_name = tool_call_match.group(1)
         arg_str = tool_call_match.group(2).strip()
 
-        # Extract main quoted argument (e.g., the query) and optional kwargs like num_articles/top_n
+        # Extract main quoted argument (e.g., the query) and optional kwargs like num_articles/top_n/num_results
         query_arg = None
         quoted = re.search(r'"([^"]+)"|\'([^\']+)\'', arg_str)
         if quoted:
@@ -123,12 +134,16 @@ def llm_agent(state: AgentState):
 
         num_articles = None
         top_n = None
+        num_results = None
         m = re.search(r'num_articles\s*=\s*(\d+)', arg_str)
         if m:
             num_articles = int(m.group(1))
         m2 = re.search(r'top_n\s*=\s*(\d+)', arg_str)
         if m2:
             top_n = int(m2.group(1))
+        m3 = re.search(r'num_results\s*=\s*(\d+)', arg_str)
+        if m3:
+            num_results = int(m3.group(1))
 
         logger.info(f"Detected tool call: {tool_name}({arg_str})")
 
@@ -145,6 +160,15 @@ def llm_agent(state: AgentState):
                 if top_n is not None:
                     params["top_n"] = top_n
                 tool_result = search_pubmed.invoke(params)
+        elif tool_name == "search_duckduckgo":
+            if not query_arg:
+                logger.warning("search_duckduckgo called without a query argument")
+                tool_result = "Error: search_duckduckgo requires a query argument. Please call the tool as: TOOL_CALL: search_duckduckgo(\"your query\")"
+            else:
+                params = {"query": query_arg}
+                if num_results is not None:
+                    params["num_results"] = num_results
+                tool_result = search_duckduckgo.invoke(params)
         elif tool_name == "fetch_ehr_data":
             if not query_arg:
                 logger.warning("fetch_ehr_data called without a patient_id")

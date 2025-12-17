@@ -1,15 +1,18 @@
 import os
 from pydantic_settings import BaseSettings
+import dotenv
+dotenv.load_dotenv()
+
 
 class Settings(BaseSettings):
     OLLAMA_BASE_URL: str = "http://localhost:11434"
-    AGENT_MODEL: str = "gemma3"
-    SAFETY_MODEL: str = "gemma3"
+    AGENT_MODEL: str = os.getenv("AGENT_MODEL")
+    SAFETY_MODEL: str = os.getenv("SAFETY_MODEL")
     
     # External APIs
-    NCBI_API_KEY: str = ""
-    NCBI_EMAIL: str = ""
-    GOOGLE_API_KEY: str = ""
+    NCBI_API_KEY: str = os.getenv("NCBI_API_KEY")
+    NCBI_EMAIL: str = os.getenv("NCBI_EMAIL")
+    GOOGLE_API_KEY: str = os.getenv("GOOGLE_API_KEY")
     LOG_LEVEL: str = "INFO"
     
     # Paths
