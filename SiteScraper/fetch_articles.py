@@ -4,7 +4,6 @@ import csv
 import json
 import os
 import re
-import sheets_sync
 
 STORAGE_DIR = "md_files"
 os.makedirs(STORAGE_DIR, exist_ok=True)
@@ -44,7 +43,7 @@ def get_headers():
         'Accept-Language': 'en-US,en;q=0.5',
     }
 
-def extract_article(url, article_id, updated_rows):
+def extract_from_medline(url, article_id, updated_rows):
     try:
         response = requests.get(url, headers=get_headers(), timeout=30)
     except Exception as e:
@@ -67,38 +66,38 @@ def extract_article(url, article_id, updated_rows):
         "sections": []
     }
 
-    # Generic content extraction: look for article, main, or specific PMC classes
+    # MedlinePlus specific content root
+    # Usually it's in <article> or <div id="mplus-content"> or similar, but keeping original logic as a base
+    # removing generic fallbacks that might be NCBI specific if we want strict separation, 
+    # but for safety I will leave the broader search but prioritize Medline structure if known.
+    # The original code searched article -> main -> jig-ncbi-inpagenav -> #maincontent
+    
     content_root = soup.find("article")
     if not content_root:
         content_root = soup.find("main")
     if not content_root:
-        content_root = soup.find(class_="jig-ncbi-inpagenav") # Common in PMC
+        content_root = soup.find(id="maincontent") # Common in MedlinePlus
+    
     if not content_root:
-        # Fallback for some PMC layouts or simple pages
-        content_root = soup.find(id="maincontent") 
+        # Fallback to the original broad search just in case
+        content_root = soup.find(class_="jig-ncbi-inpagenav")
 
     if not content_root:
         print(f"Main content container not found for {url}")
         return False
 
-    # Extract clean text sections
-    # Targeted tags: h2, h3 for headers; p, ul for content
-    # We might want to exclude common non-content sections like 'References' or 'shield'
-    
     sections = content_root.find_all(["h2", "h3", "p", "ul"])
     current_section = None
 
-    # Handle abstract specifically if easily identifiable (often in PMC or PubMed)
-    abstract_div = soup.select_one(".abstract, #abstract, .abstract-content, .editor-summary")
+    # MedlinePlus abstract check
+    abstract_div = soup.select_one(".abstract, #abstract, .abstract-content")
     if abstract_div:
-        # Treat abstract as a section
         data["sections"].append({
             "section_title": "Abstract",
             "content": [{"type": "paragraph", "text": abstract_div.get_text(strip=True)}]
         })
 
     for elem in sections:
-        # Skip elements inside navigation or footers if possible
         if elem.find_parent(class_=["ref-list", "ack", "app-group", "fn-group"]):
             continue
 
@@ -114,9 +113,8 @@ def extract_article(url, article_id, updated_rows):
         
         elif elem.name == "p":
             paragraph_text = elem.get_text(strip=True)
-            if paragraph_text: # Skip empty paragraphs
+            if paragraph_text:
                 if current_section is None:
-                     # Create a default section if content comes before any header
                     current_section = {"section_title": "Introduction", "content": []}
                 
                 current_section["content"].append({
@@ -140,10 +138,119 @@ def extract_article(url, article_id, updated_rows):
 
     if not data["sections"]:
         print(f"No structured content extracted for {url}")
-        # Create a fallback dump if structured failed but some text exists?
-        # For now, return False as requested
         return False
 
+    save_markdown(article_id, title, url, data)
+    
+    for row in updated_rows:
+        if row['link'] == url:
+            row['status'] = 'extracted'
+            break
+    
+    return True
+
+def extract_from_ncbi(url, article_id, updated_rows):
+    try:
+        response = requests.get(url, headers=get_headers(), timeout=30)
+    except Exception as e:
+        print(f"Error fetching {url}: {e}")
+        return False
+    
+    if response.status_code != 200:
+        print(f"Failed to fetch {url} (Status: {response.status_code})")
+        return False
+
+    soup = BeautifulSoup(response.text, "html.parser")
+
+    # User requested specifically: div.main-content lit-style
+    # We also keep div.document as fallback or alternative
+    content_root = soup.select_one("div.main-content.lit-style")
+    
+    if not content_root:
+        content_root = soup.find("div", class_="document")
+    
+    if not content_root:
+        print(f"Main content container (div.main-content.lit-style or div.document) not found for {url}")
+        return False
+
+    title_tag = soup.find("h1")
+    if not title_tag:
+        title_tag = content_root.find("h1")
+        
+    title = title_tag.get_text(strip=True) if title_tag else "Unknown_Title"
+
+    data = {
+        "id": article_id,
+        "title": title,
+        "url": url,
+        "sections": []
+    }
+
+    # Extract clean text sections from the specialized root
+    # Note: Structure might be flat or nested. We iterate through likely content tags.
+    # Looking for direct children or general flow?
+    # BS4 extract loop similar to medline
+    
+    sections = content_root.find_all(["h2", "h3", "p", "ul"])
+    current_section = None
+
+    for elem in sections:
+        # Skip reference lists and other non-content machinery
+        if elem.find_parent(class_=["ref-list", "ack", "app-group", "fn-group", "back", "reflist"]):
+            continue
+        
+        # Skip if element is inside a table wrapper for now if complicated, but p/ul usually ok.
+        
+        if elem.name in ["h2", "h3"]:
+            if current_section:
+                data["sections"].append(current_section)
+
+            section_title = elem.get_text(strip=True)
+            current_section = {
+                "section_title": section_title,
+                "content": []
+            }
+        
+        elif elem.name == "p":
+            paragraph_text = elem.get_text(strip=True)
+            if paragraph_text: 
+                if current_section is None:
+                    current_section = {"section_title": "Introduction", "content": []}
+                
+                current_section["content"].append({
+                    "type": "paragraph",
+                    "text": paragraph_text
+                })
+
+        elif elem.name == "ul":
+            list_items = [li.get_text(strip=True) for li in elem.find_all("li")]
+            if list_items:
+                if current_section is None:
+                    current_section = {"section_title": "Introduction", "content": []}
+                
+                current_section["content"].append({
+                    "type": "list",
+                    "items": list_items
+                })
+    
+    if current_section:
+        if current_section not in data["sections"]:
+            data["sections"].append(current_section)
+
+    if not data["sections"]:
+        print(f"No structured content extracted for {url}")
+        return False
+
+    save_markdown(article_id, title, url, data)
+
+    for row in updated_rows:
+        if row['link'] == url:
+            row['status'] = 'extracted'
+            break
+
+    return True
+
+def save_markdown(article_id, title, url, data):
     markdown_filename = f"{article_id}_{sanitize_filename(title)}.md"
     markdown_filepath = os.path.join(STORAGE_DIR, markdown_filename)
     
@@ -164,21 +271,18 @@ def extract_article(url, article_id, updated_rows):
 
     print(f"Markdown file saved as: {markdown_filepath}")
 
-    for row in updated_rows:
-        if row['link'] == url:
-            row['status'] = 'extracted'
-            break
-    
-    return True
-
-# Alias for backward compatibility if needed, or update calls
-extract_medlineplus_page = extract_article
 
 if __name__ == "__main__":
     formatted_data, updated_rows = convert_csv_to_list(CSV_FILE)
 
     for article_id, url in formatted_data:
-        extract_medlineplus_page(url, article_id, updated_rows)
+        if "medlineplus.gov" in url:
+            extract_from_medline(url, article_id, updated_rows)
+        elif "ncbi.nlm.nih.gov" in url:
+            extract_from_ncbi(url, article_id, updated_rows)
+        else:
+            print(f"No specific extractor for URL: {url}, attempting default Medline extractor.")
+            extract_from_medline(url, article_id, updated_rows)
 
     with open(CSV_FILE, mode='w', newline='', encoding='utf-8') as file:
         fieldnames = ['id', 'link', 'status']
@@ -188,7 +292,3 @@ if __name__ == "__main__":
         writer.writerows(updated_rows)
 
     print("CSV file updated successfully.")
-
-    # Sync data to Google Sheets
-    # print("Syncing data to Google Sheets...")
-    # sheets_sync.update_sheet_with_csv_data(updated_rows)
