@@ -1,0 +1,1802 @@
+id,link,status,working,status_code,status_abbreviation
+1,https://ncbi.nlm.nih.gov/books/NBK571337,extracted,article,200,OK
+2,https://pmc.ncbi.nlm.nih.gov/articles/PMC6020195,yet,Non-article,403,Forbidden
+3,https://ncbi.nlm.nih.gov/books/NBK526072,extracted,article,200,OK
+4,https://pmc.ncbi.nlm.nih.gov/articles/PMC8762786,yet,Non-article,403,Forbidden
+5,https://pmc.ncbi.nlm.nih.gov/articles/PMC2875732,yet,Non-article,403,Forbidden
+6,https://pmc.ncbi.nlm.nih.gov/articles/PMC7250635,yet,Non-article,403,Forbidden
+7,https://pmc.ncbi.nlm.nih.gov/articles/PMC11678337,yet,Non-article,403,Forbidden
+8,https://pmc.ncbi.nlm.nih.gov/articles/PMC7190441,yet,Non-article,403,Forbidden
+9,https://pmc.ncbi.nlm.nih.gov/articles/PMC11204042,yet,Non-article,403,Forbidden
+10,https://pmc.ncbi.nlm.nih.gov/articles/PMC8058608,yet,Non-article,403,Forbidden
+11,https://pmc.ncbi.nlm.nih.gov/articles/PMC12675084,yet,Non-article,403,Forbidden
+12,https://pmc.ncbi.nlm.nih.gov/articles/PMC11363501,yet,Non-article,403,Forbidden
+13,https://pmc.ncbi.nlm.nih.gov/articles/PMC10866737,yet,Non-article,403,Forbidden
+14,https://pmc.ncbi.nlm.nih.gov/articles/PMC10541273,yet,Non-article,403,Forbidden
+15,https://pmc.ncbi.nlm.nih.gov/articles/PMC12287477,yet,Non-article,403,Forbidden
+16,https://ncbi.nlm.nih.gov/books/NBK459368,extracted,article,200,OK
+17,https://pmc.ncbi.nlm.nih.gov/articles/PMC6083537,yet,Non-article,403,Forbidden
+18,https://pmc.ncbi.nlm.nih.gov/articles/PMC8829486,yet,Non-article,403,Forbidden
+19,https://pmc.ncbi.nlm.nih.gov/articles/PMC3431581,yet,Non-article,403,Forbidden
+20,https://pmc.ncbi.nlm.nih.gov/articles/PMC1839776,yet,Non-article,403,Forbidden
+21,https://pmc.ncbi.nlm.nih.gov/articles/PMC2822144,yet,Non-article,403,Forbidden
+22,https://pmc.ncbi.nlm.nih.gov/articles/PMC6962767,yet,Non-article,403,Forbidden
+23,https://pmc.ncbi.nlm.nih.gov/articles/PMC8289470,yet,Non-article,403,Forbidden
+24,https://pmc.ncbi.nlm.nih.gov/articles/PMC11395432,yet,Non-article,403,Forbidden
+25,https://pmc.ncbi.nlm.nih.gov/articles/PMC10998004,yet,Non-article,403,Forbidden
+26,https://pmc.ncbi.nlm.nih.gov/articles/PMC11858358,yet,Non-article,403,Forbidden
+27,https://medlineplus.gov/triglycerides.html,extracted,article,200,OK
+28,https://pmc.ncbi.nlm.nih.gov/articles/PMC3064759,yet,Non-article,403,Forbidden
+29,https://pmc.ncbi.nlm.nih.gov/articles/PMC7770610,yet,Non-article,403,Forbidden
+30,https://pmc.ncbi.nlm.nih.gov/articles/PMC6938588,yet,Non-article,403,Forbidden
+31,https://medlineplus.gov/genetics/condition/fbxl4-related-encephalomyopathic-,yet,Non-article,404,Not Found
+32,https://medlineplus.gov/genetics/condition/osteoglophonic-dysplasia,extracted,article,200,OK
+33,https://medlineplus.gov/genetics/condition/keratitis-ichthyosis-deafness-syndrome,extracted,article,200,OK
+34,https://medlineplus.gov/genetics/condition/combined-pituitary-hormone-deficiency,extracted,article,200,OK
+35,https://medlineplus.gov/genetics/condition/liddle-syndrome,extracted,article,200,OK
+36,https://medlineplus.gov/genetics/condition/spinal-muscular-atrophy-with-respiratory-distress-type-1,extracted,article,200,OK
+37,https://medlineplus.gov/genetics/condition/autosomal-recessive-hypotrichosis,extracted,article,200,OK
+38,https://medlineplus.gov/genetics/condition/myhre-syndrome,extracted,article,200,OK
+39,https://medlineplus.gov/genetics/condition/3q29-microdeletion-syndrome,extracted,article,200,OK
+40,https://medlineplus.gov/genetics/condition/chronic-atrial-and-intestinal-dysrhyt,yet,Non-article,404,Not Found
+41,https://ncbi.nlm.nih.gov/books/NBK1445,extracted,article,200,OK
+42,https://medlineplus.gov/genetics/condition/dicer1-syndrome,extracted,article,200,OK
+43,https://medlineplus.gov/genetics/condition/leukoencephalopathy-with-thalamu,yet,Non-article,404,Not Found
+44,https://medlineplus.gov/genetics/condition/white-sponge-nevus,extracted,article,200,OK
+45,https://medlineplus.gov/genetics/condition/glutamate-formiminotransferase-deficiency,extracted,article,200,OK
+46,https://medlineplus.gov/genetics/condition/sepiapterin-reductase-deficiency,extracted,article,200,OK
+47,https://medlineplus.gov/genetics/condition/ppp2r5d-related-intellectual-disabili,yet,Non-article,404,Not Found
+48,https://medlineplus.gov/genetics/condition/trichohepatoenteric-syndrome,extracted,article,200,OK
+49,https://medlineplus.gov/genetics/condition/amish-lethal-microcephaly,extracted,article,200,OK
+50,https://medlineplus.gov/genetics/condition/myoclonic-epilepsy-with-ragged-re,yet,Non-article,404,Not Found
+51,https://medlineplus.gov/genetics/condition/mandibuloacral-dysplasia,extracted,article,200,OK
+52,https://medlineplus.gov/genetics/condition/primary-familial-brain-calcification,extracted,article,200,OK
+53,https://medlineplus.gov/genetics/condition/partington-syndrome,extracted,article,200,OK
+54,https://medlineplus.gov/genetics/condition/multiple-mitochondrial-dysfunctions-syndrome,extracted,article,200,OK
+55,https://medlineplus.gov/genetics/condition/5-alpha-reductase-deficiency,extracted,article,200,OK
+56,https://medlineplus.gov/genetics/condition/17-alpha-hydroxylase-17-20-lyase-,yet,Non-article,404,Not Found
+57,https://medlineplus.gov/genetics/condition/gitelman-syndrome,extracted,article,200,OK
+58,https://medlineplus.gov/genetics/condition/maturity-onset-diabetes-of-the-you,yet,Non-article,404,Not Found
+59,https://medlineplus.gov/genetics/condition/walker-warburg-syndrome,extracted,article,200,OK
+60,https://medlineplus.gov/genetics/condition/cerebro-facio-thoracic-dysplasia,extracted,article,200,OK
+61,https://medlineplus.gov/genetics/condition/benign-recurrent-intrahepatic-chole,yet,Non-article,404,Not Found
+62,https://medlineplus.gov/genetics/condition/ataxia-with-vitamin-e-deficiency,extracted,article,200,OK
+63,https://ncbi.nlm.nih.gov/books/NBK3822,extracted,article,200,OK
+64,https://medlineplus.gov/genetics/condition/dihydropyrimidine-dehydrogenase-deficiency,extracted,article,200,OK
+65,https://medlineplus.gov/genetics/condition/mitochondrial-complex-i-deficiency,extracted,article,200,OK
+66,https://medlineplus.gov/genetics/condition/juvenile-idiopathic-arthritis,extracted,article,200,OK
+67,https://medlineplus.gov/genetics/condition/tumor-necrosis-factor-receptor-ass,yet,Non-article,404,Not Found
+68,https://medlineplus.gov/genetics/condition/farber-lipogranulomatosis,extracted,article,200,OK
+69,https://medlineplus.gov/genetics/condition/osteoarthritis,extracted,article,200,OK
+70,https://medlineplus.gov/genetics/condition/cowden-syndrome,extracted,article,200,OK
+71,https://pubmed.ncbi.nlm.nih.gov/19309503,yet,Non-article,403,Forbidden
+72,https://pmc.ncbi.nlm.nih.gov/articles/PMC8422252,yet,Non-article,403,Forbidden
+73,https://medlineplus.gov/genetics/condition/cav3-related-distal-myopathy,extracted,article,200,OK
+74,https://medlineplus.gov/genetics/condition/developmental-and-epileptic-encephalopathy-1,extracted,article,200,OK
+75,https://medlineplus.gov/genetics/condition/keratoconus,extracted,article,200,OK
+76,https://medlineplus.gov/genetics/condition/hypermanganesemia-with-dystonia,extracted,article,200,OK
+77,https://medlineplus.gov/genetics/condition/retinal-arterial-macroaneurysm-with-supravalvular-pulmonic-stenosis,extracted,article,200,OK
+78,https://medlineplus.gov/genetics/condition/pitt-hopkins-syndrome,extracted,article,200,OK
+79,https://medlineplus.gov/genetics/condition/dopamine-transporter-deficiency-s,yet,Non-article,404,Not Found
+80,https://medlineplus.gov/genetics/condition/hidradenitis-suppurativa,extracted,article,200,OK
+81,https://medlineplus.gov/genetics/condition/pallister-killian-mosaic-syndrome,extracted,article,200,OK
+82,https://medlineplus.gov/genetics/condition/poikiloderma-with-neutropenia,extracted,article,200,OK
+83,https://medlineplus.gov/genetics/condition/autoimmune-lymphoproliferative-sy,yet,Non-article,404,Not Found
+84,https://medlineplus.gov/genetics/condition/vldlr-associated-cerebellar-hypopla,yet,Non-article,404,Not Found
+85,https://ncbi.nlm.nih.gov/books/NBK447920,extracted,article,200,OK
+86,https://pmc.ncbi.nlm.nih.gov/articles/PMC1459119,yet,Non-article,403,Forbidden
+87,https://medlineplus.gov/genetics/condition/myasthenia-gravis,extracted,article,200,OK
+88,https://medlineplus.gov/genetics/condition/amelogenesis-imperfecta,extracted,article,200,OK
+89,https://medlineplus.gov/genetics/condition/lyme-disease,extracted,article,200,OK
+90,https://medlineplus.gov/genetics/condition/isolated-hyperchlorhidrosis/https://medlineplus.gov/genetics/condition/noonan-syndrome-with-multiple-lentigines,yet,Non-article,404,Not Found
+91,https://medlineplus.gov/genetics/condition/proximal-18q-deletion-syndrome,extracted,article,200,OK
+92,https://medlineplus.gov/genetics/condition/mitochondrial-complex-i-deficiency,yet,article,200,OK
+93,https://medlineplus.gov/genetics/condition/leptin-receptor-deficiency,extracted,article,200,OK
+94,https://medlineplus.gov/genetics/condition/schimke-immuno-osseous-dysplasi,yet,Non-article,404,Not Found
+95,https://medlineplus.gov/genetics/condition/angelman-syndrome,extracted,article,200,OK
+96,https://medlineplus.gov/genetics/condition/ehlers-danlos-syndrome,extracted,article,200,OK
+97,https://medlineplus.gov/genetics/condition/inclusion-body-myopathy-with-early-onset-paget-disease-and-frontotemporal-dementia,extracted,article,200,OK
+98,https://medlineplus.gov/genetics/condition/arterial-tortuosity-syndrome,extracted,article,200,OK
+99,https://medlineplus.gov/genetics/condition/alg12-congenital-disorder-of-glyco,yet,Non-article,404,Not Found
+100,https://medlineplus.gov/genetics/condition/complement-component-2-deficien,yet,Non-article,404,Not Found
+101,https://medlineplus.gov/genetics/condition/leydig-cell-hypoplasia,extracted,article,200,OK
+102,https://medlineplus.gov/genetics/condition/shprintzen-goldberg-syndrome,extracted,article,200,OK
+103,https://medlineplus.gov/genetics/condition/familial-glucocorticoid-deficiency,extracted,article,200,OK
+104,https://medlineplus.gov/genetics/condition/klinefelter-syndrome?utm_source,extracted,article,200,OK
+105,https://medlineplus.gov/genetics/condition/familial-mediterranean-fever,extracted,article,200,OK
+106,https://medlineplus.gov/genetics/condition/knobloch-syndrome,extracted,article,200,OK
+107,https://medlineplus.gov/genetics/condition/ataxia-telangiectasia,extracted,article,200,OK
+108,https://medlineplus.gov/genetics/condition/centronuclear-myopathy,extracted,article,200,OK
+109,https://medlineplus.gov/genetics/condition/crouzon-syndrome-with-acanthosis,yet,Non-article,404,Not Found
+110,https://medlineplus.gov/genetics/condition/dilated-cardiomyopathy-with-ataxia-syndrome,extracted,article,200,OK
+111,https://medlineplus.gov/genetics/condition/alveolar-capillary-dysplasia-with-mi,yet,Non-article,404,Not Found
+112,https://medlineplus.gov/genetics/condition/trimethylaminuria,extracted,article,200,OK
+113,https://pmc.ncbi.nlm.nih.gov/articles/PMC5461780,yet,Non-article,403,Forbidden
+114,https://medlineplus.gov/genetics/condition/uncombable-hair-syndrome,extracted,article,200,OK
+115,https://cdc.gov/birth-defects/about/anophthalmia-microphthalmia.html,extracted,article,200,OK
+116,https://medlineplus.gov/genetics/condition/x-linked-sideroblastic-anemia-and-ataxia,extracted,article,200,OK
+117,https://medlineplus.gov/genetics/condition/hereditary-fibrosing-poikiloderma-with-tendon-contractures-myopathy-and-pulmonary-fibrosis,extracted,article,200,OK
+118,https://medlineplus.gov/genetics/condition/autosomal-recessive-congenital-m,yet,Non-article,404,Not Found
+119,https://medlineplus.gov/genetics/condition/1q211-microdeletion,extracted,article,200,OK
+120,https://medlineplus.gov/genetics/condition/chanarin-dorfman-syndrome,extracted,article,200,OK
+121,https://medlineplus.gov/genetics/condition/hutchinson-gilford-progeria-syndrome,extracted,article,200,OK
+122,https://medlineplus.gov/genetics/condition/blepharophimosis-ptosis-and-epicanthus-inversus-syndrome,extracted,article,200,OK
+123,https://medlineplus.gov/genetics/condition/progressive-familial-intrahepatic-ch,yet,Non-article,404,Not Found
+124,https://medlineplus.gov/genetics/condition/rhizomelic-chondrodysplasia-punctata,extracted,article,200,OK
+125,https://ncbi.nlm.nih.gov/books/NBK1481,extracted,article,200,OK
+126,https://medlineplus.gov/genetics/condition/melanoma,extracted,article,200,OK
+127,https://ncbi.nlm.nih.gov/books/NBK513253,extracted,article,200,OK
+128,https://ncbi.nlm.nih.gov/books/NBK525916,extracted,article,200,OK
+129,https://medlineplus.gov/genetics/condition/darier-disease,extracted,article,200,OK
+130,https://medlineplus.gov/genetics/condition/distal-hereditary-motor-neuropathy-type-ii,extracted,article,200,OK
+131,https://medlineplus.gov/genetics/condition/norrie-disease,extracted,article,200,OK
+132,https://medlineplus.gov/genetics/condition/otopalatodigital-syndrome-type-1,extracted,article,200,OK
+133,https://pmc.ncbi.nlm.nih.gov/articles/PMC7136165,yet,Non-article,403,Forbidden
+134,https://pmc.ncbi.nlm.nih.gov/articles/PMC7812771,yet,Non-article,403,Forbidden
+135,https://ncbi.nlm.nih.gov/books/NBK63582,extracted,article,200,OK
+136,https://medlineplus.gov/genetics/condition/catecholaminergic-polymorphic-ventricular-tachycardia,extracted,article,200,OK
+137,https://medlineplus.gov/genetics/condition/bap1-tumor-predisposition-syndro,yet,Non-article,404,Not Found
+138,https://medlineplus.gov/genetics/condition/hereditary-cerebral-amyloid-angiopathy,extracted,article,200,OK
+139,https://medlineplus.gov/genetics/condition/prion-disease,extracted,article,200,OK
+140,https://medlineplus.gov/genetics/condition/genetic-epilepsy-with-febrile-seizur,yet,Non-article,404,Not Found
+141,https://medlineplus.gov/genetics/condition/canavan-disease,extracted,article,200,OK
+142,https://medlineplus.gov/genetics/condition/cul3-related-neurodevelopmental-d,yet,Non-article,404,Not Found
+143,https://pubmed.ncbi.nlm.nih.gov/23294109,yet,Non-article,403,Forbidden
+144,https://medlineplus.gov/genetics/condition/infantile-onset-spinocerebellar-atax,yet,Non-article,404,Not Found
+145,https://medlineplus.gov/genetics/condition/motion-sickness,extracted,article,200,OK
+146,https://medlineplus.gov/genetics/condition/trichorhinophalangeal-syndrome-type-i,extracted,article,200,OK
+147,https://pmc.ncbi.nlm.nih.gov/articles/PMC3415789,yet,Non-article,403,Forbidden
+148,https://medlineplus.gov/genetics/condition/megacystis-microcolon-intestinal-h,yet,Non-article,404,Not Found
+149,https://medlineplus.gov/genetics/condition/septo-optic-dysplasia,extracted,article,200,OK
+150,https://medlineplus.gov/genetics/condition/cartilage-hair-hypoplasia,extracted,article,200,OK
+151,https://ncbi.nlm.nih.gov/books/NBK537300,extracted,article,200,OK
+152,https://medlineplus.gov/genetics/condition/fibronectin-glomerulopathy,extracted,article,200,OK
+153,https://medlineplus.gov/genetics/condition/hypomyelination-with-brainstem-and-spinal-cord-involvement-and-leg-spasticity,extracted,article,200,OK
+154,https://pmc.ncbi.nlm.nih.gov/articles/PMC11737626,yet,Non-article,403,Forbidden
+155,https://medlineplus.gov/genetics/condition/irak-4-deficiency,extracted,article,200,OK
+156,https://nhs.uk/conditions/edwards-syndrome,extracted,article,200,OK
+157,https://ncbi.nlm.nih.gov/books/NBK1156,extracted,article,200,OK
+158,https://medlineplus.gov/genetics/condition/46xx-testicular-difference-of-sex-development,extracted,article,200,OK
+159,https://medlineplus.gov/genetics/condition/autosomal-recessive-cerebellar-at,yet,Non-article,404,Not Found
+160,https://medlineplus.gov/genetics/condition/mcleod-neuroacanthocytosis-syndr,yet,Non-article,404,Not Found
+161,https://medlineplus.gov/genetics/condition/glanzmann-thrombasthenia,extracted,article,200,OK
+162,https://medlineplus.gov/genetics/condition/nakajo-nishimura-syndrome,extracted,article,200,OK
+163,https://medlineplus.gov/genetics/condition/smith-lemli-opitz-syndrome,extracted,article,200,OK
+164,https://medlineplus.gov/genetics/condition/dihydrolipoamide-dehydrogenase-,yet,Non-article,404,Not Found
+165,https://rarediseases.info.nih.gov/diseases/19062/x-linked-neurodegenerative-syndrome-hamel-type,yet,article,200,OK
+166,https://medlineplus.gov/genetics/condition/manitoba-oculotrichoanal-syndrome,extracted,article,200,OK
+167,https://ncbi.nlm.nih.gov/books/NBK575793,extracted,article,200,OK
+168,https://pmc.ncbi.nlm.nih.gov/articles/PMC4433400,yet,Non-article,403,Forbidden
+169,https://ncbi.nlm.nih.gov/books/NBK1402,extracted,article,200,OK
+170,https://ncbi.nlm.nih.gov/books/NBK1459,extracted,article,200,OK
+171,https://medlineplus.gov/genetics/condition/infantile-onset-ascending-hereditar,yet,Non-article,404,Not Found
+172,https://medlineplus.gov/genetics/condition/congenital-bile-acid-synthesis-defect-type-2,extracted,article,200,OK
+173,https://medlineplus.gov/genetics/condition/kniest-dysplasia,extracted,article,200,OK
+174,https://medlineplus.gov/genetics/condition/9q223-microdeletion,extracted,article,200,OK
+175,https://medlineplus.gov/genetics/condition/juvenile-myoclonic-epilepsy,extracted,article,200,OK
+176,https://medlineplus.gov/genetics/condition/naegeli-franceschetti-jadassohn-syndrome-dermatopathia-pigmentosa-reticularis,extracted,article,200,OK
+177,https://medlineplus.gov/genetics/condition/anencephaly,extracted,article,200,OK
+178,https://medlineplus.gov/genetics/condition/multiple-cutaneous-and-mucosal-v,yet,Non-article,404,Not Found
+179,https://medlineplus.gov/genetics/condition/familial-atrial-fibrillation,extracted,article,200,OK
+180,https://medlineplus.gov/genetics/condition/myopathy-with-deficiency-of-iron-sulfur-cluster-assembly-enzyme,extracted,article,200,OK
+181,https://medlineplus.gov/genetics/condition/smith-magenis-syndrome,extracted,article,200,OK
+182,https://ncbi.nlm.nih.gov/books/NBK1249,extracted,article,200,OK
+183,https://medlineplus.gov/genetics/condition/hereditary-cerebral-amyloid-angiop,yet,Non-article,404,Not Found
+184,https://medlineplus.gov/genetics/condition/hereditary-hypophosphatemic-rickets,extracted,article,200,OK
+185,https://medlineplus.gov/genetics/condition/isolated-duane-retraction-syndrome,extracted,article,200,OK
+186,https://medlineplus.gov/genetics/condition/3-hydroxyacyl-coa-dehydrogenase,yet,Non-article,404,Not Found
+187,https://medlineplus.gov/genetics/condition/thiamine-responsive-megaloblastic,yet,Non-article,404,Not Found
+188,https://medlineplus.gov/genetics/condition/marfan-syndrome,extracted,article,200,OK
+189,https://medlineplus.gov/genetics/condition/aldosterone-producing-adenoma,extracted,article,200,OK
+190,https://medlineplus.gov/genetics/condition/congenital-central-hypoventilation-,yet,Non-article,404,Not Found
+191,https://medlineplus.gov/genetics/condition/familial-acute-myeloid-leukemia-with-mutated-cebpa,extracted,article,200,OK
+192,https://medlineplus.gov/genetics/condition/dentatorubral-pallidoluysian-atroph,yet,Non-article,404,Not Found
+193,https://ncbi.nlm.nih.gov/books/NBK442004,extracted,article,200,OK
+194,https://medlineplus.gov/genetics/condition/lmna-related-congenital-muscular-,yet,Non-article,404,Not Found
+195,https://pmc.ncbi.nlm.nih.gov/articles/PMC11084724,yet,Non-article,403,Forbidden
+196,https://medlineplus.gov/genetics/condition/spastic-paraplegia-type-4,extracted,article,200,OK
+197,https://medlineplus.gov/genetics/condition/idiopathic-infantile-hypercalcemia,extracted,article,200,OK
+198,https://medlineplus.gov/genetics/condition/arginine-vasopressin-deficiency,extracted,article,200,OK
+199,https://medlineplus.gov/genetics/condition/adermatoglyphia,extracted,article,200,OK
+200,https://medlineplus.gov/genetics/condition/hashimotos-disease,extracted,article,200,OK
+201,https://medlineplus.gov/genetics/condition/nonsyndromic-aplasia-cutis-conge,yet,Non-article,404,Not Found
+202,https://medlineplus.gov/genetics/condition/short-chain-acyl-coa-dehydrogenase-deficiency,extracted,article,200,OK
+203,https://medlineplus.gov/genetics/condition/plcg2-associated-antibody-deficiency-and-immune-dysregulation,extracted,article,200,OK
+204,https://pmc.ncbi.nlm.nih.gov/articles/PMC10605349,yet,Non-article,403,Forbidden
+205,https://medlineplus.gov/genetics/condition/x-linked-dystonia-parkinsonism,extracted,article,200,OK
+206,https://rarediseases.info.nih.gov/diseases/5676/48xxxy-syndrome,yet,article,200,OK
+207,https://medlineplus.gov/genetics/condition/familial-cold-autoinflammatory-syndrome-type-2,extracted,article,200,OK
+208,https://medlineplus.gov/genetics/condition/vacterl-association,extracted,article,200,OK
+209,https://ncbi.nlm.nih.gov/books/NBK570597,extracted,article,200,OK
+210,https://pmc.ncbi.nlm.nih.gov/articles/PMC11316693,yet,Non-article,403,Forbidden
+211,https://medlineplus.gov/genetics/condition/slc35a2-congenital-disorder-of-glycosylation,extracted,article,200,OK
+212,https://medlineplus.gov/genetics/condition/spinocerebellar-ataxia-type-3,extracted,article,200,OK
+213,https://medlineplus.gov/genetics/condition/campomelic-dysplasia,extracted,article,200,OK
+214,https://medlineplus.gov/genetics/condition/metatropic-dysplasia,extracted,article,200,OK
+215,https://medlineplus.gov/genetics/condition/phenylketonuria,extracted,article,200,OK
+216,https://medlineplus.gov/genetics/condition/paramyotonia-congenita,extracted,article,200,OK
+217,https://medlineplus.gov/genetics/condition/adenine-phosphoribosyltransferase-deficiency,extracted,article,200,OK
+218,https://medlineplus.gov/genetics/condition/ohdo-syndrome-maat-kievit-brunne,yet,Non-article,404,Not Found
+219,https://medlineplus.gov/genetics/condition/x-linked-chondrodysplasia-punctat,yet,Non-article,404,Not Found
+220,https://medlineplus.gov/genetics/condition/congenital-diaphragmatic-hernia,extracted,article,200,OK
+221,https://medlineplus.gov/genetics/condition/myoclonic-epilepsy-myopathy-sensory-ataxia,extracted,article,200,OK
+222,https://medlineplus.gov/genetics/condition/maffucci-syndrome,extracted,article,200,OK
+223,https://medlineplus.gov/genetics/condition/autosomal-recessive-hypotrichosis,yet,article,200,OK
+224,https://medlineplus.gov/genetics/condition/megalencephalic-leukoencephalopathy-with-subcortical-cysts,extracted,article,200,OK
+225,https://medlineplus.gov/genetics/condition/stac3-disorder,extracted,article,200,OK
+226,https://medlineplus.gov/genetics/condition/x-linked-spondyloepiphyseal-dysplasia-tarda,extracted,article,200,OK
+227,https://medlineplus.gov/genetics/condition/leukoencephalopathy-with-vanishing-white-matter,extracted,article,200,OK
+228,https://medlineplus.gov/genetics/condition/myoclonic-epilepsy-myopathy-sens,yet,Non-article,404,Not Found
+229,https://medlineplus.gov/genetics/condition/atypical-hemolytic-uremic-syndrome,extracted,article,200,OK
+230,https://medlineplus.gov/genetics/condition/platyspondylic-dysplasia-torrance-t,yet,Non-article,404,Not Found
+231,https://medlineplus.gov/genetics/condition/gne-myopathy,extracted,article,200,OK
+232,https://medlineplus.gov/genetics/condition/alagille-syndrome,extracted,article,200,OK
+233,https://medlineplus.gov/genetics/condition/beta-ketothiolase-deficiency,extracted,article,200,OK
+234,https://medlineplus.gov/genetics/condition/dystrophic-epidermolysis-bullosa,extracted,article,200,OK
+235,https://medlineplus.gov/genetics/condition/encephalocraniocutaneous-lipomatosis,extracted,article,200,OK
+236,https://medlineplus.gov/genetics/condition/pelizaeus-merzbacher-like-disease,yet,Non-article,404,Not Found
+237,https://medlineplus.gov/genetics/condition/essential-tremor,extracted,article,200,OK
+238,https://medlineplus.gov/genetics/condition/ghosal-hematodiaphyseal-dysplasi,yet,Non-article,404,Not Found
+239,https://medlineplus.gov/genetics/condition/tarsal-carpal-coalition-syndrome,extracted,article,200,OK
+240,https://pmc.ncbi.nlm.nih.gov/articles/PMC9352800,yet,Non-article,403,Forbidden
+241,https://medlineplus.gov/genetics/condition/axenfeld-rieger-syndrome,extracted,article,200,OK
+242,https://medlineplus.gov/genetics/condition/congenital-generalized-lipodystrop,yet,Non-article,404,Not Found
+243,https://medlineplus.gov/genetics/condition/nonketotic-hyperglycinemia,extracted,article,200,OK
+244,https://pmc.ncbi.nlm.nih.gov/articles/PMC4782791,yet,Non-article,403,Forbidden
+245,https://medlineplus.gov/genetics/condition/rnase-t2-deficient-leukoencephalo,yet,Non-article,404,Not Found
+246,https://medlineplus.gov/genetics/condition/sturge-weber-syndrome,extracted,article,200,OK
+247,https://medlineplus.gov/genetics/condition/spastic-paraplegia-type-8,extracted,article,200,OK
+248,https://medlineplus.gov/genetics/condition/early-onset-myopathy-with-fatal-ca,yet,Non-article,404,Not Found
+249,https://medlineplus.gov/genetics/condition/5q-minus-syndrome,extracted,article,200,OK
+250,https://medlineplus.gov/genetics/condition/ankyloblepharon-ectodermal-defects-cleft-lip-palate-syndrome,extracted,article,200,OK
+251,https://medlineplus.gov/genetics/condition/chmp2b-related-frontotemporal-de,yet,Non-article,404,Not Found
+252,https://medlineplus.gov/genetics/condition/autosomal-dominant-leukodystrophy-with-autonomic-disease,extracted,article,200,OK
+253,https://ncbi.nlm.nih.gov/books/NBK1878,extracted,article,200,OK
+254,https://pmc.ncbi.nlm.nih.gov/articles/PMC6911249,yet,Non-article,403,Forbidden
+255,https://medlineplus.gov/genetics/condition/leukoencephalopathy-with-brainste,yet,Non-article,404,Not Found
+256,https://medlineplus.gov/genetics/condition/myd88-deficiency,extracted,article,200,OK
+257,https://medlineplus.gov/genetics/condition/palmoplantar-keratoderma-with-deafness,extracted,article,200,OK
+258,https://medlineplus.gov/genetics/condition/anophthalmia-microphthalmia-eso,yet,Non-article,404,Not Found
+259,https://medlineplus.gov/genetics/condition/adenosine-deaminase-2-deficiency,extracted,article,200,OK
+260,https://medlineplus.gov/genetics/condition/neutral-lipid-storage-disease-with-,yet,Non-article,404,Not Found
+261,https://medlineplus.gov/genetics/condition/idiopathic-pulmonary-fibrosis,extracted,article,200,OK
+262,https://medlineplus.gov/genetics/condition/spinocerebellar-ataxia-type-6,extracted,article,200,OK
+263,https://medlineplus.gov/genetics/condition/protein-c-deficiency,extracted,article,200,OK
+264,https://medlineplus.gov/genetics/condition/complete-plasminogen-activator-in,yet,Non-article,404,Not Found
+265,https://medlineplus.gov/genetics/condition/pgm3-congenital-disorder-of-glyco,yet,Non-article,404,Not Found
+266,https://medlineplus.gov/genetics/condition/dihydrolipoamide-dehydrogenase-deficiency,extracted,article,200,OK
+267,https://medlineplus.gov/genetics/condition/pelizaeus-merzbacher-disease,extracted,article,200,OK
+268,https://medlineplus.gov/genetics/condition/beta-propeller-protein-associated-n,yet,Non-article,404,Not Found
+269,https://medlineplus.gov/genetics/condition/camurati-engelmann-disease,extracted,article,200,OK
+270,https://medlineplus.gov/genetics/condition/microphthalmia-with-linear-skin-defects-syndrome,extracted,article,200,OK
+271,https://medlineplus.gov/genetics/condition/familial-restrictive-cardiomyopathy,extracted,article,200,OK
+272,https://medlineplus.gov/genetics/condition/3mc-syndrome,extracted,article,200,OK
+273,https://medlineplus.gov/genetics/condition/fragile-x-syndrome,extracted,article,200,OK
+274,https://pmc.ncbi.nlm.nih.gov/articles/PMC9836924,yet,Non-article,403,Forbidden
+275,https://medlineplus.gov/genetics/condition/factor-x-deficiency,extracted,article,200,OK
+276,https://medlineplus.gov/genetics/condition/chops-syndrome,extracted,article,200,OK
+277,https://medlineplus.gov/genetics/condition/meniere-disease,extracted,article,200,OK
+278,https://medlineplus.gov/genetics/condition/epidermolysis-bullosa-with-pyloric-atresia,extracted,article,200,OK
+279,https://medlineplus.gov/genetics/condition/hereditary-hemorrhagic-telangiectasia,extracted,article,200,OK
+280,https://medlineplus.gov/genetics/condition/lesch-nyhan-syndrome,extracted,article,200,OK
+281,https://medlineplus.gov/genetics/condition/lmna-related-congenital-muscular-dystrophy,extracted,article,200,OK
+282,https://medlineplus.gov/genetics/condition/riboflavin-transporter-deficiency-neuronopathy,extracted,article,200,OK
+283,https://medlineplus.gov/genetics/condition/autosomal-dominant-tubulointerstiti,yet,Non-article,404,Not Found
+284,https://pmc.ncbi.nlm.nih.gov/articles/PMC7902511,yet,Non-article,403,Forbidden
+285,https://medlineplus.gov/genetics/condition/primary-localized-cutaneous-amylo,yet,Non-article,404,Not Found
+286,https://medlineplus.gov/genetics/condition/north-american-indian-childhood-cirrhosis,extracted,article,200,OK
+287,https://medlineplus.gov/genetics/condition/hypochromic-microcytic-anemia-wi,yet,Non-article,404,Not Found
+288,https://medlineplus.gov/genetics/condition/aicardi-syndrome,extracted,article,200,OK
+289,https://medlineplus.gov/genetics/condition/congenital-insensitivity-to-pain-with,yet,Non-article,404,Not Found
+290,https://medlineplus.gov/genetics/condition/x-linked-chondrodysplasia-punctata-1,extracted,article,200,OK
+291,https://medlineplus.gov/genetics/condition/nearsightedness,extracted,article,200,OK
+292,https://medlineplus.gov/genetics/condition/rabson-mendenhall-syndrome,extracted,article,200,OK
+293,https://medlineplus.gov/genetics/condition/central-core-disease,extracted,article,200,OK
+294,https://medlineplus.gov/genetics/condition/stxbp1-encephalopathy,extracted,article,200,OK
+295,https://medlineplus.gov/genetics/condition/factor-vii-deficiency,extracted,article,200,OK
+296,https://medlineplus.gov/genetics/condition/cerebral-autosomal-dominant-arteriopathy-with-subcortical-infarcts-and-leukoencephalopathy,extracted,article,200,OK
+297,https://medlineplus.gov/genetics/condition/guillain-barre-syndrome,extracted,article,200,OK
+298,https://medlineplus.gov/genetics/condition/x-linked-thrombocytopenia,extracted,article,200,OK
+299,https://medlineplus.gov/genetics/condition/riboflavin-transporter-deficiency-ne,yet,Non-article,404,Not Found
+300,https://medlineplus.gov/genetics/condition/tetra-amelia-syndrome,extracted,article,200,OK
+301,https://medlineplus.gov/genetics/condition/hyperferritinemia-cataract-syndrome,extracted,article,200,OK
+302,https://medlineplus.gov/genetics/condition/nonbullous-congenital-ichthyosiform-erythroderma,extracted,article,200,OK
+303,https://medlineplus.gov/genetics/condition/lamellar-ichthyosis,extracted,article,200,OK
+304,https://medlineplus.gov/genetics/condition/kallmann-syndrome,extracted,article,200,OK
+305,https://medlineplus.gov/genetics/condition/townes-brocks-syndrome,extracted,article,200,OK
+306,https://medlineplus.gov/genetics/condition/juvenile-primary-lateral-sclerosis,extracted,article,200,OK
+307,https://rarediseases.info.nih.gov/diseases/19062/x-linked-neurodegenerative-,yet,Non-article,404,Not Found
+308,https://medlineplus.gov/genetics/condition/persistent-mullerian-duct-syndrom,yet,Non-article,404,Not Found
+309,https://pubmed.ncbi.nlm.nih.gov/29294000,yet,Non-article,403,Forbidden
+310,https://medlineplus.gov/genetics/condition/rhabdoid-tumor-predisposition-syndrome,extracted,article,200,OK
+311,https://medlineplus.gov/genetics/condition/hereditary-neuropathy-with-liability-to-pressure-palsies,extracted,article,200,OK
+312,https://medlineplus.gov/genetics/condition/pdgfra-associated-chronic-eosinop,yet,Non-article,404,Not Found
+313,https://medlineplus.gov/genetics/condition/heterotaxy-syndrome,extracted,article,200,OK
+314,https://medlineplus.gov/genetics/condition/arginine-vasopressin-resistance,extracted,article,200,OK
+315,https://medlineplus.gov/genetics/condition/lowe-syndrome,extracted,article,200,OK
+316,https://medlineplus.gov/genetics/condition/pmm2-congenital-disorder-of-glyco,yet,Non-article,404,Not Found
+317,https://medlineplus.gov/genetics/condition/triosephosphate-isomerase-deficie,yet,Non-article,404,Not Found
+318,https://medlineplus.gov/genetics/condition/isolated-duane-retraction-syndrom,yet,Non-article,404,Not Found
+319,https://medlineplus.gov/genetics/condition/hyperphosphatemic-familial-tumor,yet,Non-article,404,Not Found
+320,https://medlineplus.gov/genetics/condition/coffin-lowry-syndrome,extracted,article,200,OK
+321,https://medlineplus.gov/genetics/condition/protein-s-deficiency,extracted,article,200,OK
+322,https://medlineplus.gov/genetics/condition/glucose-galactose-malabsorption,extracted,article,200,OK
+323,https://medlineplus.gov/genetics/condition/meesmann-corneal-dystrophy,extracted,article,200,OK
+324,https://medlineplus.gov/genetics/condition/x-linked-lymphoproliferative-disease,extracted,article,200,OK
+325,https://medlineplus.gov/genetics/condition/mbd5-associated-neurodevelopme,yet,Non-article,404,Not Found
+326,https://medlineplus.gov/genetics/condition/clcn2-related-leukoencephalopathy,extracted,article,200,OK
+327,https://medlineplus.gov/genetics/condition/waldenstrom-macroglobulinemia,extracted,article,200,OK
+328,https://medlineplus.gov/genetics/condition/48xxxy-syndrome,extracted,article,200,OK
+329,https://medlineplus.gov/genetics/condition/cranioectodermal-dysplasia,extracted,article,200,OK
+330,https://medlineplus.gov/genetics/condition/epilepsy-of-infancy-with-migrating-f,yet,Non-article,404,Not Found
+331,https://medlineplus.gov/genetics/condition/spastic-paraplegia-type-31,extracted,article,200,OK
+332,https://medlineplus.gov/genetics/condition/platyspondylic-dysplasia-torrance-type,extracted,article,200,OK
+333,https://medlineplus.gov/genetics/condition/x-linked-juvenile-retinoschisis,extracted,article,200,OK
+334,https://medlineplus.gov/genetics/condition/laing-distal-myopathy,extracted,article,200,OK
+335,https://medlineplus.gov/genetics/condition/3-m-syndrome,extracted,article,200,OK
+336,https://medlineplus.gov/genetics/condition/deoxyguanosine-kinase-deficiency,extracted,article,200,OK
+337,https://medlineplus.gov/genetics/condition/spastic-paraplegia-type-7,extracted,article,200,OK
+338,https://medlineplus.gov/genetics/condition/multicentric-osteolysis-nodulosis-a,yet,Non-article,404,Not Found
+339,https://medlineplus.gov/genetics/condition/rothmund-thomson-syndrome,extracted,article,200,OK
+340,https://medlineplus.gov/genetics/condition/dopamine-transporter-deficiency-syndrome,extracted,article,200,OK
+341,https://medlineplus.gov/genetics/condition/chmp2b-related-frontotemporal-dementia,extracted,article,200,OK
+342,https://medlineplus.gov/genetics/condition/majeed-syndrome,extracted,article,200,OK
+343,https://medlineplus.gov/genetics/condition/woodhouse-sakati-syndrome,extracted,article,200,OK
+344,https://medlineplus.gov/genetics/condition/cog5-congenital-disorder-of-glycos,yet,Non-article,404,Not Found
+345,https://medlineplus.gov/genetics/condition/atelosteogenesis-type-3,extracted,article,200,OK
+346,https://medlineplus.gov/genetics/condition/x-linked-infantile-spinal-muscular-a,yet,Non-article,404,Not Found
+347,https://medlineplus.gov/genetics/condition/collagen-vi-related-myopathy,extracted,article,200,OK
+348,https://medlineplus.gov/genetics/condition/familial-male-limited-precocious-pu,yet,Non-article,404,Not Found
+349,https://medlineplus.gov/genetics/condition/choroideremia,extracted,article,200,OK
+350,https://medlineplus.gov/genetics/condition/benign-essential-blepharospasm,extracted,article,200,OK
+351,https://medlineplus.gov/genetics/condition/microcephaly-seizures-and-develo,yet,Non-article,404,Not Found
+352,https://pmc.ncbi.nlm.nih.gov/articles/PMC8865813,yet,Non-article,403,Forbidden
+353,https://medlineplus.gov/genetics/condition/complete-plasminogen-activator-inhibitor-1-deficiency,extracted,article,200,OK
+354,https://medlineplus.gov/genetics/condition/methemoglobinemia-beta-globin-type,extracted,article,200,OK
+355,https://pmc.ncbi.nlm.nih.gov/articles/PMC3495011,yet,Non-article,403,Forbidden
+356,https://medlineplus.gov/genetics/condition/krabbe-disease,extracted,article,200,OK
+357,https://medlineplus.gov/genetics/condition/aarskog-scott-syndrome,extracted,article,200,OK
+358,https://medlineplus.gov/genetics/condition/greig-cephalopolysyndactyly-syndr,yet,Non-article,404,Not Found
+359,https://pmc.ncbi.nlm.nih.gov/articles/PMC3658200,yet,Non-article,403,Forbidden
+360,https://pmc.ncbi.nlm.nih.gov/articles/PMC8364843,yet,Non-article,403,Forbidden
+361,https://medlineplus.gov/genetics/condition/nonsyndromic-paraganglioma,extracted,article,200,OK
+362,https://medlineplus.gov/genetics/condition/congenital-central-hypoventilation-syndrome,extracted,article,200,OK
+363,https://medlineplus.gov/genetics/condition/familial-hypobetalipoproteinemia,extracted,article,200,OK
+364,https://medlineplus.gov/genetics/condition/usher-syndrome,extracted,article,200,OK
+365,https://medlineplus.gov/genetics/condition/cln4-disease,extracted,article,200,OK
+366,https://medlineplus.gov/genetics/condition/glycogen-storage-disease-type-i,extracted,article,200,OK
+367,https://medlineplus.gov/genetics/condition/autosomal-dominant-sleep-related-,yet,Non-article,404,Not Found
+368,https://medlineplus.gov/genetics/condition/giant-axonal-neuropathy,extracted,article,200,OK
+369,https://medlineplus.gov/genetics/condition/spinocerebellar-ataxia-type-36,extracted,article,200,OK
+370,https://medlineplus.gov/genetics/condition/african-iron-overload,extracted,article,200,OK
+371,https://medlineplus.gov/genetics/condition/kbg-syndrome,extracted,article,200,OK
+372,https://medlineplus.gov/genetics/condition/langer-mesomelic-dysplasia,extracted,article,200,OK
+373,https://medlineplus.gov/genetics/condition/autosomal-dominant-hypocalcemia,extracted,article,200,OK
+374,https://medlineplus.gov/genetics/condition/constitutional-mismatch-repair-deficiency-syndrome,extracted,article,200,OK
+375,https://medlineplus.gov/genetics/condition/scn8a-related-epilepsy-with-encephalopathy,extracted,article,200,OK
+376,https://medlineplus.gov/genetics/condition/noonan-syndrome,extracted,article,200,OK
+377,https://medlineplus.gov/genetics/condition/corticosteroid-binding-globulin-defi,yet,Non-article,404,Not Found
+378,https://medlineplus.gov/genetics/condition/15q133-microdeletion,extracted,article,200,OK
+379,https://medlineplus.gov/genetics/condition/17-beta-hydroxysteroid-dehydroge,yet,Non-article,404,Not Found
+380,https://ncbi.nlm.nih.gov/books/NBK1457,extracted,article,200,OK
+381,https://medlineplus.gov/genetics/condition/acatalasemia,extracted,article,200,OK
+382,https://medlineplus.gov/genetics/condition/short-branched-chain-acyl-coa-dehydrogenase-deficiency,extracted,article,200,OK
+383,https://medlineplus.gov/genetics/condition/hand-foot-genital-syndrome,extracted,article,200,OK
+384,https://medlineplus.gov/genetics/condition/mccune-albright-syndrome,extracted,article,200,OK
+385,https://medlineplus.gov/genetics/condition/adenosine-deaminase-2-deficiency,yet,article,200,OK
+386,https://medlineplus.gov/genetics/condition/adult-polyglucosan-body-disease,extracted,article,200,OK
+387,https://medlineplus.gov/genetics/condition/medullary-cystic-kidney-disease-type-1,extracted,article,200,OK
+388,https://medlineplus.gov/genetics/condition/free-sialic-acid-storage-disorder,extracted,article,200,OK
+389,https://medlineplus.gov/genetics/condition/ren-related-kidney-disease,extracted,article,200,OK
+390,https://medlineplus.gov/genetics/condition/grange-syndrome,extracted,article,200,OK
+391,https://medlineplus.gov/genetics/condition/hypokalemic-periodic-paralysis,extracted,article,200,OK
+392,https://medlineplus.gov/genetics/condition/congenital-afibrinogenemia,extracted,article,200,OK
+393,https://ncbi.nlm.nih.gov/books/NBK2594,extracted,article,200,OK
+394,https://medlineplus.gov/genetics/condition/swyer-syndrome,extracted,article,200,OK
+395,https://pmc.ncbi.nlm.nih.gov/articles/PMC4306042,yet,Non-article,403,Forbidden
+396,https://ncbi.nlm.nih.gov/books/NBK476671,extracted,article,200,OK
+397,https://medlineplus.gov/genetics/condition/phosphoglycerate-kinase-deficienc,yet,Non-article,404,Not Found
+398,https://medlineplus.gov/genetics/condition/progressive-myoclonic-epilepsy-type-1,extracted,article,200,OK
+399,https://medlineplus.gov/genetics/condition/spastic-paraplegia-type-11,extracted,article,200,OK
+400,https://medlineplus.gov/genetics/condition/setbp1-haploinsufficiency-disorder,extracted,article,200,OK
+401,https://medlineplus.gov/genetics/condition/mowat-wilson-syndrome,extracted,article,200,OK
+402,https://medlineplus.gov/genetics/condition/hyperparathyroidism-jaw-tumor-sy,yet,Non-article,404,Not Found
+403,https://medlineplus.gov/genetics/condition/beare-stevenson-cutis-gyrata-synd,yet,Non-article,404,Not Found
+404,https://medlineplus.gov/genetics/condition/stormorken-syndrome,extracted,article,200,OK
+405,https://medlineplus.gov/genetics/condition/erdheim-chester-disease,extracted,article,200,OK
+406,https://pmc.ncbi.nlm.nih.gov/articles/PMC11187779,yet,Non-article,403,Forbidden
+407,https://medlineplus.gov/genetics/condition/x-linked-spondyloepiphyseal-dyspl,yet,Non-article,404,Not Found
+408,https://medlineplus.gov/genetics/condition/fukuyama-congenital-muscular-dystrophy,extracted,article,200,OK
+409,https://medlineplus.gov/genetics/condition/dementia-with-lewy-bodies,extracted,article,200,OK
+410,https://nhs.uk/conditions/downs-syndrome,extracted,article,200,OK
+411,https://medlineplus.gov/genetics/condition/peeling-skin-syndrome-2,extracted,article,200,OK
+412,https://medlineplus.gov/genetics/condition/syngap1-related-intellectual-disability,extracted,article,200,OK
+413,https://medlineplus.gov/genetics/condition/familial-hemophagocytic-lymphohis,yet,Non-article,404,Not Found
+414,https://medlineplus.gov/genetics/condition/seasonal-affective-disorder,extracted,article,200,OK
+415,https://medlineplus.gov/genetics/condition/doors-syndrome,extracted,article,200,OK
+416,https://medlineplus.gov/genetics/condition/deafness-infertility-syndrome,extracted,article,200,OK
+417,https://medlineplus.gov/genetics/condition/dock8-immunodeficiency-syndrome,extracted,article,200,OK
+418,https://medlineplus.gov/genetics/condition/pontocerebellar-hypoplasia,extracted,article,200,OK
+419,https://medlineplus.gov/genetics/condition/type-a-insulin-resistance-syndrome,extracted,article,200,OK
+420,https://medlineplus.gov/genetics/condition/frasier-syndrome,extracted,article,200,OK
+421,https://ninds.nih.gov/health-information/disorders/ataxia-telangiectasia,extracted,article,200,OK
+422,https://medlineplus.gov/genetics/condition/pantothenate-kinase-associated-n,yet,Non-article,404,Not Found
+423,https://medlineplus.gov/genetics/condition/autosomal-recessive-congenital-methemoglobinemia,extracted,article,200,OK
+424,https://medlineplus.gov/genetics/condition/pyridoxal-phosphate-responsive-se,yet,Non-article,404,Not Found
+425,https://medlineplus.gov/genetics/condition/hereditary-sensory-neuropathy-type-ia,extracted,article,200,OK
+426,https://medlineplus.gov/genetics/condition/tietz-syndrome,extracted,article,200,OK
+427,https://medlineplus.gov/genetics/condition/isolated-pierre-robin-sequence,extracted,article,200,OK
+428,https://medlineplus.gov/genetics/condition/narcolepsy,extracted,article,200,OK
+429,https://medlineplus.gov/genetics/condition/aspartylglucosaminuria,extracted,article,200,OK
+430,https://medlineplus.gov/genetics/condition/cerebrotendinous-xanthomatosis,extracted,article,200,OK
+431,https://medlineplus.gov/genetics/condition/tumor-necrosis-factor-receptor-associated-periodic-syndrome,extracted,article,200,OK
+432,https://pmc.ncbi.nlm.nih.gov/articles/PMC4491663,yet,Non-article,403,Forbidden
+433,https://medlineplus.gov/genetics/condition/zap70-related-severe-combined-im,yet,Non-article,404,Not Found
+434,https://medlineplus.gov/genetics/condition/alstrom-syndrome,extracted,article,200,OK
+435,https://medlineplus.gov/genetics/condition/mevalonate-kinase-deficiency,extracted,article,200,OK
+436,https://medlineplus.gov/genetics/condition/x-linked-infantile-spinal-muscular-atrophy,extracted,article,200,OK
+437,https://medlineplus.gov/genetics/condition/yuan-harel-lupski-syndrome,extracted,article,200,OK
+438,https://ncbi.nlm.nih.gov/books/NBK1150,extracted,article,200,OK
+439,https://medlineplus.gov/genetics/condition/congenital-bile-acid-synthesis-defect-type-1,extracted,article,200,OK
+440,https://medlineplus.gov/genetics/condition/episodic-ataxia,extracted,article,200,OK
+441,https://pubmed.ncbi.nlm.nih.gov/39237642,yet,Non-article,403,Forbidden
+442,https://medlineplus.gov/genetics/condition/satb2-associated-syndrome,extracted,article,200,OK
+443,https://medlineplus.gov/genetics/condition/tibial-muscular-dystrophy,extracted,article,200,OK
+444,https://nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/anophthalmia-and-microphthalmia,extracted,article,200,OK
+445,https://medlineplus.gov/genetics/condition/permanent-neonatal-diabetes-mellitus,extracted,article,200,OK
+446,https://medlineplus.gov/genetics/condition/fukuyama-congenital-muscular-dys,yet,Non-article,404,Not Found
+447,https://medlineplus.gov/genetics/condition/epidermolytic-hyperkeratosis,extracted,article,200,OK
+448,https://medlineplus.gov/genetics/condition/giant-congenital-melanocytic-nevus,extracted,article,200,OK
+449,https://medlineplus.gov/genetics/condition/rotor-syndrome,extracted,article,200,OK
+450,https://medlineplus.gov/genetics/condition/moebius-syndrome,extracted,article,200,OK
+451,https://medlineplus.gov/genetics/condition/hereditary-fructose-intolerance,extracted,article,200,OK
+452,https://medlineplus.gov/genetics/condition/weissenbacher-zweymuller-syndro,yet,Non-article,404,Not Found
+453,https://medlineplus.gov/genetics/condition/achondrogenesis,extracted,article,200,OK
+454,https://medlineplus.gov/genetics/condition/mucopolysaccharidosis-type-ii,extracted,article,200,OK
+455,https://cdc.gov/genomics-and-health/about/genetic-disorders.html,extracted,article,200,OK
+456,https://medlineplus.gov/genetics/condition/autoimmune-addison-disease,extracted,article,200,OK
+457,https://medlineplus.gov/genetics/condition/microvillus-inclusion-disease,extracted,article,200,OK
+458,https://medlineplus.gov/genetics/condition/lacrimo-auriculo-dento-digital-syndrome,extracted,article,200,OK
+459,https://medlineplus.gov/genetics/condition/asphyxiating-thoracic-dystrophy,extracted,article,200,OK
+460,https://medlineplus.gov/genetics/condition/microcephaly-seizures-and-developmental-delay,extracted,article,200,OK
+461,https://medlineplus.gov/genetics/condition/familial-dilated-cardiomyopathy,extracted,article,200,OK
+462,https://medlineplus.gov/genetics/condition/neuroferritinopathy,extracted,article,200,OK
+463,https://medlineplus.gov/genetics/condition/phosphoglycerate-mutase-deficien,yet,Non-article,404,Not Found
+464,https://medlineplus.gov/genetics/condition/white-sponge-nevus/\,yet,Non-article,404,Not Found
+465,https://medlineplus.gov/genetics/condition/arginineglycine-amidinotransferase-deficiency,extracted,article,200,OK
+466,https://medlineplus.gov/genetics/condition/familial-hdl-deficiency,extracted,article,200,OK
+467,https://medlineplus.gov/genetics/condition/acute-necrotizing-encephalopathy-type-1,extracted,article,200,OK
+468,https://medlineplus.gov/genetics/condition/ophthalmo-acromelic-syndrome,extracted,article,200,OK
+469,https://medlineplus.gov/genetics/condition/catsper1-related-nonsyndromic-male-infertility,extracted,article,200,OK
+470,https://medlineplus.gov/genetics/condition/autosomal-recessive-cerebellar-ataxia-type-1,extracted,article,200,OK
+471,https://medlineplus.gov/genetics/condition/familial-osteochondritis-dissecans,extracted,article,200,OK
+472,https://medlineplus.gov/genetics/condition/ollier-disease,extracted,article,200,OK
+473,https://pmc.ncbi.nlm.nih.gov/articles/PMC8777205,yet,Non-article,403,Forbidden
+474,https://medlineplus.gov/genetics/condition/gm2-activator-deficiency,extracted,article,200,OK
+475,https://medlineplus.gov/genetics/condition/white-sutton-syndrome,extracted,article,200,OK
+476,https://medlineplus.gov/genetics/condition/periventricular-heterotopia,extracted,article,200,OK
+477,https://medlineplus.gov/genetics/condition/hereditary-multiple-osteochondrom,yet,Non-article,404,Not Found
+478,https://pmc.ncbi.nlm.nih.gov/articles/PMC10789890,yet,Non-article,403,Forbidden
+479,https://medlineplus.gov/genetics/condition/depression,extracted,article,200,OK
+480,https://medlineplus.gov/genetics/condition/koolen-de-vries-syndrome,extracted,article,200,OK
+481,https://medlineplus.gov/genetics/condition/gastrointestinal-stromal-tumor,extracted,article,200,OK
+482,https://medlineplus.gov/genetics/condition/von-hippel-lindau-syndrome,extracted,article,200,OK
+483,https://ncbi.nlm.nih.gov/books/NBK1216,extracted,article,200,OK
+484,https://medlineplus.gov/genetics/condition/cole-disease,extracted,article,200,OK
+485,https://medlineplus.gov/genetics/condition/xeroderma-pigmentosum,extracted,article,200,OK
+486,https://medlineplus.gov/genetics/condition/hystrix-like-ichthyosis-with-deafness,extracted,article,200,OK
+487,https://medlineplus.gov/genetics/condition/juvenile-paget-disease,extracted,article,200,OK
+488,https://medlineplus.gov/genetics/condition/timothy-syndrome,extracted,article,200,OK
+489,https://pmc.ncbi.nlm.nih.gov/articles/PMC6499608,yet,Non-article,403,Forbidden
+490,https://medlineplus.gov/genetics/condition/prostate-cancer,extracted,article,200,OK
+491,https://medlineplus.gov/genetics/condition/erythromelalgia,extracted,article,200,OK
+492,https://medlineplus.gov/genetics/condition/sost-related-sclerosing-bone-dyspl,yet,Non-article,404,Not Found
+493,https://medlineplus.gov/genetics/condition/baller-gerold-syndrome,extracted,article,200,OK
+494,https://medlineplus.gov/genetics/condition/crouzon-syndrome,extracted,article,200,OK
+495,https://medlineplus.gov/genetics/condition/myotonic-dystrophy,extracted,article,200,OK
+496,https://medlineplus.gov/genetics/condition/dlg4-related-synaptopathy,extracted,article,200,OK
+497,https://pmc.ncbi.nlm.nih.gov/articles/PMC6331365,yet,Non-article,403,Forbidden
+498,https://medlineplus.gov/genetics/condition/trnt1-deficiency,extracted,article,200,OK
+499,https://medlineplus.gov/genetics/condition/rhabdoid-tumor-predisposition-syn,yet,Non-article,404,Not Found
+500,https://medlineplus.gov/genetics/condition/shwachman-diamond-syndrome,extracted,article,200,OK
+501,https://ncbi.nlm.nih.gov/books/NBK526016,extracted,article,200,OK
+502,https://medlineplus.gov/genetics/condition/klippel-trenaunay-syndrome,extracted,article,200,OK
+503,https://medlineplus.gov/genetics/condition/oculofaciocardiodental-syndrome,extracted,article,200,OK
+504,https://medlineplus.gov/genetics/condition/16p112-duplication,extracted,article,200,OK
+505,https://medlineplus.gov/genetics/condition/tetrasomy-18p,extracted,article,200,OK
+506,https://medlineplus.gov/genetics/condition/lipoid-proteinosis,extracted,article,200,OK
+507,https://ncbi.nlm.nih.gov/books/NBK538270,extracted,article,200,OK
+508,https://medlineplus.gov/genetics/condition/brain-lung-thyroid-syndrome,extracted,article,200,OK
+509,https://medlineplus.gov/genetics/condition/nonsyndromic-holoprosencephaly,extracted,article,200,OK
+510,https://medlineplus.gov/genetics/condition/mn1-c-terminal-truncation-syndrom,yet,Non-article,404,Not Found
+511,https://medlineplus.gov/genetics/condition/kawasaki-disease,extracted,article,200,OK
+512,https://medlineplus.gov/genetics/condition/methylmalonic-acidemia-with-hom,yet,Non-article,404,Not Found
+513,https://medlineplus.gov/genetics/condition/adolescent-idiopathic-scoliosis,extracted,article,200,OK
+514,https://medlineplus.gov/genetics/condition/potassium-aggravated-myotonia,extracted,article,200,OK
+515,https://medlineplus.gov/genetics/condition/wilson-disease,extracted,article,200,OK
+516,https://medlineplus.gov/genetics/condition/congenital-plasminogen-deficiency,extracted,article,200,OK
+517,https://medlineplus.gov/genetics/condition/floating-harbor-syndrome,extracted,article,200,OK
+518,https://pubmed.ncbi.nlm.nih.gov/26947586,yet,Non-article,403,Forbidden
+519,https://medlineplus.gov/genetics/condition/thrombocytopenia-absent-radius-s,yet,Non-article,404,Not Found
+520,https://medlineplus.gov/genetics/condition/leri-weill-dyschondrosteosis,extracted,article,200,OK
+521,https://medlineplus.gov/genetics/condition/chd2-myoclonic-encephalopathy,extracted,article,200,OK
+522,https://medlineplus.gov/genetics/condition/ornithine-translocase-deficiency,extracted,article,200,OK
+523,https://medlineplus.gov/genetics/condition/factor-v-deficiency,extracted,article,200,OK
+524,https://medlineplus.gov/genetics/condition/kaufman-oculocerebrofacial-syndrome,extracted,article,200,OK
+525,https://medlineplus.gov/genetics/condition/familial-thoracic-aortic-aneurysm-a,yet,Non-article,404,Not Found
+526,https://medlineplus.gov/genetics/condition/succinic-semialdehyde-dehydroge,yet,Non-article,404,Not Found
+527,https://medlineplus.gov/genetics/condition/alpha-thalassemia-x-linked-intellec,yet,Non-article,404,Not Found
+528,https://medlineplus.gov/genetics/condition/liebenberg-syndrome,extracted,article,200,OK
+529,https://medlineplus.gov/genetics/condition/melnick-needles-syndrome,extracted,article,200,OK
+530,https://medlineplus.gov/genetics/condition/pallister-hall-syndrome,extracted,article,200,OK
+531,https://medlineplus.gov/genetics/condition/autosomal-dominant-congenital-stationary-night-blindness,extracted,article,200,OK
+532,https://medlineplus.gov/genetics/condition/netherton-syndrome,extracted,article,200,OK
+533,https://pmc.ncbi.nlm.nih.gov/articles/PMC5788182,yet,Non-article,403,Forbidden
+534,https://medlineplus.gov/genetics/condition/phosphoglycerate-dehydrogenase-,yet,Non-article,404,Not Found
+535,https://medlineplus.gov/genetics/condition/alport-syndrome,extracted,article,200,OK
+536,https://medlineplus.gov/genetics/condition/x-linked-myotubular-myopathy,extracted,article,200,OK
+537,https://medlineplus.gov/genetics/condition/multiple-cutaneous-and-mucosal-venous-malformations,extracted,article,200,OK
+538,https://medlineplus.gov/genetics/condition/brody-myopathy,extracted,article,200,OK
+539,https://ncbi.nlm.nih.gov/books/NBK1489,extracted,article,200,OK
+540,https://medlineplus.gov/genetics/condition/otospondylomegaepiphyseal-dysplasia,extracted,article,200,OK
+541,https://genome.gov/about-genomics/fact-sheets/Chromosome-Abnormalities-Fact-Sheet,extracted,article,200,OK
+542,https://medlineplus.gov/genetics/condition/spondyloepiphyseal-dysplasia-with-metatarsal-shortening,extracted,article,200,OK
+543,https://medlineplus.gov/genetics/condition/androgenetic-alopecia,extracted,article,200,OK
+544,https://medlineplus.gov/genetics/condition/duchenne-and-becker-muscular-dy,yet,Non-article,404,Not Found
+545,https://medlineplus.gov/genetics/condition/dentatorubral-pallidoluysian-atrophy,extracted,article,200,OK
+546,https://medlineplus.gov/genetics/condition/cri-du-chat-syndrome,extracted,article,200,OK
+547,https://medlineplus.gov/genetics/condition/xia-gibbs-syndrome,extracted,article,200,OK
+548,https://ncbi.nlm.nih.gov/books/NBK519542,extracted,article,200,OK
+549,https://medlineplus.gov/genetics/condition/guanidinoacetate-methyltransferas,yet,Non-article,404,Not Found
+550,https://medlineplus.gov/genetics/condition/hereditary-angiopathy-with-nephro,yet,Non-article,404,Not Found
+551,https://medlineplus.gov/genetics/condition/aromatase-excess-syndrome,extracted,article,200,OK
+552,https://pmc.ncbi.nlm.nih.gov/articles/PMC6336675,yet,Non-article,403,Forbidden
+553,https://medlineplus.gov/genetics/condition/gorlin-syndrome,extracted,article,200,OK
+554,https://medlineplus.gov/genetics/condition/central-precocious-puberty,extracted,article,200,OK
+555,https://medlineplus.gov/genetics/condition/early-onset-myopathy-with-fatal-cardiomyopathy,extracted,article,200,OK
+556,https://medlineplus.gov/genetics/condition/jansen-de-vries-syndrome,extracted,article,200,OK
+557,https://medlineplus.gov/genetics/condition/nonsyndromic-hearing-loss,extracted,article,200,OK
+558,https://medlineplus.gov/genetics/condition/pyle-disease,extracted,article,200,OK
+559,https://medlineplus.gov/genetics/condition/huntingtons-disease-like,extracted,article,200,OK
+560,https://medlineplus.gov/genetics/condition/iron-refractory-iron-deficiency-ane,yet,Non-article,404,Not Found
+561,https://medlineplus.gov/genetics/condition/cerebral-folate-transport-deficiency,extracted,article,200,OK
+562,https://medlineplus.gov/genetics/condition/vitelliform-macular-dystrophy,extracted,article,200,OK
+563,https://ncbi.nlm.nih.gov/books/NBK1263,extracted,article,200,OK
+564,https://pmc.ncbi.nlm.nih.gov/articles/PMC10815279,yet,Non-article,403,Forbidden
+565,https://medlineplus.gov/genetics/condition/microcephalic-osteodysplastic-prim,yet,Non-article,404,Not Found
+566,https://medlineplus.gov/genetics/condition/congenital-stromal-corneal-dystrop,yet,Non-article,404,Not Found
+567,https://medlineplus.gov/genetics/condition/parkes-weber-syndrome,extracted,article,200,OK
+568,https://medlineplus.gov/genetics/condition/beta-ureidopropionase-deficiency,extracted,article,200,OK
+569,https://medlineplus.gov/genetics/condition/cerebral-cavernous-malformation,extracted,article,200,OK
+570,https://medlineplus.gov/genetics/condition/combined-malonic-and-methylmalonic-aciduria,extracted,article,200,OK
+571,https://medlineplus.gov/genetics/condition/x-linked-lissencephaly-with-abnor,yet,Non-article,404,Not Found
+572,https://medlineplus.gov/genetics/condition/ichthyosis-with-confetti,extracted,article,200,OK
+573,https://medlineplus.gov/genetics/condition/sialuria,extracted,article,200,OK
+574,https://medlineplus.gov/genetics/condition/cerebral-autosomal-recessive-arter,yet,Non-article,404,Not Found
+575,https://medlineplus.gov/genetics/condition/biotin-thiamine-responsive-basal-g,yet,Non-article,404,Not Found
+576,https://medlineplus.gov/genetics/condition/glutamate-formiminotransferase-de,yet,Non-article,404,Not Found
+577,https://medlineplus.gov/genetics/condition/craniofacial-deafness-hand-syndrome,extracted,article,200,OK
+578,https://medlineplus.gov/genetics/condition/coloboma,extracted,article,200,OK
+579,https://medlineplus.gov/genetics/condition/prothrombin-deficiency,extracted,article,200,OK
+580,https://medlineplus.gov/genetics/condition/sucla2-related-mitochondrial-dna-depletion-syndrome,extracted,article,200,OK
+581,https://medlineplus.gov/genetics/condition/hereditary-hyperekplexia,extracted,article,200,OK
+582,https://ncbi.nlm.nih.gov/books/NBK22252,extracted,article,200,OK
+583,https://medlineplus.gov/genetics/condition/hartsfield-syndrome,extracted,article,200,OK
+584,https://medlineplus.gov/genetics/condition/rrm2b-related-mitochondrial-dna-depletion-syndrome-encephalomyopathic-form-with-renal-tubulopathy,extracted,article,200,OK
+585,https://medlineplus.gov/genetics/condition/kcnb1-encephalopathy,extracted,article,200,OK
+586,https://medlineplus.gov/genetics/condition/spastic-paraplegia-type-3a,extracted,article,200,OK
+587,https://medlineplus.gov/genetics/condition/spondyloperipheral-dysplasia,extracted,article,200,OK
+588,https://medlineplus.gov/genetics/condition/attention-deficit-hyperactivity-disorder,extracted,article,200,OK
+589,https://medlineplus.gov/genetics/condition/trisomy-13,extracted,article,200,OK
+590,https://medlineplus.gov/genetics/condition/larsen-syndrome,extracted,article,200,OK
+591,https://medlineplus.gov/genetics/condition/thiamine-responsive-megaloblastic-anemia-syndrome,extracted,article,200,OK
+592,https://ncbi.nlm.nih.gov/books/NBK1333,extracted,article,200,OK
+593,https://pmc.ncbi.nlm.nih.gov/articles/PMC8311836,yet,Non-article,403,Forbidden
+594,https://medlineplus.gov/genetics/condition/glutaric-acidemia-type-ii,extracted,article,200,OK
+595,https://medlineplus.gov/genetics/condition/fragile-x-associated-primary-ovarian-insufficiency,extracted,article,200,OK
+596,https://medlineplus.gov/genetics/condition/glycogen-storage-disease-type-vii,extracted,article,200,OK
+597,https://medlineplus.gov/genetics/condition/x-linked-severe-combined-immuno,yet,Non-article,404,Not Found
+598,https://medlineplus.gov/genetics/condition/horner-syndrome,extracted,article,200,OK
+599,https://medlineplus.gov/genetics/condition/sting-associated-vasculopathy-with,yet,Non-article,404,Not Found
+600,https://medlineplus.gov/genetics/condition/infantile-onset-spinocerebellar-ataxia,extracted,article,200,OK
+601,https://medlineplus.gov/genetics/condition/nager-syndrome,extracted,article,200,OK
+602,https://medlineplus.gov/genetics/condition/leukoencephalopathy-with-vanishin,yet,Non-article,404,Not Found
+603,https://medlineplus.gov/genetics/condition/mckusick-kaufman-syndrome,extracted,article,200,OK
+604,https://medlineplus.gov/genetics/condition/bap1-tumor-predisposition-syndrome,extracted,article,200,OK
+605,https://medlineplus.gov/genetics/condition/spondyloepiphyseal-dysplasia-with-marked-metaphyseal-changes,extracted,article,200,OK
+606,https://medlineplus.gov/genetics/condition/alg6-congenital-disorder-of-glycosy,yet,Non-article,404,Not Found
+607,https://medlineplus.gov/genetics/condition/silver-syndrome,extracted,article,200,OK
+608,https://medlineplus.gov/genetics/condition/congenital-mirror-movement-disord,yet,Non-article,404,Not Found
+609,https://medlineplus.gov/genetics/condition/mandibulofacial-dysostosis-with-mi,yet,Non-article,404,Not Found
+610,https://medlineplus.gov/genetics/condition/familial-acute-myeloid-leukemia-wit,yet,Non-article,404,Not Found
+611,https://medlineplus.gov/genetics/condition/inclusion-body-myopathy-with-earl,yet,Non-article,404,Not Found
+612,https://medlineplus.gov/genetics/condition/glycogen-storage-disease-type-ix,extracted,article,200,OK
+613,https://ncbi.nlm.nih.gov/books/NBK22266,extracted,article,200,OK
+614,https://medlineplus.gov/genetics/condition/congenital-anomalies-of-kidney-and-urinary-tract,extracted,article,200,OK
+615,https://medlineplus.gov/genetics/condition/buschke-ollendorff-syndrome,extracted,article,200,OK
+616,https://medlineplus.gov/genetics/condition/maple-syrup-urine-disease,extracted,article,200,OK
+617,https://medlineplus.gov/genetics/condition/costeff-syndrome,extracted,article,200,OK
+618,https://medlineplus.gov/genetics/condition/menkes-syndrome,extracted,article,200,OK
+619,https://medlineplus.gov/genetics/condition/catsper1-related-nonsyndromic-ma,yet,Non-article,404,Not Found
+620,https://medlineplus.gov/genetics/condition/lafora-progressive-myoclonus-epilepsy,extracted,article,200,OK
+621,https://medlineplus.gov/genetics/condition/type-a-insulin-resistance-syndrome,yet,article,200,OK
+622,https://medlineplus.gov/genetics/condition/familial-focal-epilepsy-with-variable-foci,extracted,article,200,OK
+623,https://nhs.uk/conditions/turner-syndrome?utm_source=chatgpt.co,extracted,article,200,OK
+624,https://ncbi.nlm.nih.gov/books/NBK545211,extracted,article,200,OK
+625,https://medlineplus.gov/genetics/condition/autosomal-dominant-cerebellar-ataxia-deafness-and-narcolepsy,extracted,article,200,OK
+626,https://medlineplus.gov/genetics/condition/supravalvular-aortic-stenosis,extracted,article,200,OK
+627,https://medlineplus.gov/genetics/condition/immune-dysregulation-polyendocri,yet,Non-article,404,Not Found
+628,https://medlineplus.gov/genetics/condition/refsum-disease,extracted,article,200,OK
+629,https://medlineplus.gov/genetics/condition/congenital-adrenal-hyperplasia-du,yet,Non-article,404,Not Found
+630,https://nhs.uk/conditions/klinefelters-syndrome,extracted,article,200,OK
+631,https://medlineplus.gov/genetics/condition/schizoaffective-disorder,extracted,article,200,OK
+632,https://medlineplus.gov/genetics/condition/mpv17-related-hepatocerebral-mitochondrial-dna-depletion-syndrome,extracted,article,200,OK
+633,https://medlineplus.gov/genetics/condition/2q37-deletion-syndrome,extracted,article,200,OK
+634,https://medlineplus.gov/genetics/condition/16p122-microdeletion,extracted,article,200,OK
+635,https://medlineplus.gov/genetics/condition/complement-component-2-deficiency,extracted,article,200,OK
+636,https://ncbi.nlm.nih.gov/books/NBK531470,extracted,article,200,OK
+637,https://medlineplus.gov/genetics/condition/diamond-blackfan-anemia,extracted,article,200,OK
+638,https://medlineplus.gov/genetics/condition/duchenne-and-becker-muscular-dystrophy,extracted,article,200,OK
+639,https://medlineplus.gov/genetics/condition/lysosomal-acid-lipase-deficiency,extracted,article,200,OK
+640,https://medlineplus.gov/genetics/condition/3-beta-hydroxysteroid-dehydrogenase-deficiency,extracted,article,200,OK
+641,https://medlineplus.gov/genetics/condition/fibrodysplasia-ossificans-progressi,yet,Non-article,404,Not Found
+642,https://medlineplus.gov/genetics/condition/spinal-muscular-atrophy-with-progressive-myoclonic-epilepsy,extracted,article,200,OK
+643,https://medlineplus.gov/genetics/condition/kcnk9-imprinting-syndrome,extracted,article,200,OK
+644,https://medlineplus.gov/genetics/condition/nephronophthisis,extracted,article,200,OK
+645,https://medlineplus.gov/genetics/condition/renal-coloboma-syndrome,extracted,article,200,OK
+646,https://medlineplus.gov/genetics/condition/intrahepatic-cholestasis-of-pregna,yet,Non-article,404,Not Found
+647,https://medlineplus.gov/genetics/condition/hereditary-neuralgic-amyotrophy,extracted,article,200,OK
+648,https://medlineplus.gov/genetics/condition/megacystis-microcolon-intestinal-hypoperistalsis-syndrome,extracted,article,200,OK
+649,https://medlineplus.gov/genetics/condition/core-binding-factor-acute-myeloid-l,yet,Non-article,404,Not Found
+650,https://medlineplus.gov/genetics/condition/joubert-syndrome,extracted,article,200,OK
+651,https://medlineplus.gov/genetics/condition/sudden-infant-death-with-dysgene,yet,Non-article,404,Not Found
+652,https://medlineplus.gov/genetics/condition/essential-thrombocythemia,extracted,article,200,OK
+653,https://medlineplus.gov/genetics/condition/hereditary-spherocytosis,extracted,article,200,OK
+654,https://pmc.ncbi.nlm.nih.gov/articles/PMC10427533,yet,Non-article,403,Forbidden
+655,https://medlineplus.gov/genetics/condition/mucopolysaccharidosis-type-iv,extracted,article,200,OK
+656,https://medlineplus.gov/genetics/condition/restless-legs-syndrome,extracted,article,200,OK
+657,https://medlineplus.gov/genetics/condition/hereditary-diffuse-gastric-cancer,extracted,article,200,OK
+658,https://medlineplus.gov/genetics/condition/small-fiber-neuropathy,extracted,article,200,OK
+659,https://medlineplus.gov/genetics/condition/thrombotic-thrombocytopenic-purp,yet,Non-article,404,Not Found
+660,https://medlineplus.gov/genetics/condition/adcy5-related-dyskinesia,extracted,article,200,OK
+661,https://medlineplus.gov/genetics/condition/gaucher-disease,extracted,article,200,OK
+662,https://medlineplus.gov/genetics/condition/leukoencephalopathy-with-brainstem-and-spinal-cord-involvement-and-lactate-elevation,extracted,article,200,OK
+663,https://medlineplus.gov/genetics/condition/8p11-myeloproliferative-syndrome,extracted,article,200,OK
+664,https://medlineplus.gov/genetics/condition/cold-induced-sweating-syndrome,extracted,article,200,OK
+665,https://medlineplus.gov/genetics/condition/congenital-insensitivity-to-pain-with-anhidrosis,extracted,article,200,OK
+666,https://medlineplus.gov/genetics/condition/amyotrophic-lateral-sclerosis,extracted,article,200,OK
+667,https://medlineplus.gov/genetics/condition/3-beta-hydroxysteroid-dehydrogen,yet,Non-article,404,Not Found
+668,https://medlineplus.gov/genetics/condition/hereditary-sensory-and-autonomic-neuropathy-type-v,extracted,article,200,OK
+669,https://medlineplus.gov/genetics/condition/feingold-syndrome,extracted,article,200,OK
+670,https://medlineplus.gov/genetics/condition/x-linked-creatine-deficiency,extracted,article,200,OK
+671,https://medlineplus.gov/genetics/condition/atelosteogenesis-type-1,extracted,article,200,OK
+672,https://medlineplus.gov/genetics/condition/bloom-syndrome,extracted,article,200,OK
+673,https://medlineplus.gov/genetics/condition/autosomal-dominant-optic-atrophy-and-cataract,extracted,article,200,OK
+674,https://nhs.uk/conditions/pataus-syndrome,extracted,article,200,OK
+675,https://medlineplus.gov/genetics/condition/l1-syndrome,extracted,article,200,OK
+676,https://medlineplus.gov/genetics/condition/familial-erythrocytosis,extracted,article,200,OK
+677,https://medlineplus.gov/genetics/condition/common-variable-immune-deficien,yet,Non-article,404,Not Found
+678,https://medlineplus.gov/genetics/condition/mitochondrial-neurogastrointestinal-encephalopathy-disease,extracted,article,200,OK
+679,https://medlineplus.gov/genetics/condition/intervertebral-disc-disease,extracted,article,200,OK
+680,https://medlineplus.gov/genetics/condition/cockayne-syndrome,extracted,article,200,OK
+681,https://medlineplus.gov/genetics/condition/sialidosis,extracted,article,200,OK
+682,https://medlineplus.gov/genetics/condition/lama2-related-muscular-dystrophy,extracted,article,200,OK
+683,https://medlineplus.gov/genetics/condition/prickle1-related-progressive-myocl,yet,Non-article,404,Not Found
+684,https://medlineplus.gov/genetics/condition/spondylocostal-dysostosis,extracted,article,200,OK
+685,https://medlineplus.gov/genetics/condition/mcleod-neuroacanthocytosis-syndrome,extracted,article,200,OK
+686,https://medlineplus.gov/genetics/condition/hutchinson-gilford-progeria-syndro,yet,Non-article,404,Not Found
+687,https://medlineplus.gov/genetics/condition/image-syndrome,extracted,article,200,OK
+688,https://pmc.ncbi.nlm.nih.gov/articles/PMC9544208,yet,Non-article,403,Forbidden
+689,https://medlineplus.gov/genetics/condition/scalp-ear-nipple-syndrome,extracted,article,200,OK
+690,https://medlineplus.gov/genetics/condition/x-linked-hyper-igm-syndrome,extracted,article,200,OK
+691,https://medlineplus.gov/genetics/condition/mbd5-associated-neurodevelopmental-disorder,extracted,article,200,OK
+692,https://medlineplus.gov/genetics/condition/common-variable-immune-deficiency,extracted,article,200,OK
+693,https://medlineplus.gov/genetics/condition/cytogenetically-normal-acute-myel,yet,Non-article,404,Not Found
+694,https://medlineplus.gov/genetics/condition/spastic-paraplegia-type-49,extracted,article,200,OK
+695,https://medlineplus.gov/genetics/condition/zellweger-spectrum-disorder,extracted,article,200,OK
+696,https://medlineplus.gov/genetics/condition/hypermethioninemia,extracted,article,200,OK
+697,https://medlineplus.gov/genetics/condition/hypochromic-microcytic-anemia-with-iron-overload,extracted,article,200,OK
+698,https://pmc.ncbi.nlm.nih.gov/articles/PMC1852094,yet,Non-article,403,Forbidden
+699,https://medlineplus.gov/genetics/condition/mannose-binding-lectin-deficiency,extracted,article,200,OK
+700,https://medlineplus.gov/genetics/condition/srd5a3-congenital-disorder-of-glycosylation,extracted,article,200,OK
+701,https://medlineplus.gov/genetics/condition/adult-onset-leukoencephalopathy-,yet,Non-article,404,Not Found
+702,https://medlineplus.gov/genetics/condition/x-linked-lymphoproliferative-diseas,yet,Non-article,404,Not Found
+703,https://ncbi.nlm.nih.gov/books/NBK470458,extracted,article,200,OK
+704,https://medlineplus.gov/genetics/condition/retinitis-pigmentosa,extracted,article,200,OK
+705,https://medlineplus.gov/genetics/condition/arginineglycine-amidinotransferase,yet,Non-article,404,Not Found
+706,https://medlineplus.gov/genetics/condition/gorlin-chaudhry-moss-syndrome,extracted,article,200,OK
+707,https://medlineplus.gov/genetics/condition/corticosterone-methyloxidase-deficiency,extracted,article,200,OK
+708,https://medlineplus.gov/genetics/condition/ankyloblepharon-ectodermal-defec,yet,Non-article,404,Not Found
+709,https://medlineplus.gov/genetics/condition/cln6-disease,extracted,article,200,OK
+710,https://ncbi.nlm.nih.gov/books/NBK475802,extracted,article,200,OK
+711,https://medlineplus.gov/genetics/condition/succinic-semialdehyde-dehydrogenase-deficiency,extracted,article,200,OK
+712,https://medlineplus.gov/genetics/condition/graves-disease,extracted,article,200,OK
+713,https://medlineplus.gov/genetics/condition/anauxetic-dysplasia,extracted,article,200,OK
+714,https://ncbi.nlm.nih.gov/books/NBK557467,extracted,article,200,OK
+715,https://ncbi.nlm.nih.gov/books/NBK540966,extracted,article,200,OK
+716,https://pmc.ncbi.nlm.nih.gov/articles/PMC3150013,yet,Non-article,403,Forbidden
+717,https://medlineplus.gov/genetics/condition/17q12-duplication,extracted,article,200,OK
+718,https://medlineplus.gov/genetics/condition/autosomal-recessive-primary-microcephaly,extracted,article,200,OK
+719,https://medlineplus.gov/genetics/condition/methemoglobinemia-beta-globin-ty,yet,Non-article,404,Not Found
+720,https://pmc.ncbi.nlm.nih.gov/articles/PMC3124893,yet,Non-article,403,Forbidden
+721,https://medlineplus.gov/genetics/condition/inherited-thyroxine-binding-globulin,yet,Non-article,404,Not Found
+722,https://medlineplus.gov/genetics/condition/fumarase-deficiency,extracted,article,200,OK
+723,https://medlineplus.gov/genetics/condition/caffey-disease,extracted,article,200,OK
+724,https://medlineplus.gov/genetics/condition/lissencephaly-with-cerebellar-hypo,yet,Non-article,404,Not Found
+725,https://pmc.ncbi.nlm.nih.gov/articles/PMC1563447,yet,Non-article,403,Forbidden
+726,https://medlineplus.gov/genetics/condition/succinyl-coa3-ketoacid-coa-transfe,yet,Non-article,404,Not Found
+727,https://medlineplus.gov/genetics/condition/fragile-x-associated-tremor-ataxia-,yet,Non-article,404,Not Found
+728,https://medlineplus.gov/genetics/condition/multiple-sulfatase-deficiency,extracted,article,200,OK
+729,https://pmc.ncbi.nlm.nih.gov/articles/PMC6879786,yet,Non-article,403,Forbidden
+730,https://medlineplus.gov/genetics/condition/microcephaly-capillary-malformatio,yet,Non-article,404,Not Found
+731,https://medlineplus.gov/genetics/condition/sitosterolemia,extracted,article,200,OK
+732,https://ncbi.nlm.nih.gov/books/NBK560754,extracted,article,200,OK
+733,https://medlineplus.gov/genetics/condition/biotinidase-deficiency,extracted,article,200,OK
+734,https://medlineplus.gov/genetics/condition/autoimmune-lymphoproliferative-syndrome,extracted,article,200,OK
+735,https://medlineplus.gov/genetics/condition/isolated-sulfite-oxidase-deficiency,extracted,article,200,OK
+736,https://medlineplus.gov/genetics/condition/juvenile-primary-osteoporosis,extracted,article,200,OK
+737,https://medlineplus.gov/genetics/condition/hereditary-angiopathy-with-nephropathy-aneurysms-and-muscle-cramps-syndrome,extracted,article,200,OK
+738,https://medlineplus.gov/genetics/condition/spondyloepiphyseal-dysplasia-con,yet,Non-article,404,Not Found
+739,https://medlineplus.gov/genetics/condition/prekallikrein-deficiency,extracted,article,200,OK
+740,https://medlineplus.gov/genetics/condition/x-linked-agammaglobulinemia,extracted,article,200,OK
+741,https://ncbi.nlm.nih.gov/medgen/928177,extracted,article,200,OK
+742,https://medlineplus.gov/genetics/condition/nail-patella-syndrome,extracted,article,200,OK
+743,https://medlineplus.gov/genetics/condition/hivep2-related-intellectual-disability,extracted,article,200,OK
+744,https://medlineplus.gov/genetics/condition/erythrokeratodermia-variabilis-et-progressiva,extracted,article,200,OK
+745,https://medlineplus.gov/genetics/condition/47xyy-syndrome,extracted,article,200,OK
+746,https://pmc.ncbi.nlm.nih.gov/articles/PMC4085583,yet,Non-article,403,Forbidden
+747,https://medlineplus.gov/genetics/condition/spinal-muscular-atrophy-with-respi,yet,Non-article,404,Not Found
+748,https://medlineplus.gov/genetics/condition/anophthalmia-microphthalmia-esophageal-atresia-syndrome,extracted,article,200,OK
+749,https://medlineplus.gov/genetics/condition/childhood-myocerebrohepatopathy,yet,Non-article,404,Not Found
+750,https://medlineplus.gov/genetics/condition/familial-hyperaldosteronism,extracted,article,200,OK
+751,https://pmc.ncbi.nlm.nih.gov/articles/PMC6671929,yet,Non-article,403,Forbidden
+752,https://medlineplus.gov/genetics/condition/benign-familial-neonatal-seizures,extracted,article,200,OK
+753,https://medlineplus.gov/genetics/condition/zap70-related-severe-combined-immunodeficiency,extracted,article,200,OK
+754,https://medlineplus.gov/genetics/condition/potocki-shaffer-syndrome,extracted,article,200,OK
+755,https://medlineplus.gov/genetics/condition/spinocerebellar-ataxia-type-1,extracted,article,200,OK
+756,https://medlineplus.gov/genetics/condition/emery-dreifuss-muscular-dystrophy,extracted,article,200,OK
+757,https://pmc.ncbi.nlm.nih.gov/articles/PMC5963269,yet,Non-article,403,Forbidden
+758,https://medlineplus.gov/genetics/condition/hypermanganesemia-with-dystonia,yet,article,200,OK
+759,https://medlineplus.gov/genetics/condition/fatty-acid-hydroxylase-associated-neurodegeneration,extracted,article,200,OK
+760,https://medlineplus.gov/genetics/condition/maffucci-syndrome,yet,article,200,OK
+761,https://medlineplus.gov/genetics/condition/alpha-mannosidosis,extracted,article,200,OK
+762,https://medlineplus.gov/genetics/condition/terminal-osseous-dysplasia,extracted,article,200,OK
+763,https://medlineplus.gov/genetics/condition/proopiomelanocortin-deficiency,extracted,article,200,OK
+764,https://medlineplus.gov/genetics/condition/pura-syndrome,extracted,article,200,OK
+765,https://medlineplus.gov/genetics/condition/vldlr-associated-cerebellar-hypoplasia,extracted,article,200,OK
+766,https://medlineplus.gov/genetics/condition/milroy-disease,extracted,article,200,OK
+767,https://medlineplus.gov/genetics/condition/beckwith-wiedemann-syndrome,extracted,article,200,OK
+768,https://medlineplus.gov/genetics/condition/familial-exudative-vitreoretinopathy,extracted,article,200,OK
+769,https://medlineplus.gov/genetics/condition/poland-syndrome,extracted,article,200,OK
+770,https://medlineplus.gov/genetics/condition/simpson-golabi-behmel-syndrome,extracted,article,200,OK
+771,https://medlineplus.gov/genetics/condition/dyskeratosis-congenita,extracted,article,200,OK
+772,https://medlineplus.gov/genetics/condition/polymicrogyria,extracted,article,200,OK
+773,https://medlineplus.gov/genetics/condition/smith-kingsmore-syndrome,extracted,article,200,OK
+774,https://medlineplus.gov/genetics/condition/renal-tubular-dysgenesis,extracted,article,200,OK
+775,https://medlineplus.gov/genetics/condition/pilomatricoma,extracted,article,200,OK
+776,https://medlineplus.gov/genetics/condition/alpha-thalassemia-x-linked-intellectual-disability-syndrome,extracted,article,200,OK
+777,https://medlineplus.gov/genetics/condition/proteus-syndrome,extracted,article,200,OK
+778,https://medlineplus.gov/genetics/condition/spondyloepiphyseal-dysplasia-congenita,extracted,article,200,OK
+779,https://medlineplus.gov/genetics/condition/arrhythmogenic-right-ventricular-ca,yet,Non-article,404,Not Found
+780,https://medlineplus.gov/genetics/condition/hyperkalemic-periodic-paralysis,extracted,article,200,OK
+781,https://pmc.ncbi.nlm.nih.gov/articles/PMC2563255,yet,Non-article,403,Forbidden
+782,https://medlineplus.gov/genetics/condition/hereditary-angioedema,extracted,article,200,OK
+783,https://ncbi.nlm.nih.gov/books/NBK558998,extracted,article,200,OK
+784,https://pmc.ncbi.nlm.nih.gov/articles/PMC3892174,yet,Non-article,403,Forbidden
+785,https://medlineplus.gov/genetics/condition/fabry-disease,extracted,article,200,OK
+786,https://medlineplus.gov/genetics/condition/von-willebrand-disease,extracted,article,200,OK
+787,https://medlineplus.gov/genetics/condition/leukoencephalopathy-with-thalamus-and-brainstem-involvement-and-high-lactate,extracted,article,200,OK
+788,https://medlineplus.gov/genetics/condition/wolfram-syndrome,extracted,article,200,OK
+789,https://medlineplus.gov/genetics/condition/harlequin-ichthyosis,extracted,article,200,OK
+790,https://medlineplus.gov/genetics/condition/congenital-deafness-with-labyrinthi,yet,Non-article,404,Not Found
+791,https://medlineplus.gov/genetics/condition/langerhans-cell-histiocytosis,extracted,article,200,OK
+792,https://medlineplus.gov/genetics/condition/friedreich-ataxia,extracted,article,200,OK
+793,https://medlineplus.gov/genetics/condition/wolff-parkinson-white-syndrome,extracted,article,200,OK
+794,https://pmc.ncbi.nlm.nih.gov/articles/PMC4733813,yet,Non-article,403,Forbidden
+795,https://medlineplus.gov/genetics/condition/multiple-sclerosis,extracted,article,200,OK
+796,https://medlineplus.gov/genetics/condition/spinocerebellar-ataxia-type-2,extracted,article,200,OK
+797,https://pmc.ncbi.nlm.nih.gov/articles/PMC3782979,yet,Non-article,403,Forbidden
+798,https://medlineplus.gov/genetics/condition/familial-exudative-vitreoretinopathy,yet,article,200,OK
+799,https://medlineplus.gov/genetics/condition/neutral-lipid-storage-disease-with-myopathy,extracted,article,200,OK
+800,https://medlineplus.gov/genetics/condition/isobutyryl-coa-dehydrogenase-defi,yet,Non-article,404,Not Found
+801,https://medlineplus.gov/genetics/condition/dystonia-6,extracted,article,200,OK
+802,https://ncbi.nlm.nih.gov/books/NBK100664,extracted,article,200,OK
+803,https://medlineplus.gov/genetics/condition/esophageal-atresia-tracheoesophageal-fistula,extracted,article,200,OK
+804,https://medlineplus.gov/genetics/condition/inherited-thyroxine-binding-globulin-deficiency,extracted,article,200,OK
+805,https://pmc.ncbi.nlm.nih.gov/articles/PMC6417841,yet,Non-article,403,Forbidden
+806,https://medlineplus.gov/genetics/condition/early-onset-isolated-dystonia,extracted,article,200,OK
+807,https://medlineplus.gov/genetics/condition/maternally-inherited-diabetes-and-,yet,Non-article,404,Not Found
+808,https://medlineplus.gov/genetics/condition/snyder-robinson-syndrome,extracted,article,200,OK
+809,https://medlineplus.gov/genetics/condition/branchiootorenal-branchiootic-syndrome,extracted,article,200,OK
+810,https://medlineplus.gov/genetics/condition/trichorhinophalangeal-syndrome-type-ii,extracted,article,200,OK
+811,https://medlineplus.gov/genetics/condition/genitopatellar-syndrome,extracted,article,200,OK
+812,https://medlineplus.gov/genetics/condition/pseudocholinesterase-deficiency,extracted,article,200,OK
+813,https://medlineplus.gov/genetics/condition/pfeiffer-syndrome,extracted,article,200,OK
+814,https://medlineplus.gov/genetics/condition/paroxysmal-nocturnal-hemoglobin,yet,Non-article,404,Not Found
+815,https://medlineplus.gov/genetics/condition/turner-syndrome,extracted,article,200,OK
+816,https://medlineplus.gov/genetics/condition/otulipenia,extracted,article,200,OK
+817,https://medlineplus.gov/genetics/condition/cln5-disease,extracted,article,200,OK
+818,https://medlineplus.gov/genetics/condition/andersen-tawil-syndrome,extracted,article,200,OK
+819,https://medlineplus.gov/genetics/condition/triosephosphate-isomerase-deficiency,extracted,article,200,OK
+820,https://medlineplus.gov/genetics/condition/17-alpha-hydroxylase-17-20-lyase-deficiency,extracted,article,200,OK
+821,https://medlineplus.gov/genetics/condition/alg6-congenital-disorder-of-glycosylation,extracted,article,200,OK
+822,https://medlineplus.gov/genetics/condition/x-linked-severe-combined-immunodeficiency,extracted,article,200,OK
+823,https://medlineplus.gov/genetics/condition/familial-isolated-hyperparathyroidis,yet,Non-article,404,Not Found
+824,https://medlineplus.gov/genetics/condition/aromatase-deficiency,extracted,article,200,OK
+825,https://medlineplus.gov/genetics/condition/deafness-and-myopia-syndrome,extracted,article,200,OK
+826,https://medlineplus.gov/genetics/condition/multiple-mitochondrial-dysfunction,yet,Non-article,404,Not Found
+827,https://medlineplus.gov/genetics/condition/glut1-deficiency-syndrome,extracted,article,200,OK
+828,https://ncbi.nlm.nih.gov/books/NBK1544,extracted,article,200,OK
+829,https://pmc.ncbi.nlm.nih.gov/articles/PMC7231795,yet,Non-article,403,Forbidden
+830,https://medlineplus.gov/genetics/condition/capillary-malformation-arteriovenous-malformation-syndrome,extracted,article,200,OK
+831,https://pmc.ncbi.nlm.nih.gov/articles/PMC3334421,yet,Non-article,403,Forbidden
+832,https://medlineplus.gov/genetics/condition/holt-oram-syndrome,extracted,article,200,OK
+833,https://medlineplus.gov/genetics/condition/silver-russell-syndrome,extracted,article,200,OK
+834,https://ncbi.nlm.nih.gov/books/NBK1523,extracted,article,200,OK
+835,https://medlineplus.gov/genetics/condition/mpv17-related-hepatocerebral-mit,yet,Non-article,404,Not Found
+836,https://medlineplus.gov/genetics/condition/isolated-congenital-asplenia,extracted,article,200,OK
+837,https://medlineplus.gov/genetics/condition/scn8a-related-epilepsy-with-encep,yet,Non-article,404,Not Found
+838,https://medlineplus.gov/genetics/condition/dyserythropoietic-anemia-and-thro,yet,Non-article,404,Not Found
+839,https://genome.gov/genetics-glossary/Chromosome,extracted,article,200,OK
+840,https://medlineplus.gov/genetics/condition/essential-pentosuria,extracted,article,200,OK
+841,https://medlineplus.gov/genetics/condition/esophageal-atresia-tracheoesopha,yet,Non-article,404,Not Found
+842,https://medlineplus.gov/genetics/condition/t-cell-immunodeficiency-congenital,yet,Non-article,404,Not Found
+843,https://medlineplus.gov/genetics/condition/rhizomelic-chondrodysplasia-punct,yet,Non-article,404,Not Found
+844,https://medlineplus.gov/genetics/condition/celiac-disease,extracted,article,200,OK
+845,https://medlineplus.gov/genetics/condition/pyridoxine-dependent-epilepsy,extracted,article,200,OK
+846,https://medlineplus.gov/genetics/condition/kuskokwim-syndrome,extracted,article,200,OK
+847,https://medlineplus.gov/genetics/condition/gyrate-atrophy-of-the-choroid-and-retina,extracted,article,200,OK
+848,https://pmc.ncbi.nlm.nih.gov/articles/PMC6885669,yet,Non-article,403,Forbidden
+849,https://medlineplus.gov/genetics/condition/progressive-myoclonic-epilepsy-ty,yet,Non-article,404,Not Found
+850,https://ncbi.nlm.nih.gov/books/NBK220444,extracted,article,200,OK
+851,https://pmc.ncbi.nlm.nih.gov/articles/PMC11507414,yet,Non-article,403,Forbidden
+852,https://medlineplus.gov/genetics/condition/cholangiocarcinoma,extracted,article,200,OK
+853,https://nhs.uk/conditions/turner-syndrome,extracted,article,200,OK
+854,https://medlineplus.gov/genetics/condition/weyers-acrofacial-dysostosis,extracted,article,200,OK
+855,https://medlineplus.gov/genetics/condition/multiple-system-atrophy,extracted,article,200,OK
+856,https://medlineplus.gov/genetics/condition/cask-related-intellectual-disability,extracted,article,200,OK
+857,https://medlineplus.gov/genetics/condition/osteopetrosis,extracted,article,200,OK
+858,https://pmc.ncbi.nlm.nih.gov/articles/PMC9455087,yet,Non-article,403,Forbidden
+859,https://medlineplus.gov/genetics/condition/blepharophimosis-ptosis-and-epica,yet,Non-article,404,Not Found
+860,https://medlineplus.gov/genetics/condition/laryngo-onycho-cutaneous-syndrome,extracted,article,200,OK
+861,https://medlineplus.gov/genetics/condition/rab18-deficiency,extracted,article,200,OK
+862,https://medlineplus.gov/genetics/condition/plcg2-associated-antibody-deficien,yet,Non-article,404,Not Found
+863,https://medlineplus.gov/genetics/condition/griscelli-syndrome,extracted,article,200,OK
+864,https://medlineplus.gov/genetics/condition/paroxysmal-nocturnal-hemoglobinuria,extracted,article,200,OK
+865,https://medlineplus.gov/genetics/condition/type-1-diabetes,extracted,article,200,OK
+866,https://medlineplus.gov/genetics/condition/alpha-1-antitrypsin-deficiency,extracted,article,200,OK
+867,https://medlineplus.gov/genetics/condition/north-american-indian-childhood-ci,yet,Non-article,404,Not Found
+868,https://pmc.ncbi.nlm.nih.gov/articles/PMC5910509,yet,Non-article,403,Forbidden
+869,https://medlineplus.gov/genetics/condition/myoclonic-epilepsy-with-ragged-red-fibers,extracted,article,200,OK
+870,https://medlineplus.gov/genetics/condition/suclg1-related-mitochondrial-dna-d,yet,Non-article,404,Not Found
+871,https://medlineplus.gov/genetics/condition/ataxia-with-oculomotor-apraxia,extracted,article,200,OK
+872,https://medlineplus.gov/genetics/condition/hereditary-sensory-neuropathy-typ,yet,Non-article,404,Not Found
+873,https://medlineplus.gov/genetics/condition/action-myoclonus-renal-failure-syndrome,extracted,article,200,OK
+874,https://medlineplus.gov/genetics/condition/hereditary-hypophosphatemic-rick,yet,Non-article,404,Not Found
+875,https://pmc.ncbi.nlm.nih.gov/articles/PMC10341083,yet,Non-article,403,Forbidden
+876,https://medlineplus.gov/genetics/condition/familial-focal-epilepsy-with-variable,yet,Non-article,404,Not Found
+877,https://medlineplus.gov/genetics/condition/cdkl5-deficiency-disorder,extracted,article,200,OK
+878,https://medlineplus.gov/genetics/condition/familial-dysautonomia,extracted,article,200,OK
+879,https://medlineplus.gov/genetics/condition/retinoblastoma,extracted,Non-article,0,Connection Error
+880,https://medlineplus.gov/genetics/condition/fatty-acid-hydroxylase-associated-,yet,Non-article,0,Connection Error
+881,https://medlineplus.gov/genetics/condition/wilms-tumor,extracted,Non-article,0,Connection Error
+882,https://medlineplus.gov/genetics/condition/mullerian-aplasia-and-hyperandrog,yet,Non-article,0,Connection Error
+883,https://medlineplus.gov/genetics/condition/mal-de-meleda,extracted,Non-article,0,Connection Error
+884,https://pmc.ncbi.nlm.nih.gov/articles/PMC6991628,yet,Non-article,403,Forbidden
+885,https://medlineplus.gov/genetics/condition/williams-syndrome,extracted,Non-article,408,Request Timeout
+886,https://medlineplus.gov/genetics/condition/lujan-syndrome,extracted,article,200,OK
+887,https://medlineplus.gov/genetics/condition/mosaic-variegated-aneuploidy-syndrome,extracted,article,200,OK
+888,https://medlineplus.gov/genetics/condition/boucher-neuhauser-syndrome,extracted,article,200,OK
+889,https://medlineplus.gov/genetics/condition/x-linked-chondrodysplasia-punctata-2,extracted,article,200,OK
+890,https://pmc.ncbi.nlm.nih.gov/articles/PMC10550807,yet,Non-article,403,Forbidden
+891,https://medlineplus.gov/genetics/condition/distal-hereditary-motor-neuropathy,yet,Non-article,404,Not Found
+892,https://pmc.ncbi.nlm.nih.gov/articles/PMC3371272,yet,Non-article,403,Forbidden
+893,https://medlineplus.gov/genetics/condition/myofibrillar-myopathy,extracted,article,200,OK
+894,https://medlineplus.gov/genetics/condition/mucolipidosis-iii-alpha-beta,extracted,article,200,OK
+895,https://medlineplus.gov/genetics/condition/jackson-weiss-syndrome,extracted,article,200,OK
+896,https://medlineplus.gov/genetics/condition/med13l-syndrome,extracted,article,200,OK
+897,https://medlineplus.gov/genetics/condition/congenital-contractural-arachnoda,yet,Non-article,404,Not Found
+898,https://medlineplus.gov/genetics/condition/22q133-deletion-syndrome,extracted,article,200,OK
+899,https://ncbi.nlm.nih.gov/books/NBK1339,extracted,article,200,OK
+900,https://pmc.ncbi.nlm.nih.gov/articles/PMC4869578,yet,Non-article,403,Forbidden
+901,https://medlineplus.gov/genetics/condition/weill-marchesani-syndrome,extracted,article,200,OK
+902,https://medlineplus.gov/genetics/condition/niemann-pick-disease,extracted,article,200,OK
+903,https://medlineplus.gov/genetics/condition/branchiootorenal-branchiootic-syn,yet,Non-article,404,Not Found
+904,https://medlineplus.gov/genetics/condition/trichothiodystrophy,extracted,article,200,OK
+905,https://medlineplus.gov/genetics/condition/otopalatodigital-syndrome-type-2,extracted,article,200,OK
+906,https://pmc.ncbi.nlm.nih.gov/articles/PMC10152364,yet,Non-article,403,Forbidden
+907,https://medlineplus.gov/genetics/condition/mycosis-fungoides,extracted,article,200,OK
+908,https://medlineplus.gov/genetics/condition/gillespie-syndrome,extracted,article,200,OK
+909,https://medlineplus.gov/genetics/condition/non-alcoholic-fatty-liver-disease,extracted,article,200,OK
+910,https://medlineplus.gov/genetics/condition/stickler-syndrome,extracted,article,200,OK
+911,https://medlineplus.gov/genetics/condition/slc35a2-congenital-disorder-of-glyc,yet,Non-article,404,Not Found
+912,https://medlineplus.gov/genetics/condition/waardenburg-syndrome,extracted,article,200,OK
+913,https://medlineplus.gov/genetics/condition/cohen-syndrome,extracted,article,200,OK
+914,https://medlineplus.gov/genetics/condition/congenital-fiber-type-disproportion,extracted,article,200,OK
+915,https://medlineplus.gov/genetics/condition/mitochondrial-neurogastrointestinal,yet,Non-article,404,Not Found
+916,https://pmc.ncbi.nlm.nih.gov/articles/PMC7023732,yet,Non-article,403,Forbidden
+917,https://medlineplus.gov/genetics/condition/x-linked-acrogigantism,extracted,article,200,OK
+918,https://medlineplus.gov/genetics/condition/dubin-johnson-syndrome,extracted,article,200,OK
+919,https://pmc.ncbi.nlm.nih.gov/articles/PMC12393173,yet,Non-article,403,Forbidden
+920,https://medlineplus.gov/genetics/condition/cryopyrin-associated-periodic-synd,yet,Non-article,404,Not Found
+921,https://medlineplus.gov/genetics/condition/lacrimo-auriculo-dento-digital-synd,yet,Non-article,404,Not Found
+922,https://medlineplus.gov/genetics/condition/bladder-cancer,extracted,article,200,OK
+923,https://medlineplus.gov/genetics/condition/cap-myopathy,extracted,article,200,OK
+924,https://ncbi.nlm.nih.gov/books/NBK1235,extracted,article,200,OK
+925,https://medlineplus.gov/genetics/condition/foxp2-related-speech-and-language-disorder,extracted,article,200,OK
+926,https://medlineplus.gov/genetics/condition/alexander-disease,extracted,article,200,OK
+927,https://medlineplus.gov/genetics/condition/isolated-ectopia-lentis,extracted,article,200,OK
+928,https://medlineplus.gov/genetics/condition/pmm2-congenital-disorder-of-glycosylation,extracted,article,200,OK
+929,https://ncbi.nlm.nih.gov/books/NBK1219,extracted,article,200,OK
+930,https://medlineplus.gov/genetics/condition/leber-congenital-amaurosis,extracted,article,200,OK
+931,https://medlineplus.gov/genetics/condition/atelosteogenesis-type-2,extracted,article,200,OK
+932,https://pmc.ncbi.nlm.nih.gov/articles/PMC6410459,yet,Non-article,403,Forbidden
+933,https://medlineplus.gov/genetics/condition/sost-related-sclerosing-bone-dysplasia,extracted,article,200,OK
+934,https://medlineplus.gov/genetics/condition/sheldon-hall-syndrome,extracted,article,200,OK
+935,https://medlineplus.gov/genetics/condition/primary-ciliary-dyskinesia,extracted,article,200,OK
+936,https://medlineplus.gov/genetics/condition/intranuclear-rod-myopathy,extracted,article,200,OK
+937,https://medlineplus.gov/genetics/condition/tuberous-sclerosis-complex,extracted,article,200,OK
+938,https://medlineplus.gov/genetics/condition/x-linked-congenital-stationary-night-blindness,extracted,article,200,OK
+939,https://medlineplus.gov/genetics/condition/horizontal-gaze-palsy-with-progres,yet,Non-article,404,Not Found
+940,https://medlineplus.gov/genetics/condition/greig-cephalopolysyndactyly-syndrome,extracted,article,200,OK
+941,https://medlineplus.gov/genetics/condition/familial-hemophagocytic-lymphohistiocytosis,extracted,article,200,OK
+942,https://pmc.ncbi.nlm.nih.gov/articles/PMC3366702,yet,Non-article,403,Forbidden
+943,https://medlineplus.gov/genetics/condition/hystrix-like-ichthyosis-with-deafnes,yet,Non-article,404,Not Found
+944,https://medlineplus.gov/genetics/condition/neuromyelitis-optica,extracted,Non-article,0,Connection Error
+945,https://medlineplus.gov/genetics/condition/autosomal-recessive-congenital-st,yet,Non-article,404,Not Found
+946,https://medlineplus.gov/genetics/condition/7q1123-duplication-syndrome,extracted,article,200,OK
+947,https://medlineplus.gov/genetics/condition/slc4a1-associated-distal-renal-tubular-acidosis,extracted,article,200,OK
+948,https://medlineplus.gov/genetics/condition/x-linked-sideroblastic-anemia-and-,yet,Non-article,404,Not Found
+949,https://medlineplus.gov/genetics/condition/mayer-rokitansky-kuster-hauser-sy,yet,Non-article,404,Not Found
+950,https://medlineplus.gov/genetics/condition/lymphedema-distichiasis-syndrom,yet,Non-article,404,Not Found
+951,medlineplus.gov/genetics/condition/noonan-syndrome-with-multiple-lentigines,yet,Non-article,-1,Unknown Error
+952,https://medlineplus.gov/genetics/condition/x-linked-immunodeficiency-with-m,yet,Non-article,404,Not Found
+953,https://medlineplus.gov/genetics/condition/cystic-fibrosis,extracted,article,200,OK
+954,https://medlineplus.gov/genetics/condition/molybdenum-cofactor-deficiency,extracted,article,200,OK
+955,https://medlineplus.gov/genetics/condition/myostatin-related-muscle-hypertro,yet,Non-article,404,Not Found
+956,https://medlineplus.gov/genetics/condition/jak3-deficient-severe-combined-im,yet,Non-article,404,Not Found
+957,https://medlineplus.gov/genetics/condition/ochoa-syndrome,extracted,article,200,OK
+958,https://medlineplus.gov/genetics/condition/frontometaphyseal-dysplasia,extracted,article,200,OK
+959,https://medlineplus.gov/genetics/condition/werner-syndrome,extracted,article,200,OK
+960,https://medlineplus.gov/genetics/condition/allan-herndon-dudley-syndrome,extracted,article,200,OK
+961,https://medlineplus.gov/genetics/condition/megalencephalic-leukoencephalop,yet,Non-article,404,Not Found
+962,https://medlineplus.gov/genetics/condition/chst3-related-skeletal-dysplasia,extracted,article,200,OK
+963,https://medlineplus.gov/genetics/condition/freeman-sheldon-syndrome,extracted,article,200,OK
+964,https://medlineplus.gov/genetics/condition/x-linked-intellectual-disability-sideri,yet,Non-article,404,Not Found
+965,https://medlineplus.gov/genetics/condition/cytochrome-p450-oxidoreductase-deficiency,extracted,article,200,OK
+966,https://medlineplus.gov/genetics/condition/fragile-x-associated-primary-ovaria,yet,Non-article,404,Not Found
+967,https://medlineplus.gov/genetics/condition/complement-component-8-deficien,yet,Non-article,404,Not Found
+968,https://medlineplus.gov/genetics/condition/vici-syndrome,extracted,article,200,OK
+969,https://medlineplus.gov/genetics/condition/aromatic-l-amino-acid-decarboxylase-deficiency,extracted,article,200,OK
+970,https://medlineplus.gov/genetics/condition/renpenning-syndrome,extracted,article,200,OK
+971,https://medlineplus.gov/genetics/condition/ocular-albinism,extracted,article,200,OK
+972,https://medlineplus.gov/genetics/condition/osteoporosis-pseudoglioma-syndrome,extracted,article,200,OK
+973,https://medlineplus.gov/genetics/condition/saddan,extracted,article,200,OK
+974,https://medlineplus.gov/genetics/condition/congenital-sucrase-isomaltase-deficiency,extracted,article,200,OK
+975,https://ncbi.nlm.nih.gov/books/NBK1433,extracted,article,200,OK
+976,https://medlineplus.gov/genetics/condition/chorea-acanthocytosis,extracted,article,200,OK
+977,https://medlineplus.gov/genetics/condition/col4a1-related-brain-small-vessel-,yet,Non-article,404,Not Found
+978,https://medlineplus.gov/genetics/condition/fuchs-endothelial-dystrophy,extracted,article,200,OK
+979,https://medlineplus.gov/genetics/condition/progressive-familial-heart-block,extracted,article,200,OK
+980,https://medlineplus.gov/genetics/condition/alg1-congenital-disorder-of-glycosy,yet,Non-article,404,Not Found
+981,https://medlineplus.gov/genetics/condition/hepatic-veno-occlusive-disease-wit,yet,Non-article,404,Not Found
+982,https://pubmed.ncbi.nlm.nih.gov/34254723,yet,Non-article,403,Forbidden
+983,https://medlineplus.gov/genetics/condition/ngly1-congenital-disorder-of-deglycosylation,extracted,article,200,OK
+984,https://pmc.ncbi.nlm.nih.gov/articles/PMC1316309,yet,Non-article,403,Forbidden
+985,https://medlineplus.gov/genetics/condition/progressive-pseudorheumatoid-dy,yet,Non-article,404,Not Found
+986,https://medlineplus.gov/genetics/condition/encephalocraniocutaneous-lipomat,yet,Non-article,404,Not Found
+987,https://medlineplus.gov/genetics/condition/autosomal-dominant-hypocalcemia,yet,article,200,OK
+988,https://medlineplus.gov/genetics/condition/sjogren-syndrome,extracted,article,200,OK
+989,https://medlineplus.gov/genetics/condition/primary-coenzyme-q10-deficiency,extracted,article,200,OK
+990,https://medlineplus.gov/genetics/condition/crohns-disease,extracted,article,200,OK
+991,https://medlineplus.gov/genetics/condition/cerebral-autosomal-recessive-arteriopathy-with-subcortical-infarcts-and-leukoencephalopathy,extracted,article,200,OK
+992,https://ncbi.nlm.nih.gov/gtr/conditions/C3806275,extracted,article,200,OK
+993,https://medlineplus.gov/genetics/condition/cyld-cutaneous-syndrome,extracted,article,200,OK
+994,https://medlineplus.gov/genetics/condition/bare-lymphocyte-syndrome-type-ii,extracted,article,200,OK
+995,https://medlineplus.gov/genetics/condition/pseudoachondroplasia,extracted,article,200,OK
+996,https://medlineplus.gov/genetics/condition/alveolar-capillary-dysplasia-with-misalignment-of-pulmonary-veins,extracted,article,200,OK
+997,https://medlineplus.gov/genetics/condition/facioscapulohumeral-muscular-dystrophy,extracted,article,200,OK
+998,https://medlineplus.gov/genetics/condition/renal-tubular-acidosis-with-deafnes,yet,Non-article,404,Not Found
+999,https://medlineplus.gov/genetics/condition/corticosterone-methyloxidase-defic,yet,Non-article,404,Not Found
+1000,https://medlineplus.gov/genetics/condition/thanatophoric-dysplasia,extracted,article,200,OK
+1001,https://medlineplus.gov/genetics/condition/suclg1-related-mitochondrial-dna-depletion-syndrome,extracted,article,200,OK
+1002,https://medlineplus.gov/genetics/condition/craniometaphyseal-dysplasia,extracted,article,200,OK
+1003,https://medlineplus.gov/genetics/condition/naegeli-franceschetti-jadassohn-sy,yet,Non-article,404,Not Found
+1004,https://pmc.ncbi.nlm.nih.gov/articles/PMC10407208,yet,Non-article,403,Forbidden
+1005,https://medlineplus.gov/genetics/condition/maternally-inherited-diabetes-and-deafness,extracted,article,200,OK
+1006,https://medlineplus.gov/genetics/condition/myostatin-related-muscle-hypertrophy,extracted,article,200,OK
+1007,https://medlineplus.gov/genetics/condition/prothrombin-thrombophilia,extracted,article,200,OK
+1008,https://medlineplus.gov/genetics/condition/hereditary-leiomyomatosis-and-ren,yet,Non-article,404,Not Found
+1009,https://ncbi.nlm.nih.gov/books/NBK56080,extracted,article,200,OK
+1010,https://medlineplus.gov/genetics/condition/3p-deletion-syndrome,extracted,article,200,OK
+1011,https://medlineplus.gov/genetics/condition/generalized-pustular-psoriasis,extracted,article,200,OK
+1012,https://medlineplus.gov/genetics/condition/ornithine-transcarbamylase-deficiency,extracted,article,200,OK
+1013,https://medlineplus.gov/genetics/condition/multiple-familial-trichoepithelioma,extracted,article,200,OK
+1014,https://ncbi.nlm.nih.gov/books/NBK2690,extracted,article,200,OK
+1015,https://medlineplus.gov/genetics/condition/chordoma,extracted,article,200,OK
+1016,https://medlineplus.gov/genetics/condition/intrahepatic-cholestasis-of-pregnancy,extracted,article,200,OK
+1017,https://medlineplus.gov/genetics/condition/hepatic-lipase-deficiency,extracted,article,200,OK
+1018,https://medlineplus.gov/genetics/condition/vohwinkel-syndrome,extracted,article,200,OK
+1019,https://medlineplus.gov/genetics/condition/cul3-related-neurodevelopmental-disorder,extracted,article,200,OK
+1020,https://ncbi.nlm.nih.gov/books/NBK1386,extracted,article,200,OK
+1021,https://ncbi.nlm.nih.gov/books/NBK544951,extracted,article,200,OK
+1022,https://medlineplus.gov/genetics/condition/childhood-myocerebrohepatopathy-spectrum,extracted,article,200,OK
+1023,https://medlineplus.gov/genetics/condition/fragile-x-associated-tremor-ataxia-syndrome,extracted,article,200,OK
+1024,https://medlineplus.gov/genetics/condition/autosomal-recessive-primary-micr,yet,Non-article,404,Not Found
+1025,https://medlineplus.gov/genetics/condition/familial-lipoprotein-lipase-deficienc,yet,Non-article,404,Not Found
+1026,https://medlineplus.gov/genetics/condition/stuve-wiedemann-syndrome,extracted,article,200,OK
+1027,https://medlineplus.gov/genetics/condition/van-der-woude-syndrome,extracted,article,200,OK
+1028,https://medlineplus.gov/genetics/condition/task-specific-focal-dystonia,extracted,article,200,OK
+1029,https://medlineplus.gov/genetics/condition/gracile-syndrome,extracted,article,200,OK
+1030,https://medlineplus.gov/genetics/condition/distal-arthrogryposis-type-1,extracted,article,200,OK
+1031,https://medlineplus.gov/genetics/condition/barth-syndrome,extracted,article,200,OK
+1032,https://ncbi.nlm.nih.gov/books/NBK542206,extracted,article,200,OK
+1033,https://medlineplus.gov/genetics/condition/syngap1-related-intellectual-disabil,yet,Non-article,404,Not Found
+1034,https://medlineplus.gov/genetics/condition/thrombotic-thrombocytopenic-purpura,extracted,article,200,OK
+1035,https://medlineplus.gov/genetics/condition/li-fraumeni-syndrome,extracted,article,200,OK
+1036,https://medlineplus.gov/genetics/condition/action-myoclonus-renal-failure-syn,yet,Non-article,404,Not Found
+1037,https://medlineplus.gov/genetics/condition/hsd10-disease,extracted,article,200,OK
+1038,https://medlineplus.gov/genetics/condition/sick-sinus-syndrome,extracted,article,200,OK
+1039,https://medlineplus.gov/genetics/condition/glucose-phosphate-isomerase-defi,yet,Non-article,404,Not Found
+1040,https://medlineplus.gov/genetics/condition-c,extracted,article,200,OK
+1041,https://medlineplus.gov/genetics/condition/hereditary-xanthinuria,extracted,article,200,OK
+1042,chatgpt.co,yet,Non-article,-1,Unknown Error
+1043,https://medlineplus.gov/genetics/condition/enlarged-parietal-foramina,extracted,article,200,OK
+1044,https://ncbi.nlm.nih.gov/books/NBK570558,extracted,article,200,OK
+1045,https://medlineplus.gov/genetics/condition/6q24-related-transient-neonatal-di,yet,Non-article,404,Not Found
+1046,https://medlineplus.gov/genetics/condition/triple-a-syndrome,extracted,article,200,OK
+1047,https://medlineplus.gov/genetics/condition/congenital-myasthenic-syndrome,extracted,article,200,OK
+1048,https://medlineplus.gov/genetics/condition/nonsyndromic-aplasia-cutis-congenita,extracted,article,200,OK
+1049,https://medlineplus.gov/genetics/condition/tubular-aggregate-myopathy,extracted,article,200,OK
+1050,https://medlineplus.gov/genetics/condition/microcephalic-osteodysplastic-primordial-dwarfism-type-ii,extracted,article,200,OK
+1051,https://medlineplus.gov/genetics/condition/alternating-hemiplegia-of-childhood,extracted,article,200,OK
+1052,https://medlineplus.gov/genetics/condition/17-beta-hydroxysteroid-dehydrogenase-3-deficiency,extracted,article,200,OK
+1053,https://medlineplus.gov/genetics/condition/critical-congenital-heart-disease,extracted,article,200,OK
+1054,https://medlineplus.gov/genetics/condition/capillary-malformation-arterioveno,yet,Non-article,404,Not Found
+1055,https://medlineplus.gov/genetics/condition/microphthalmia-with-linear-skin-def,yet,Non-article,404,Not Found
+1056,https://medlineplus.gov/genetics/condition/bart-pumphrey-syndrome,extracted,article,200,OK
+1057,https://pmc.ncbi.nlm.nih.gov/articles/PMC7469861,yet,Non-article,403,Forbidden
+1058,https://medlineplus.gov/genetics/condition/ohdo-syndrome-say-barber-biesecker-young-simpson-variant,extracted,article,200,OK
+1059,https://medlineplus.gov/genetics/condition/mutyh-associated-polyposis,extracted,article,200,OK
+1060,https://medlineplus.gov/genetics/condition/sjogren-larsson-syndrome,extracted,article,200,OK
+1061,https://medlineplus.gov/genetics/condition/combined-malonic-and-methylmalo,yet,Non-article,404,Not Found
+1062,https://medlineplus.gov/genetics/condition/core-binding-factor-acute-myeloid-leukemia,extracted,article,200,OK
+1063,https://ncbi.nlm.nih.gov/books/NBK595821,extracted,article,200,OK
+1064,https://medlineplus.gov/genetics/condition/acad9-deficiency,extracted,article,200,OK
+1065,https://medlineplus.gov/genetics/condition/cyclic-vomiting-syndrome,extracted,article,200,OK
+1066,https://medlineplus.gov/genetics/condition/isobutyryl-coa-dehydrogenase-deficiency,extracted,article,200,OK
+1067,https://medlineplus.gov/genetics/condition/hereditary-leiomyomatosis-and-renal-cell-cancer,extracted,article,200,OK
+1068,https://medlineplus.gov/genetics/condition/subcortical-band-heterotopia,extracted,article,200,OK
+1069,https://medlineplus.gov/genetics/condition/adenine-phosphoribosyltransferas,yet,Non-article,404,Not Found
+1070,https://medlineplus.gov/genetics/condition/combined-oxidative-phosphorylation-deficiency-1,extracted,article,200,OK
+1071,https://medlineplus.gov/genetics/condition/leukocyte-adhesion-deficiency-typ,yet,Non-article,404,Not Found
+1072,https://pmc.ncbi.nlm.nih.gov/articles/PMC10580451,yet,Non-article,403,Forbidden
+1073,https://medlineplus.gov/genetics/condition/isolated-hyperckemia,extracted,article,200,OK
+1074,https://medlineplus.gov/genetics/condition/spondylocarpotarsal-synostosis-syndrome,extracted,article,200,OK
+1075,https://medlineplus.gov/genetics/condition/autosomal-dominant-tubulointerstitial-kidney-disease-umod,extracted,article,200,OK
+1076,https://medlineplus.gov/genetics/condition/immune-thrombocytopenia,extracted,article,200,OK
+1077,https://medlineplus.gov/genetics/condition/short-stature-hyperextensibility-her,yet,Non-article,404,Not Found
+1078,https://medlineplus.gov/genetics/condition/renal-hypouricemia,extracted,article,200,OK
+1079,https://medlineplus.gov/genetics/condition/moyamoya-disease,extracted,article,200,OK
+1080,https://medlineplus.gov/genetics/condition/hereditary-myopathy-with-early-res,yet,Non-article,404,Not Found
+1081,https://medlineplus.gov/genetics/condition/carbonic-anhydrase-va-deficiency,extracted,article,200,OK
+1082,https://medlineplus.gov/genetics/condition/cornelia-de-lange-syndrome,extracted,article,200,OK
+1083,https://medlineplus.gov/genetics/condition/dnmt3a-overgrowth-syndrome,extracted,article,200,OK
+1084,https://ncbi.nlm.nih.gov/books/NBK20221,extracted,article,200,OK
+1085,https://medlineplus.gov/genetics/condition/frontotemporal-dementia-with-parkinsonism-17,extracted,article,200,OK
+1086,https://medlineplus.gov/genetics/condition/lissencephaly-with-cerebellar-hypoplasia,extracted,article,200,OK
+1087,https://medlineplus.gov/genetics/condition/distal-18q-deletion-syndrome,extracted,article,200,OK
+1088,https://medlineplus.gov/genetics/condition/gestational-diabetes,extracted,article,200,OK
+1089,https://medlineplus.gov/genetics/condition/succinyl-coa3-ketoacid-coa-transferase-deficiency,extracted,article,200,OK
+1090,https://ncbi.nlm.nih.gov/medgen/370197,extracted,article,200,OK
+1091,https://medlineplus.gov/genetics/condition/lysinuric-protein-intolerance,extracted,article,200,OK
+1092,https://medlineplus.gov/genetics/condition/familial-paroxysmal-kinesigenic-dy,yet,Non-article,404,Not Found
+1093,https://medlineplus.gov/genetics/condition/developmental-and-epileptic-encep,yet,Non-article,404,Not Found
+1094,https://medlineplus.gov/genetics/condition/megdel-syndrome,extracted,article,200,OK
+1095,https://pmc.ncbi.nlm.nih.gov/articles/PMC4451851,yet,Non-article,403,Forbidden
+1096,https://medlineplus.gov/genetics/condition/familial-encephalopathy-with-neuroserpin-inclusion-bodies,extracted,article,200,OK
+1097,https://medlineplus.gov/genetics/condition/multiple-myeloma,extracted,article,200,OK
+1098,https://medlineplus.gov/genetics/condition/chronic-atrial-and-intestinal-dysrhythmia,extracted,article,200,OK
+1099,https://pmc.ncbi.nlm.nih.gov/articles/PMC6718240,yet,Non-article,403,Forbidden
+1100,https://medlineplus.gov/genetics/condition/hypomyelination-with-brainstem-an,yet,Non-article,404,Not Found
+1101,https://medlineplus.gov/genetics/understanding/basics/chromosome,extracted,article,200,OK
+1102,https://medlineplus.gov/genetics/condition/mucopolysaccharidosis-type-vi,extracted,article,200,OK
+1103,https://pmc.ncbi.nlm.nih.gov/articles/PMC10500774,yet,Non-article,403,Forbidden
+1104,https://medlineplus.gov/genetics/condition/charcot-marie-tooth-disease,extracted,article,200,OK
+1105,https://medlineplus.gov/genetics/condition/constitutional-mismatch-repair-defi,yet,Non-article,408,Request Timeout
+1106,https://medlineplus.gov/genetics/condition/nonsyndromic-congenital-nail-disorder-10,extracted,article,200,OK
+1107,https://medlineplus.gov/genetics/condition/polycystic-lipomembranous-osteodysplasia-with-sclerosing-leukoencephalopathy,extracted,article,200,OK
+1108,https://medlineplus.gov/genetics/condition/laryngo-onycho-cutaneous-syndro,yet,Non-article,404,Not Found
+1109,https://medlineplus.gov/genetics/condition/cerebral-autosomal-dominant-arter,yet,Non-article,404,Not Found
+1110,https://medlineplus.gov/genetics/condition/carpal-tunnel-syndrome,extracted,article,200,OK
+1111,https://medlineplus.gov/genetics/condition/peters-anomaly,extracted,article,200,OK
+1112,http://ncbi.nlm.nih.gov/medgen/226944,extracted,article,200,OK
+1113,https://medlineplus.gov/genetics/condition/congenital-cataracts-facial-dysmor,yet,Non-article,404,Not Found
+1114,https://medlineplus.gov/genetics/condition/omenn-syndrome,extracted,article,200,OK
+1115,https://medlineplus.gov/genetics/condition/au-kline-syndrome,extracted,article,200,OK
+1116,https://medlineplus.gov/genetics/condition/otospondylomegaepiphyseal-dyspl,yet,Non-article,408,Request Timeout
+1117,https://pmc.ncbi.nlm.nih.gov/articles/PMC12427558,yet,Non-article,408,Request Timeout
+1118,https://medlineplus.gov/genetics/condition/microcephaly-capillary-malformation-syndrome,extracted,Non-article,0,Connection Error
+1119,https://medlineplus.gov/genetics/condition/sting-associated-vasculopathy-with-onset-in-infancy,extracted,Non-article,0,Connection Error
+1120,https://ncbi.nlm.nih.gov/books/NBK613517,extracted,Non-article,408,Request Timeout
+1121,https://medlineplus.gov/genetics/condition/spastic-paraplegia-type-5a,extracted,article,200,OK
+1122,https://medlineplus.gov/genetics/condition/mosaic-variegated-aneuploidy-syn,yet,Non-article,404,Not Found
+1123,https://nhs.uk/conditions/turner-syndrome?utm_source=chatgpt.com,extracted,article,200,OK
+1124,https://medlineplus.gov/genetics/condition/pantothenate-kinase-associated-neurodegeneration,extracted,article,200,OK
+1125,https://ncbi.nlm.nih.gov/books/NBK560701,extracted,article,200,OK
+1126,https://medlineplus.gov/genetics/condition/hivep2-related-intellectual-disability,yet,article,200,OK
+1127,https://medlineplus.gov/genetics/condition/hereditary-paraganglioma-pheochr,yet,Non-article,404,Not Found
+1128,https://medlineplus.gov/genetics/condition/paroxysmal-extreme-pain-disorder,extracted,article,200,OK
+1129,https://medlineplus.gov/genetics/condition/myopathy-with-deficiency-of-iron-s,yet,Non-article,404,Not Found
+1130,https://medlineplus.gov/genetics/condition/treacher-collins-syndrome,extracted,article,200,OK
+1131,https://medlineplus.gov/genetics/condition/robinow-syndrome,extracted,article,200,OK
+1132,https://medlineplus.gov/genetics/condition/blepharocheilodontic-syndrome,extracted,article,200,OK
+1133,https://medlineplus.gov/genetics/condition/boomerang-dysplasia,extracted,article,200,OK
+1134,https://medlineplus.gov/genetics/condition/short-chain-acyl-coa-dehydrogena,yet,Non-article,404,Not Found
+1135,https://medlineplus.gov/genetics/condition/cln1-disease,extracted,article,200,OK
+1136,https://medlineplus.gov/genetics/condition/ataxia-neuropathy-spectrum,extracted,article,200,OK
+1137,https://medlineplus.gov/genetics/condition/alcohol-use-disorder,extracted,article,200,OK
+1138,https://medlineplus.gov/genetics/condition/mullerian-aplasia-and-hyperandrogenism,extracted,article,200,OK
+1139,https://medlineplus.gov/genetics/condition/myh9-related-disorder,extracted,article,200,OK
+1140,https://medlineplus.gov/genetics/condition/15q11-q13-duplication-syndrome,extracted,article,200,OK
+1141,https://medlineplus.gov/genetics/condition/combined-oxidative-phosphorylatio,yet,Non-article,404,Not Found
+1142,https://medlineplus.gov/genetics/condition/trisomy-x,extracted,article,200,OK
+1143,https://medlineplus.gov/genetics/condition/crouzon-syndrome-with-acanthosis-nigricans,extracted,article,200,OK
+1144,https://medlineplus.gov/genetics/condition/factor-xi-deficiency,extracted,article,200,OK
+1145,https://ncbi.nlm.nih.gov/books/NBK575630,extracted,article,200,OK
+1146,https://medlineplus.gov/genetics/condition/alzheimers-disease,extracted,article,200,OK
+1147,https://medlineplus.gov/genetics/condition/cln11-disease,extracted,article,200,OK
+1148,https://medlineplus.gov/genetics/condition/hereditary-multiple-osteochondromas,extracted,article,200,OK
+1149,https://medlineplus.gov/genetics/condition/transthyretin-amyloidosis,extracted,article,200,OK
+1150,https://medlineplus.gov/genetics/condition/cln2-disease,extracted,article,200,OK
+1151,https://medlineplus.gov/genetics/condition/noonan-syndrome-with-multiple-lentigines,extracted,article,200,OK
+1152,https://medlineplus.gov/genetics/condition/imerslund-grasbeck-syndrome,extracted,article,200,OK
+1153,https://medlineplus.gov/genetics/condition/x-linked-infantile-nystagmus,extracted,article,200,OK
+1154,https://medlineplus.gov/genetics/condition/beta-propeller-protein-associated-neurodegeneration,extracted,article,200,OK
+1155,https://medlineplus.gov/genetics/condition/short-stature-hyperextensibility-hernia-ocular-depression-rieger-anomaly-and-teething-delay,extracted,article,200,OK
+1156,https://medlineplus.gov/genetics/condition/hermansky-pudlak-syndrome,extracted,article,200,OK
+1157,https://medlineplus.gov/genetics/condition/spondyloenchondrodysplasia-with-immune-dysregulation,extracted,article,200,OK
+1158,https://medlineplus.gov/genetics/condition/dock8-immunodeficiency-syndrom,yet,Non-article,404,Not Found
+1159,https://medlineplus.gov/genetics/condition/phosphoribosylpyrophosphate-synthetase-superactivity,extracted,article,200,OK
+1160,https://medlineplus.gov/genetics/condition/coffin-siris-syndrome,extracted,article,200,OK
+1161,https://medlineplus.gov/genetics/condition/huntingtons-disease,extracted,article,200,OK
+1162,https://ncbi.nlm.nih.gov/books/NBK7040,extracted,article,200,OK
+1163,https://medlineplus.gov/genetics/condition/nemaline-myopathy,extracted,article,200,OK
+1164,https://medlineplus.gov/genetics/condition/prickle1-related-progressive-myoclonus-epilepsy-with-ataxia,extracted,article,200,OK
+1165,https://medlineplus.gov/genetics/condition/osteogenesis-imperfecta,extracted,article,200,OK
+1166,https://medlineplus.gov/genetics/condition/bardet-biedl-syndrome,extracted,article,200,OK
+1167,https://medlineplus.gov/genetics/condition/peters-plus-syndrome,extracted,article,200,OK
+1168,https://medlineplus.gov/genetics/condition/miyoshi-myopathy,extracted,article,200,OK
+1169,https://medlineplus.gov/genetics/condition/focal-dermal-hypoplasia,extracted,article,200,OK
+1170,https://medlineplus.gov/genetics/condition/t-cell-immunodeficiency-congenital-alopecia-and-nail-dystrophy,extracted,article,200,OK
+1171,https://medlineplus.gov/genetics/condition/emery-dreifuss-muscular-dystroph,yet,Non-article,404,Not Found
+1172,https://ncbi.nlm.nih.gov/books/NBK1245,extracted,article,200,OK
+1173,https://genome.gov/For-Patients-and-Families/Genetic-Disorders,extracted,article,200,OK
+1174,https://medlineplus.gov/genetics/condition/progressive-supranuclear-palsy,extracted,article,200,OK
+1175,https://medlineplus.gov/genetics/condition/spinal-muscular-atrophy-with-lower,yet,Non-article,404,Not Found
+1176,https://medlineplus.gov/genetics/condition/familial-paroxysmal-nonkinesigenic-dyskinesia,extracted,article,200,OK
+1177,https://medlineplus.gov/genetics/condition/birt-hogg-dube-syndrome,extracted,article,200,OK
+1178,https://medlineplus.gov/genetics/condition/gilbert-syndrome,extracted,article,200,OK
+1179,https://medlineplus.gov/genetics/condition/thiopurine-s-methyltransferase-defi,yet,Non-article,404,Not Found
+1180,https://medlineplus.gov/genetics/condition/costello-syndrome,extracted,article,200,OK
+1181,https://medlineplus.gov/genetics/condition/branchio-oculo-facial-syndrome,extracted,article,200,OK
+1182,https://medlineplus.gov/genetics/condition/pdgfrb-associated-chronic-eosinophilic-leukemia,extracted,article,200,OK
+1183,https://medlineplus.gov/genetics/condition/rapadilino-syndrome,extracted,article,200,OK
+1184,https://medlineplus.gov/genetics/condition/congenital-deafness-with-labyrinthine-aplasia-microtia-and-microdontia,extracted,article,200,OK
+1185,https://medlineplus.gov/genetics/condition/galactosialidosis,extracted,article,200,OK
+1186,https://medlineplus.gov/genetics/condition/prolidase-deficiency,extracted,article,200,OK
+1187,https://medlineplus.gov/genetics/condition/char-syndrome,extracted,article,200,OK
+1188,https://medlineplus.gov/genetics/condition/megalencephaly-capillary-malform,yet,Non-article,404,Not Found
+1189,https://medlineplus.gov/genetics/condition/adams-oliver-syndrome,extracted,article,200,OK
+1190,https://medlineplus.gov/genetics/condition/hypomyelination-and-congenital-ca,yet,Non-article,404,Not Found
+1191,https://pmc.ncbi.nlm.nih.gov/articles/PMC1051187,yet,Non-article,403,Forbidden
+1192,https://medlineplus.gov/genetics/condition/achondroplasia,extracted,article,200,OK
+1193,https://medlineplus.gov/genetics/condition/autosomal-dominant-vitreoretinoch,yet,Non-article,404,Not Found
+1194,https://medlineplus.gov/genetics/condition/wolf-hirschhorn-syndrome,extracted,article,200,OK
+1195,https://medlineplus.gov/genetics/condition/wiskott-aldrich-syndrome,extracted,article,200,OK
+1196,https://medlineplus.gov/genetics/condition/vexas-syndrome,extracted,article,200,OK
+1197,https://medlineplus.gov/genetics/condition/primary-myelofibrosis,extracted,article,200,OK
+1198,https://medlineplus.gov/genetics/condition/congenital-sucrase-isomaltase-defi,yet,Non-article,404,Not Found
+1199,https://medlineplus.gov/genetics/condition/glycogen-storage-disease-type-v,extracted,article,200,OK
+1200,https://medlineplus.gov/genetics/condition/mayer-rokitansky-kuster-hauser-syndrome,extracted,article,200,OK
+1201,https://medlineplus.gov/genetics/condition/combined-pituitary-hormone-defici,yet,Non-article,404,Not Found
+1202,https://ncbi.nlm.nih.gov/books/NBK1350,extracted,article,200,OK
+1203,https://medlineplus.gov/genetics/condition/carpenter-syndrome,extracted,article,200,OK
+1204,https://medlineplus.gov/genetics/condition/phosphoglycerate-dehydrogenase-deficiency,extracted,article,200,OK
+1205,https://medlineplus.gov/genetics/condition/warfarin-resistance,extracted,article,200,OK
+1206,https://medlineplus.gov/genetics/condition/anophthalmia-microphthalmia,extracted,article,200,OK
+1207,https://medlineplus.gov/genetics/condition/familial-hypertrophic-cardiomyopat,yet,Non-article,404,Not Found
+1208,https://medlineplus.gov/genetics/condition/x-linked-lissencephaly-with-abnormal-genitalia,extracted,article,200,OK
+1209,https://medlineplus.gov/genetics/condition/tetrahydrobiopterin-deficiency,extracted,article,200,OK
+1210,https://medlineplus.gov/genetics/condition/spondyloepiphyseal-dysplasia-with,yet,Non-article,404,Not Found
+1211,https://medlineplus.gov/genetics/condition/renal-tubular-acidosis-with-deafness,extracted,article,200,OK
+1212,https://medlineplus.gov/genetics/condition/sudden-infant-death-with-dysgenesis-of-the-testes-syndrome,extracted,article,200,OK
+1213,https://medlineplus.gov/genetics/condition/junctional-epidermolysis-bullosa,extracted,article,200,OK
+1214,https://medlineplus.gov/genetics/condition/cytogenetically-normal-acute-myeloid-leukemia,extracted,article,200,OK
+1215,https://medlineplus.gov/genetics/condition/spondyloenchondrodysplasia-with-i,yet,Non-article,404,Not Found
+1216,https://medlineplus.gov/genetics/condition/caudal-regression-syndrome,extracted,article,200,OK
+1217,https://medlineplus.gov/genetics/condition/19p1313-deletion-syndrome,extracted,article,200,OK
+1218,https://medlineplus.gov/genetics/condition/cherubism,extracted,article,200,OK
+1219,https://medlineplus.gov/genetics/condition/stargardt-macular-degeneration,extracted,article,200,OK
+1220,https://ncbi.nlm.nih.gov/books/NBK1431,extracted,article,200,OK
+1221,https://medlineplus.gov/genetics/condition/pseudoxanthoma-elasticum,extracted,article,200,OK
+1222,https://pmc.ncbi.nlm.nih.gov/articles/PMC10032446,yet,Non-article,403,Forbidden
+1223,https://medlineplus.gov/genetics/condition/jacobsen-syndrome,extracted,article,200,OK
+1224,https://medlineplus.gov/genetics/condition/charge-syndrome,extracted,article,200,OK
+1225,https://medlineplus.gov/genetics/condition/brugada-syndrome,extracted,article,200,OK
+1226,https://medlineplus.gov/genetics/condition/3-hydroxyacyl-coa-dehydrogenase-deficiency,extracted,article,200,OK
+1227,https://medlineplus.gov/genetics/condition/tourette-syndrome,extracted,article,200,OK
+1228,https://medlineplus.gov/genetics/condition/gnathodiaphyseal-dysplasia,extracted,article,200,OK
+1229,https://medlineplus.gov/genetics/condition/bietti-crystalline-dystrophy,extracted,article,200,OK
+1230,https://medlineplus.gov/genetics/condition/factor-v-leiden-thrombophilia,extracted,article,200,OK
+1231,https://medlineplus.gov/genetics/condition/attention-deficit-hyperactivity-disor,yet,Non-article,404,Not Found
+1232,https://medlineplus.gov/genetics/condition/christianson-syndrome,yet,article,200,OK
+1233,https://medlineplus.gov/genetics/condition/catecholaminergic-polymorphic-ve,yet,Non-article,404,Not Found
+1234,https://medlineplus.gov/genetics/condition/erythrokeratodermia-variabilis-et-pr,yet,Non-article,404,Not Found
+1235,https://pmc.ncbi.nlm.nih.gov/articles/PMC4772338,yet,Non-article,403,Forbidden
+1236,https://medlineplus.gov/genetics/condition/y-chromosome-infertility,yet,article,200,OK
+1237,https://medlineplus.gov/genetics/condition/hereditary-pancreatitis,yet,article,200,OK
+1238,https://medlineplus.gov/genetics/condition/systemic-lupus-erythematosus,yet,article,200,OK
+1239,https://medlineplus.gov/genetics/condition/megalencephaly-polymicrogyria-polydactyly-hydrocephalus-syndrome,yet,article,200,OK
+1240,https://medlineplus.gov/genetics/condition/progressive-pseudorheumatoid-dysplasia,yet,article,200,OK
+1241,https://medlineplus.gov/genetics/condition/thrombocytopenia-absent-radius-syndrome,yet,article,200,OK
+1242,https://medlineplus.gov/genetics/condition/rubinstein-taybi-syndrome,yet,article,200,OK
+1243,https://medlineplus.gov/genetics/condition/hereditary-fibrosing-poikiloderma-,yet,Non-article,404,Not Found
+1244,https://medlineplus.gov/genetics/condition/systemic-scleroderma,yet,article,200,OK
+1245,https://medlineplus.gov/genetics/condition/myosin-storage-myopathy,yet,article,200,OK
+1246,https://medlineplus.gov/genetics/condition/saethre-chotzen-syndrome,yet,article,200,OK
+1247,https://medlineplus.gov/genetics/condition/early-onset-glaucoma,yet,article,200,OK
+1248,https://medlineplus.gov/genetics/condition/bipolar-disorder,yet,article,200,OK
+1249,https://medlineplus.gov/genetics/condition/mitochondrial-encephalomyopathy-,yet,Non-article,404,Not Found
+1250,https://pmc.ncbi.nlm.nih.gov/articles/PMC10663705,yet,Non-article,403,Forbidden
+1251,https://medlineplus.gov/genetics/condition/distal-hereditary-motor-neuropathy-type-v,yet,article,200,OK
+1252,https://medlineplus.gov/genetics/condition/fanconi-anemia,yet,article,200,OK
+1253,https://medlineplus.gov/genetics/condition/familial-isolated-pituitary-adenoma,yet,article,200,OK
+1254,https://pmc.ncbi.nlm.nih.gov/articles/PMC8471045,yet,Non-article,403,Forbidden
+1255,https://medlineplus.gov/genetics/condition/cryopyrin-associated-periodic-syndromes,yet,article,200,OK
+1256,https://medlineplus.gov/genetics/condition/hennekam-syndrome,yet,article,200,OK
+1257,https://medlineplus.gov/genetics/condition/spastic-paraplegia-type-15,yet,article,200,OK
+1258,https://medlineplus.gov/genetics/condition/x-linked-dilated-cardiomyopathy,yet,article,200,OK
+1259,https://medlineplus.gov/genetics/condition/ataxia-pancytopenia-syndrome,yet,article,200,OK
+1260,https://pmc.ncbi.nlm.nih.gov/articles/PMC6376866,yet,Non-article,403,Forbidden
+1261,https://medlineplus.gov/genetics/condition/autosomal-dominant-congenital-st,yet,Non-article,404,Not Found
+1262,https://pmc.ncbi.nlm.nih.gov/articles/PMC1592572,yet,Non-article,403,Forbidden
+1263,https://medlineplus.gov/genetics/condition/perry-syndrome,yet,article,200,OK
+1264,https://medlineplus.gov/genetics/condition/pacs1-syndrome,yet,article,200,OK
+1265,https://medlineplus.gov/genetics/condition/fryns-syndrome,yet,article,200,OK
+1266,https://medlineplus.gov/genetics/condition/oculodentodigital-dysplasia,yet,article,200,OK
+1267,https://medlineplus.gov/genetics/condition/cone-rod-dystrophy,yet,article,200,OK
+1268,https://ncbi.nlm.nih.gov/medgen/96585,yet,article,200,OK
+1269,https://medlineplus.gov/genetics/condition/carney-complex,yet,article,200,OK
+1270,https://medlineplus.gov/genetics/condition/x-linked-immunodeficiency-with-magnesium-defect-epstein-barr-virus-infection-and-neoplasia,yet,article,200,OK
+1271,https://medlineplus.gov/genetics/condition/22q112-deletion-syndrome,yet,article,200,OK
+1272,https://medlineplus.gov/genetics/condition/congenital-contractural-arachnodactyly,yet,article,200,OK
+1273,https://medlineplus.gov/genetics/condition/leukocyte-adhesion-deficiency-type-1,yet,article,200,OK
+1274,https://medlineplus.gov/genetics/condition/x-linked-adrenal-hypoplasia-conge,yet,Non-article,404,Not Found
+1275,https://pmc.ncbi.nlm.nih.gov/articles/PMC9186461,yet,Non-article,403,Forbidden
+1276,https://medlineplus.gov/genetics/condition/familial-encephalopathy-with-neuro,yet,Non-article,404,Not Found
+1277,https://medlineplus.gov/genetics/condition/familial-candidiasis,yet,article,200,OK
+1278,https://medlineplus.gov/genetics/condition/cerebral-folate-transport-deficiency,yet,article,200,OK
+1279,https://medlineplus.gov/genetics/condition/complete-lcat-deficiency,yet,article,200,OK
+1280,https://medlineplus.gov/genetics/condition/epidermal-nevus,yet,article,200,OK
+1281,https://medlineplus.gov/genetics/condition/acrocallosal-syndrome,yet,article,200,OK
+1282,https://medlineplus.gov/genetics/condition/cytochrome-p450-oxidoreductase-,yet,Non-article,404,Not Found
+1283,https://medlineplus.gov/genetics/condition/trisomy-18,yet,article,200,OK
+1284,https://ncbi.nlm.nih.gov/books/NBK549839,yet,article,200,OK
+1285,https://medlineplus.gov/genetics/condition/wagner-syndrome,yet,article,200,OK
+1286,https://medlineplus.gov/genetics/condition/keratoderma-with-woolly-hair,yet,article,200,OK
+1287,https://pmc.ncbi.nlm.nih.gov/articles/PMC10996339,yet,Non-article,403,Forbidden
+1288,https://medlineplus.gov/genetics/condition/glucose-phosphate-isomerase-deficiency,yet,article,200,OK
+1289,https://medlineplus.gov/genetics/condition/ppm-x-syndrome,yet,article,200,OK
+1290,https://medlineplus.gov/genetics/condition/persistent-mullerian-duct-syndrome,yet,article,200,OK
+1291,https://medlineplus.gov/genetics/condition/hepatic-veno-occlusive-disease-with-immunodeficiency,yet,article,200,OK
+1292,https://medlineplus.gov/genetics/condition/ewing-sarcoma,yet,article,200,OK
+1293,https://ncbi.nlm.nih.gov/books/NBK401562,yet,article,200,OK
+1294,https://medlineplus.gov/genetics/condition/anonychia-congenita,yet,article,200,OK
+1295,https://medlineplus.gov/genetics/condition/x-linked-cardiac-valvular-dysplasia,yet,article,200,OK
+1296,https://medlineplus.gov/genetics/condition/dyserythropoietic-anemia-and-thrombocytopenia,yet,article,200,OK
+1297,https://medlineplus.gov/genetics/condition/mabry-syndrome,yet,article,200,OK
+1298,https://medlineplus.gov/genetics/condition/gm3-synthase-deficiency,yet,article,200,OK
+1299,https://medlineplus.gov/genetics/condition/methylmalonic-acidemia-with-homocystinuria,yet,article,200,OK
+1300,https://medlineplus.gov/genetics/condition/biotin-thiamine-responsive-basal-ganglia-disease,yet,article,200,OK
+1301,https://pmc.ncbi.nlm.nih.gov/articles/PMC12268107,yet,Non-article,403,Forbidden
+1302,https://medlineplus.gov/genetics/condition/iron-refractory-iron-deficiency-anemia,yet,article,200,OK
+1303,https://pmc.ncbi.nlm.nih.gov/articles/PMC4061475,yet,Non-article,403,Forbidden
+1304,https://medlineplus.gov/genetics/condition/facioscapulohumeral-muscular-dys,yet,Non-article,404,Not Found
+1305,https://medlineplus.gov/genetics/condition/denys-drash-syndrome,yet,article,200,OK
+1306,https://medlineplus.gov/genetics/condition/lymphangioleiomyomatosis,yet,article,200,OK
+1307,https://medlineplus.gov/genetics/condition/49xxxxy-syndrome,yet,article,200,OK
+1308,https://medlineplus.gov/genetics/condition/short-branched-chain-acyl-coa-deh,yet,Non-article,404,Not Found
+1309,https://medlineplus.gov/genetics/condition/hyperparathyroidism-jaw-tumor-syndrome,yet,article,200,OK
+1310,https://medlineplus.gov/genetics/condition/crigler-najjar-syndrome,yet,article,200,OK
+1311,https://medlineplus.gov/genetics/condition/bernard-soulier-syndrome,yet,article,200,OK
+1312,https://pmc.ncbi.nlm.nih.gov/articles/PMC11457810,yet,Non-article,403,Forbidden
+1313,https://medlineplus.gov/genetics/condition/oculocutaneous-albinism,yet,article,200,OK
+1314,https://medlineplus.gov/genetics/condition/donohue-syndrome,yet,article,200,OK
+1315,https://ncbi.nlm.nih.gov/books/NBK1432,yet,article,200,OK
+1316,https://medlineplus.gov/genetics/condition/steatocystoma-multiplex,yet,article,200,OK
+1317,https://medlineplus.gov/genetics/condition/congenital-adrenal-hyperplasia-due-to-11-beta-hydroxylase-deficiency,yet,article,200,OK
+1318,https://medlineplus.gov/genetics/condition/congenital-generalized-lipodystrophy,yet,article,200,OK
+1319,https://medlineplus.gov/genetics/condition/wiedemann-rautenstrauch-syndro,yet,Non-article,404,Not Found
+1320,https://medlineplus.gov/genetics/condition/alg12-congenital-disorder-of-glycosylation,yet,article,200,OK
+1321,https://medlineplus.gov/genetics/condition/spinal-muscular-atrophy-with-progr,yet,Non-article,404,Not Found
+1322,https://medlineplus.gov/genetics/condition/pseudohypoaldosteronism-type-2,yet,article,200,OK
+1323,https://medlineplus.gov/genetics/condition/congenital-stromal-corneal-dystrophy,yet,article,200,OK
+1324,https://medlineplus.gov/genetics/condition/congenital-nephrotic-syndrome,yet,article,200,OK
+1325,https://ncbi.nlm.nih.gov/books/NBK568745,yet,article,200,OK
+1326,https://medlineplus.gov/genetics/condition/autosomal-dominant-hyper-ige-syn,yet,Non-article,404,Not Found
+1327,https://medlineplus.gov/genetics/condition/autosomal-recessive-spastic-ataxi,yet,Non-article,404,Not Found
+1328,https://medlineplus.gov/genetics/condition/corticosteroid-binding-globulin-deficiency,yet,article,200,OK
+1329,https://pmc.ncbi.nlm.nih.gov/articles/PMC6876298,yet,Non-article,403,Forbidden
+1330,https://medlineplus.gov/genetics/condition/ghosal-hematodiaphyseal-dysplasia,yet,article,200,OK
+1331,https://medlineplus.gov/genetics/condition/autosomal-dominant-leukodystrop,yet,Non-article,404,Not Found
+1332,https://medlineplus.gov/genetics/condition/familial-porencephaly,yet,article,200,OK
+1333,https://medlineplus.gov/genetics/condition/slc4a1-associated-distal-renal-tubu,yet,Non-article,404,Not Found
+1334,https://medlineplus.gov/genetics/condition/fundus-albipunctatus,yet,article,200,OK
+1335,https://ncbi.nlm.nih.gov/books/NBK99167,yet,article,200,OK
+1336,https://medlineplus.gov/genetics/condition/retinal-arterial-macroaneurysm-wit,yet,Non-article,404,Not Found
+1337,https://pmc.ncbi.nlm.nih.gov/articles/PMC6698309,yet,Non-article,403,Forbidden
+1338,https://medlineplus.gov/genetics/condition/autoimmune-polyendocrinopathy-c,yet,Non-article,404,Not Found
+1339,https://medlineplus.gov/genetics/condition/manitoba-oculotrichoanal-syndrom,yet,Non-article,404,Not Found
+1340,https://medlineplus.gov/genetics/condition/5q313-microdeletion-syndrome,yet,article,200,OK
+1341,https://pmc.ncbi.nlm.nih.gov/articles/PMC8392113,yet,Non-article,403,Forbidden
+1342,https://medlineplus.gov/genetics/condition/x-linked-congenital-stationary-night,yet,Non-article,404,Not Found
+1343,https://medlineplus.gov/genetics/condition/gaba-transaminase-deficiency,yet,article,200,OK
+1344,https://medlineplus.gov/genetics/condition/autosomal-recessive-congenital-stationary-night-blindness,yet,article,200,OK
+1345,https://medlineplus.gov/genetics/condition/glycogen-storage-disease-type-0,yet,article,200,OK
+1346,https://medlineplus.gov/genetics/condition/hirschsprung-disease,yet,article,200,OK
+1347,https://medlineplus.gov/genetics/condition/genetic-epilepsy-with-febrile-seizures-plus,yet,article,200,OK
+1348,https://medlineplus.gov/genetics/condition/oculopharyngeal-muscular-dystrophy,yet,article,200,OK
+1349,https://medlineplus.gov/genetics/condition/prader-willi-syndrome,yet,article,200,OK
+1350,https://medlineplus.gov/genetics/condition/osteoporosis-pseudoglioma-syndro,yet,Non-article,404,Not Found
+1351,https://medlineplus.gov/genetics/condition/factor-xiii-deficiency,yet,article,200,OK
+1352,https://medlineplus.gov/genetics/condition/familial-male-limited-precocious-puberty,yet,article,200,OK
+1353,https://medlineplus.gov/genetics/condition/baraitser-winter-syndrome,yet,article,200,OK
+1354,https://medlineplus.gov/genetics/condition/loeys-dietz-syndrome,yet,article,200,OK
+1355,https://medlineplus.gov/genetics/condition/clcn2-related-leukoencephalopathy,yet,article,200,OK
+1356,https://medlineplus.gov/genetics/condition/alkaptonuria,yet,article,200,OK
+1357,https://medlineplus.gov/genetics/condition/nicolaides-baraitser-syndrome,yet,article,200,OK
+1358,https://medlineplus.gov/genetics/condition/pdgfrb-associated-chronic-eosinop,yet,Non-article,404,Not Found
+1359,https://medlineplus.gov/genetics/condition/mitochondrial-complex-v-deficienc,yet,Non-article,404,Not Found
+1360,https://medlineplus.gov/genetics/condition/congenital-hyperinsulinism,yet,article,200,OK
+1361,https://medlineplus.gov/genetics/condition/type-2-diabetes,yet,article,200,OK
+1362,https://medlineplus.gov/genetics/condition/craniofacial-deafness-hand-syndro,yet,Non-article,404,Not Found
+1363,https://medlineplus.gov/genetics/condition/hyperferritinemia-cataract-syndrom,yet,Non-article,404,Not Found
+1364,https://medlineplus.gov/genetics/condition/familial-lipoprotein-lipase-deficiency,yet,article,200,OK
+1365,https://medlineplus.gov/genetics/condition/coats-plus-syndrome,yet,article,200,OK
+1366,https://medlineplus.gov/genetics/condition/congenital-anomalies-of-kidney-an,yet,Non-article,404,Not Found
+1367,https://medlineplus.gov/genetics/condition/miller-syndrome,yet,article,200,OK
+1368,https://medlineplus.gov/genetics/condition/frontotemporal-dementia-with-parki,yet,Non-article,404,Not Found
+1369,https://medlineplus.gov/genetics/condition/primary-hyperoxaluria,yet,article,200,OK
+1370,https://medlineplus.gov/genetics/condition/aceruloplasminemia,yet,article,200,OK
+1371,https://medlineplus.gov/genetics/condition/isolated-growth-hormone-deficienc,yet,Non-article,404,Not Found
+1372,https://ncbi.nlm.nih.gov/books/NBK99494,yet,article,200,OK
+1373,https://medlineplus.gov/genetics/condition/adiposis-dolorosa,yet,article,200,OK
+1374,https://medlineplus.gov/genetics/condition/legius-syndrome,yet,article,200,OK
+1375,https://medlineplus.gov/genetics/condition/monoamine-oxidase-a-deficiency,yet,article,200,OK
+1376,https://medlineplus.gov/genetics/condition/ellis-van-creveld-syndrome,yet,article,200,OK
+1377,https://medlineplus.gov/genetics/condition/x-linked-intellectual-disability-siderius-type,yet,article,200,OK
+1378,https://medlineplus.gov/genetics/condition/bjornstad-syndrome,yet,article,200,OK
+1379,https://medlineplus.gov/genetics/condition/infantile-neuroaxonal-dystrophy,yet,article,200,OK
+1380,https://medlineplus.gov/genetics/condition/complement-component-8-deficiency,yet,article,200,OK
+1381,https://medlineplus.gov/genetics/condition/piebaldism,yet,article,200,OK
+1382,https://ncbi.nlm.nih.gov/books/NBK1383,yet,article,200,OK
+1383,https://medlineplus.gov/genetics/condition/mandibulofacial-dysostosis-with-microcephaly,yet,article,200,OK
+1384,https://medlineplus.gov/genetics/condition/burn-mckeown-syndrome,yet,article,200,OK
+1385,https://medlineplus.gov/genetics/condition/multiple-endocrine-neoplasia,yet,article,200,OK
+1386,https://medlineplus.gov/genetics/condition/thiopurine-s-methyltransferase-deficiency,yet,article,200,OK
+1387,https://medlineplus.gov/genetics/condition/horizontal-gaze-palsy-with-progressive-scoliosis,yet,article,200,OK
+1388,https://medlineplus.gov/genetics/condition/phosphoglycerate-mutase-deficiency,yet,article,200,OK
+1389,https://medlineplus.gov/genetics/condition/ornithine-transcarbamylase-deficie,yet,Non-article,404,Not Found
+1390,https://medlineplus.gov/genetics/condition/megalencephaly-polymicrogyria-po,yet,Non-article,404,Not Found
+1391,https://medlineplus.gov/genetics/condition/melorheostosis,yet,article,200,OK
+1392,https://medlineplus.gov/genetics/condition/warfarin-sensitivity,yet,article,200,OK
+1393,https://medlineplus.gov/genetics/condition/meckel-syndrome,yet,article,200,OK
+1394,https://medlineplus.gov/genetics/condition/primary-macronodular-adrenal-hyperplasia,yet,article,200,OK
+1395,https://medlineplus.gov/genetics/condition/channelopathy-associated-congeni,yet,Non-article,404,Not Found
+1396,https://medlineplus.gov/genetics/condition/neuroblastoma,yet,article,200,OK
+1397,https://medlineplus.gov/genetics/condition/hereditary-neuropathy-with-liability-,yet,Non-article,404,Not Found
+1398,https://medlineplus.gov/genetics/condition/recurrent-hydatidiform-mole,yet,article,200,OK
+1399,https://medlineplus.gov/genetics/condition/mitochondrial-membrane-protein-associated-neurodegeneration,yet,article,200,OK
+1400,https://medlineplus.gov/genetics/condition/schimke-immuno-osseous-dysplasia,yet,article,200,OK
+1401,https://medlineplus.gov/genetics/condition/emanuel-syndrome,yet,article,200,OK
+1402,https://medlineplus.gov/genetics/condition/gout,yet,article,200,OK
+1403,https://medlineplus.gov/genetics/condition/rett-syndrome,yet,article,200,OK
+1404,https://medlineplus.gov/genetics/condition/familial-pityriasis-rubra-pilaris,yet,article,200,OK
+1405,https://medlineplus.gov/genetics/condition/10q26-deletion-syndrome,yet,article,200,OK
+1406,https://ncbi.nlm.nih.gov/books/NBK1449,yet,article,200,OK
+1407,https://medlineplus.gov/genetics/condition/lymphedema-distichiasis-syndrome,yet,article,200,OK
+1408,https://pmc.ncbi.nlm.nih.gov/articles/PMC11005078,yet,Non-article,403,Forbidden
+1409,https://medlineplus.gov/genetics/condition/retroperitoneal-fibrosis,yet,article,200,OK
+1410,https://medlineplus.gov/genetics/condition/pachyonychia-congenita,yet,article,200,OK
+1411,https://medlineplus.gov/genetics/condition/childhood-absence-epilepsy,yet,article,200,OK
+1412,https://medlineplus.gov/genetics/condition/hajdu-cheney-syndrome,yet,article,200,OK
+1413,https://medlineplus.gov/genetics/condition/hyperlysinemia,yet,article,200,OK
+1414,https://pubmed.ncbi.nlm.nih.gov/39952853,yet,Non-article,403,Forbidden
+1415,https://medlineplus.gov/genetics/condition/pulmonary-alveolar-microlithiasis,yet,article,200,OK
+1416,https://pmc.ncbi.nlm.nih.gov/articles/PMC7203651,yet,Non-article,403,Forbidden
+1417,https://ncbi.nlm.nih.gov/books/NBK541032,yet,article,200,OK
+1418,https://medlineplus.gov/genetics/condition/pendred-syndrome,yet,article,200,OK
+1419,https://medlineplus.gov/genetics/condition/congenital-cataracts-facial-dysmorphism-and-neuropathy,yet,article,200,OK
+1420,https://medlineplus.gov/genetics/condition/clouston-syndrome,yet,article,200,OK
+1421,https://ncbi.nlm.nih.gov/books/NBK557691,yet,article,200,OK
+1422,https://medlineplus.gov/genetics/condition/optic-atrophy-type-1,yet,article,200,OK
+1423,https://medlineplus.gov/genetics/condition/kearns-sayre-syndrome,yet,article,200,OK
+1424,https://medlineplus.gov/genetics/condition/muenke-syndrome,yet,article,200,OK
+1425,https://medlineplus.gov/genetics/condition/3q29-microduplication-syndrome,yet,article,200,OK
+1426,https://medlineplus.gov/genetics/condition/1p36-deletion-syndrome,yet,article,200,OK
+1427,https://medlineplus.gov/genetics/condition/spondylothoracic-dysostosis,yet,article,200,OK
+1428,https://medlineplus.gov/genetics/condition/behcet-disease,yet,article,200,OK
+1429,https://medlineplus.gov/genetics/condition/foxp2-related-speech-and-languag,yet,Non-article,404,Not Found
+1430,https://ncbi.nlm.nih.gov/books/NBK378974,yet,article,200,OK
+1431,https://pmc.ncbi.nlm.nih.gov/articles/PMC9465909,yet,Non-article,403,Forbidden
+1432,https://medlineplus.gov/genetics/condition/age-related-hearing-loss,yet,article,200,OK
+1433,https://medlineplus.gov/genetics/condition/potocki-lupski-syndrome,yet,article,200,OK
+1434,https://medlineplus.gov/genetics/condition/craniofacial-microsomia,yet,article,200,OK
+1435,https://medlineplus.gov/genetics/condition/isolated-growth-hormone-deficiency,yet,article,200,OK
+1436,https://medlineplus.gov/genetics/condition/hereditary-hemorrhagic-telangiecta,yet,Non-article,404,Not Found
+1437,https://medlineplus.gov/genetics/condition/romano-ward-syndrome,yet,article,200,OK
+1438,https://medlineplus.gov/genetics/condition/familial-adenomatous-polyposis,yet,article,200,OK
+1439,https://medlineplus.gov/genetics/condition/aicardi-goutieres-syndrome,yet,article,200,OK
+1440,https://medlineplus.gov/genetics/condition/autism-spectrum-disorder,yet,article,200,OK
+1441,https://medlineplus.gov/genetics/condition/spinal-muscular-atrophy-with-lower-extremity-predominance,yet,article,200,OK
+1442,https://ncbi.nlm.nih.gov/books/NBK538197,yet,article,200,OK
+1443,https://medlineplus.gov/genetics/condition/recombinant-8-syndrome,yet,article,200,OK
+1444,https://medlineplus.gov/genetics/condition/pyridoxal-phosphate-responsive-seizures,yet,article,200,OK
+1445,https://medlineplus.gov/genetics/condition/lynch-syndrome,yet,article,200,OK
+1446,https://medlineplus.gov/genetics/condition/bowen-conradi-syndrome,yet,article,200,OK
+1447,https://medlineplus.gov/downsyndrome.html,yet,article,200,OK
+1448,https://medlineplus.gov/genetics/condition/familial-isolated-hyperparathyroidism,yet,article,200,OK
+1449,https://medlineplus.gov/genetics/condition/actin-accumulation-myopathy,yet,article,200,OK
+1450,https://medlineplus.gov/genetics/condition/pgm3-congenital-disorder-of-glycosylation,yet,article,200,OK
+1451,https://medlineplus.gov/genetics/condition/deafness-dystonia-optic-neuronop,yet,Non-article,404,Not Found
+1452,https://medlineplus.gov/genetics/condition/kindler-epidermolysis-bullosa,yet,article,200,OK
+1453,https://medlineplus.gov/genetics/condition/klinefelter-syndrome?utm_source=chatgpt.com,yet,article,200,OK
+1454,https://medlineplus.gov/genetics/condition/mitochondrial-complex-v-deficiency,yet,article,200,OK
+1455,https://ncbi.nlm.nih.gov/books/NBK560862,yet,article,200,OK
+1456,https://medlineplus.gov/genetics/condition/cog5-congenital-disorder-of-glycosylation,yet,article,200,OK
+1457,https://medlineplus.gov/genetics/condition/marinesco-sjogren-syndrome,yet,article,200,OK
+1458,https://medlineplus.gov/genetics/condition/hereditary-antithrombin-deficiency,yet,article,200,OK
+1459,https://medlineplus.gov/genetics/condition/congenital-plasminogen-deficiency,yet,article,200,OK
+1460,https://medlineplus.gov/genetics/condition/wiedemann-rautenstrauch-syndrome,yet,article,200,OK
+1461,https://medlineplus.gov/genetics/condition/gorlin-syndrome/https://medlineplu,yet,Non-article,404,Not Found
+1462,https://medlineplus.gov/genetics/condition/pol-iii-related-leukodystrophy,yet,article,200,OK
+1463,https://medlineplus.gov/genetics/condition/familial-paroxysmal-kinesigenic-dyskinesia,yet,article,200,OK
+1464,https://medlineplus.gov/genetics/condition/antiphospholipid-syndrome,yet,article,200,OK
+1465,https://medlineplus.gov/genetics/condition/aniridia,yet,article,200,OK
+1466,https://medlineplus.gov/genetics/condition/lafora-progressive-myoclonus-epile,yet,Non-article,404,Not Found
+1467,https://medlineplus.gov/genetics/condition/beta-mannosidosis,yet,article,200,OK
+1468,https://medlineplus.gov/genetics/condition/congenital-hepatic-fibrosis,yet,article,200,OK
+1469,https://medlineplus.gov/genetics/condition/myoclonus-dystonia,yet,article,200,OK
+1470,https://medlineplus.gov/genetics/condition/senior-loken-syndrome,yet,article,200,OK
+1471,https://medlineplus.gov/genetics/condition/hailey-hailey-disease,yet,article,200,OK
+1472,https://pmc.ncbi.nlm.nih.gov/articles/PMC12385717,yet,Non-article,403,Forbidden
+1473,https://medlineplus.gov/genetics/condition/anhidrotic-ectodermal-dysplasia-with-immune-deficiency,yet,article,200,OK
+1474,https://medlineplus.gov/genetics/condition/adnp-syndrome,yet,article,200,OK
+1475,https://medlineplus.gov/genetics/condition/15q24-microdeletion,yet,article,200,OK
+1476,https://medlineplus.gov/genetics/condition/wagr-syndrome,yet,article,200,OK
+1477,https://medlineplus.gov/genetics/condition/progressive-osseous-heteroplasia,yet,article,200,OK
+1478,https://pmc.ncbi.nlm.nih.gov/articles/PMC6389303,yet,Non-article,403,Forbidden
+1479,https://medlineplus.gov/genetics/condition/mn1-c-terminal-truncation-syndrome,yet,article,200,OK
+1480,https://medlineplus.gov/genetics/condition/chediak-higashi-syndrome,yet,article,200,OK
+1481,https://medlineplus.gov/genetics/condition/congenital-bile-acid-synthesis-defe,yet,Non-article,404,Not Found
+1482,https://medlineplus.gov/genetics/condition/androgen-insensitivity-syndrome,yet,article,200,OK
+1483,https://pmc.ncbi.nlm.nih.gov/articles/PMC4753905,yet,Non-article,403,Forbidden
+1484,https://medlineplus.gov/genetics/condition/tay-sachs-disease,yet,article,200,OK
+1485,https://medlineplus.gov/genetics/condition/cantu-syndrome,yet,article,200,OK
+1486,https://medlineplus.gov/genetics/condition/congenital-dyserythropoietic-anemi,yet,Non-article,404,Not Found
+1487,https://medlineplus.gov/genetics/condition/adenosine-monophosphate-deaminase-deficiency,yet,article,200,OK
+1488,https://medlineplus.gov/genetics/condition/autosomal-dominant-vitreoretinochoroidopathy,yet,article,200,OK
+1489,https://medlineplus.gov/genetics/condition/aromatic-l-amino-acid-decarboxyla,yet,Non-article,404,Not Found
+1490,https://medlineplus.gov/genetics/condition/col4a1-related-brain-small-vessel-disease,yet,article,200,OK
+1491,https://medlineplus.gov/genetics/condition/ethylmalonic-encephalopathy,yet,article,200,OK
+1492,https://nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases,yet,article,200,OK
+1493,https://medlineplus.gov/genetics/condition/down-syndrome,yet,article,200,OK
+1494,https://medlineplus.gov/genetics/condition/autosomal-dominant-cerebellar-ata,yet,Non-article,404,Not Found
+1495,https://medlineplus.gov/genetics/condition/malonyl-coa-decarboxylase-deficiency,yet,article,200,OK
+1496,https://medlineplus.gov/genetics/condition/congenital-bilateral-absence-of-the-vas-deferens,yet,article,200,OK
+1497,https://medlineplus.gov/genetics/condition/familial-hypercholesterolemia,yet,article,200,OK
+1498,https://medlineplus.gov/genetics/condition/congenital-dyserythropoietic-anemia,yet,article,200,OK
+1499,https://medlineplus.gov/genetics/condition/jak3-deficient-severe-combined-immunodeficiency,yet,article,200,OK
+1500,https://medlineplus.gov/genetics/condition/mucopolysaccharidosis-type-i,yet,article,200,OK
+1501,https://medlineplus.gov/genetics/condition/tk2-related-mitochondrial-dna-depletion-syndrome-myopathic-form,yet,article,200,OK
+1502,https://medlineplus.gov/genetics/condition/kidney-stones,yet,article,200,OK
+1503,https://medlineplus.gov/genetics/condition/migraine,yet,article,200,OK
+1504,https://medlineplus.gov/genetics/condition/schwartz-jampel-syndrome,yet,article,200,OK
+1505,https://medlineplus.gov/genetics/condition/palmoplantar-keratoderma-with-de,yet,Non-article,404,Not Found
+1506,https://medlineplus.gov/genetics/condition/dopa-responsive-dystonia,yet,article,200,OK
+1507,https://medlineplus.gov/genetics/condition/desmoid-tumor,yet,article,200,OK
+1508,https://medlineplus.gov/genetics/condition/snijders-blok-campeau-syndrome,yet,article,200,OK
+1509,https://medlineplus.gov/genetics/condition/ankyrin-b-syndrome,yet,article,200,OK
+1510,https://medlineplus.gov/genetics/condition/mainzer-saldino-syndrome,yet,article,200,OK
+1511,https://medlineplus.gov/genetics/condition/trichorhinophalangeal-syndrome-ty,yet,Non-article,404,Not Found
+1512,https://medlineplus.gov/genetics/condition/lennox-gastaut-syndrome,yet,article,200,OK
+1513,https://medlineplus.gov/download/genetics/condition/yuan-harel-lupski-syndro,yet,Non-article,404,Not Found
+1514,https://medlineplus.gov/genetics/condition/hypochondroplasia,yet,article,200,OK
+1515,https://medlineplus.gov/genetics/condition/alpers-huttenlocher-syndrome,yet,article,200,OK
+1516,https://medlineplus.gov/genetics/condition/multiminicore-disease,yet,article,200,OK
+1517,https://medlineplus.gov/genetics/condition/familial-partial-lipodystrophy,yet,article,200,OK
+1518,https://medlineplus.gov/genetics/condition/maturity-onset-diabetes-of-the-young,yet,article,200,OK
+1519,https://ncbi.nlm.nih.gov/books/NBK538347,yet,article,200,OK
+1520,https://medlineplus.gov/genetics/condition/keratitis-ichthyosis-deafness-syndr,yet,Non-article,404,Not Found
+1521,https://medlineplus.gov/genetics/condition/atypical-hemolytic-uremic-syndrom,yet,Non-article,404,Not Found
+1522,https://medlineplus.gov/genetics/condition/tk2-related-mitochondrial-dna-depl,yet,Non-article,404,Not Found
+1523,https://medlineplus.gov/genetics/condition/congenital-bilateral-absence-of-the,yet,Non-article,404,Not Found
+1524,https://medlineplus.gov/genetics/condition/laron-syndrome,yet,article,200,OK
+1525,https://medlineplus.gov/genetics/condition/epilepsy-of-infancy-with-migrating-focal-seizures,yet,article,200,OK
+1526,https://medlineplus.gov/genetics/condition/lung-cancer,yet,article,200,OK
+1527,https://pmc.ncbi.nlm.nih.gov/articles/PMC1768363,yet,Non-article,403,Forbidden
+1528,https://medlineplus.gov/genetics/condition/cln10-disease,yet,article,200,OK
+1529,https://medlineplus.gov/genetics/condition/greenberg-dysplasia,yet,article,200,OK
+1530,https://pmc.ncbi.nlm.nih.gov/articles/PMC6277305,yet,Non-article,403,Forbidden
+1531,https://medlineplus.gov/download/genetics/condition/deafness-and-myopia-sy,yet,Non-article,404,Not Found
+1532,https://medlineplus.gov/genetics/condition/lateral-meningocele-syndrome,yet,article,200,OK
+1533,https://medlineplus.gov/genetics/condition/ohdo-syndrome-say-barber-biesec,yet,Non-article,404,Not Found
+1534,https://medlineplus.gov/genetics/condition/winchester-syndrome,yet,article,200,OK
+1535,https://medlineplus.gov/genetics/condition/mitochondrial-encephalomyopathy-lactic-acidosis-and-stroke-like-episodes,yet,article,200,OK
+1536,https://medlineplus.gov/genetics/condition/mda5-deficiency,yet,article,200,OK
+1537,https://medlineplus.gov/genetics/condition/6q24-related-transient-neonatal-diabetes-mellitus,yet,article,200,OK
+1538,https://medlineplus.gov/genetics/condition/epidermolysis-bullosa-simplex,yet,article,200,OK
+1539,https://medlineplus.gov/genetics/condition/tangier-disease,yet,article,200,OK
+1540,https://medlineplus.gov/genetics/condition/hyperphosphatemic-familial-tumoral-calcinosis,yet,article,200,OK
+1541,https://medlineplus.gov/genetics/condition/ankylosing-spondylitis,yet,article,200,OK
+1542,https://medlineplus.gov/genetics/condition/gyrate-atrophy-of-the-choroid-and-,yet,Non-article,404,Not Found
+1543,https://medlineplus.gov/genetics/condition/abetalipoproteinemia,yet,article,200,OK
+1544,https://medlineplus.gov/genetics/condition/multiple-epiphyseal-dysplasia,yet,article,200,OK
+1545,https://medlineplus.gov/genetics/condition/alternating-hemiplegia-of-childhoo,yet,Non-article,404,Not Found
+1546,https://medlineplus.gov/genetics/condition/21-hydroxylase-deficiency,yet,article,200,OK
+1547,https://medlineplus.gov/genetics/condition/mucolipidosis-type-iv,yet,article,200,OK
+1548,https://medlineplus.gov/genetics/condition/familial-paroxysmal-nonkinesigenic,yet,Non-article,404,Not Found
+1549,https://medlineplus.gov/genetics/condition/autosomal-dominant-sleep-related-hypermotor-epilepsy,yet,article,200,OK
+1550,https://medlineplus.gov/genetics/condition/ohdo-syndrome-maat-kievit-brunner-type,yet,article,200,OK
+1551,https://medlineplus.gov/genetics/condition/leber-hereditary-optic-neuropathy,yet,article,200,OK
+1552,https://medlineplus.gov/genetics/condition/bare-lymphocyte-syndrome-type-i,yet,article,200,OK
+1553,https://medlineplus.gov/genetics/condition/cln7-disease,yet,article,200,OK
+1554,https://medlineplus.gov/genetics/condition/child-syndrome,yet,article,200,OK
+1555,https://medlineplus.gov/genetics/condition/hereditary-sensory-and-autonomic-neuropathy-type-ii,yet,article,200,OK
+1556,https://medlineplus.gov/genetics/condition/hartnup-disease,yet,article,200,OK
+1557,https://medlineplus.gov/genetics/condition/schwannomatosis,yet,article,200,OK
+1558,https://medlineplus.gov/genetics/condition/jervell-and-lange-nielsen-syndrome,yet,article,200,OK
+1559,https://medlineplus.gov/genetics/condition/hereditary-sensory-and-autonomic-,yet,Non-article,404,Not Found
+1560,https://medlineplus.gov/genetics/condition/familial-thoracic-aortic-aneurysm-and-dissection,yet,article,200,OK
+1561,https://pmc.ncbi.nlm.nih.gov/articles/PMC3525289,yet,Non-article,403,Forbidden
+1562,https://ncbi.nlm.nih.gov/books/NBK1437,yet,article,200,OK
+1563,https://medlineplus.gov/genetics/condition/mitochondrial-membrane-protein-a,yet,Non-article,404,Not Found
+1564,https://pmc.ncbi.nlm.nih.gov/articles/PMC505202,yet,Non-article,403,Forbidden
+1565,https://medlineplus.gov/genetics/condition/danon-disease,yet,article,200,OK
+1566,https://medlineplus.gov/genetics/condition/klinefelter-syndrome,yet,article,200,OK
+1567,https://medlineplus.gov/genetics/condition/glutathione-synthetase-deficiency,yet,article,200,OK
+1568,https://medlineplus.gov/genetics/condition/mucopolysaccharidosis-type-iii,yet,article,200,OK
+1569,https://pmc.ncbi.nlm.nih.gov/articles/PMC1377094,yet,Non-article,403,Forbidden
+1570,https://medlineplus.gov/genetics/condition/sucla2-related-mitochondrial-dna-d,yet,Non-article,404,Not Found
+1571,https://medlineplus.gov/genetics/condition/familial-hemiplegic-migraine,yet,article,200,OK
+1572,https://medlineplus.gov/genetics/condition/rheumatoid-arthritis,yet,article,200,OK
+1573,https://pmc.ncbi.nlm.nih.gov/articles/PMC1538574,yet,Non-article,403,Forbidden
+1574,https://medlineplus.gov/genetics/condition/autosomal-recessive-axonal-neuro,yet,Non-article,404,Not Found
+1575,https://medlineplus.gov/genetics/condition/channelopathy-associated-congenital-insensitivity-to-pain,yet,article,200,OK
+1576,https://medlineplus.gov/genetics/condition/monilethrix,yet,article,200,OK
+1577,https://medlineplus.gov/genetics/condition/arrhythmogenic-right-ventricular-cardiomyopathy,yet,article,200,OK
+1578,https://ncbi.nlm.nih.gov/books/NBK557699,yet,article,200,OK
+1579,https://medlineplus.gov/genetics/condition/bosma-arhinia-microphthalmia-syn,yet,Non-article,404,Not Found
+1580,https://medlineplus.gov/genetics/condition/22q112-duplication,yet,article,200,OK
+1581,http://ncbi.nlm.nih.gov/medgen/113099,yet,article,200,OK
+1582,https://medlineplus.gov/genetics/condition/srd5a3-congenital-disorder-of-glyc,yet,Non-article,404,Not Found
+1583,https://medlineplus.gov/genetics/condition/hereditary-paraganglioma-pheochromocytoma,yet,article,200,OK
+1584,https://medlineplus.gov/genetics/condition/cytochrome-c-oxidase-deficiency,yet,article,200,OK
+1585,https://medlineplus.gov/genetics/condition/hypomagnesemia-with-secondary-,yet,Non-article,404,Not Found
+1586,https://medlineplus.gov/genetics/condition/spinal-and-bulbar-muscular-atroph,yet,Non-article,404,Not Found
+1587,https://medlineplus.gov/genetics/condition/tyrosine-hydroxylase-deficiency,yet,article,200,OK
+1588,https://medlineplus.gov/genetics/condition/geleophysic-dysplasia,yet,article,200,OK
+1589,https://medlineplus.gov/genetics/condition/bartter-syndrome,yet,article,200,OK
+1590,https://medlineplus.gov/genetics/condition/multicentric-osteolysis-nodulosis-and-arthropathy,yet,article,200,OK
+1591,https://medlineplus.gov/genetics/condition/intestinal-pseudo-obstruction,yet,article,200,OK
+1592,https://medlineplus.gov/genetics/condition/grn-related-frontotemporal-lobar-d,yet,Non-article,404,Not Found
+1593,https://medlineplus.gov/genetics/condition/fibrodysplasia-ossificans-progressiva,yet,article,200,OK
+1594,https://medlineplus.gov/genetics/condition/malignant-hyperthermia,yet,article,200,OK
+1595,https://medlineplus.gov/genetics/condition/fibrochondrogenesis,yet,article,200,OK
+1596,https://medlineplus.gov/genetics/condition/neurofibromatosis-type-2,yet,article,200,OK
+1597,https://medlineplus.gov/genetics/condition/saul-wilson-syndrome,yet,article,200,OK
+1598,https://medlineplus.gov/genetics/condition/autosomal-dominant-optic-atrophy-,yet,Non-article,404,Not Found
+1599,https://medlineplus.gov/genetics/condition/mucolipidosis-iii-gamma,yet,article,200,OK
+1600,https://ncbi.nlm.nih.gov/books/NBK525998,yet,article,200,OK
+1601,https://medlineplus.gov/genetics/condition/mecp2-related-severe-neonatal-en,yet,Non-article,404,Not Found
+1602,https://medlineplus.gov/genetics/condition/hereditary-myopathy-with-early-respiratory-failure,yet,article,200,OK
+1603,https://medlineplus.gov/genetics/condition/perrault-syndrome,yet,article,200,OK
+1604,https://medlineplus.gov/genetics/condition/autosomal-dominant-hyper-ige-syndrome,yet,article,200,OK
+1605,https://medlineplus.gov/genetics/condition/hypomagnesemia-with-secondary-hypocalcemia,yet,article,200,OK
+1606,https://medlineplus.gov/genetics/condition/meige-disease,yet,article,200,OK
+1607,https://pmc.ncbi.nlm.nih.gov/articles/PMC8788290,yet,Non-article,403,Forbidden
+1608,https://medlineplus.gov/genetics/condition/dolk-congenital-disorder-of-glycosy,yet,Non-article,404,Not Found
+1609,https://medlineplus.gov/genetics/condition/weissenbacher-zweymuller-syndrome,yet,article,200,OK
+1610,https://medlineplus.gov/genetics/condition/tubb4a-related-leukodystrophy,yet,article,200,OK
+1611,https://medlineplus.gov/genetics/condition/bosma-arhinia-microphthalmia-syndrome,yet,article,200,OK
+1612,https://medlineplus.gov/genetics/condition/mecp2-related-severe-neonatal-encephalopathy,yet,article,200,OK
+1613,https://medlineplus.gov/genetics/condition/yao-syndrome,yet,article,200,OK
+1614,https://medlineplus.gov/genetics/condition/globozoospermia,yet,article,200,OK
+1615,https://medlineplus.gov/genetics/condition/hereditary-sensory-and-autonomic-neuropathy-type-ie,yet,article,200,OK
+1616,https://medlineplus.gov/genetics/condition/rnase-t2-deficient-leukoencephalopathy,yet,article,200,OK
+1617,https://medlineplus.gov/genetics/condition/bannayan-riley-ruvalcaba-syndrome,yet,article,200,OK
+1618,https://medlineplus.gov/genetics/condition/giant-congenital-melanocytic-nevu,yet,Non-article,404,Not Found
+1619,https://medlineplus.gov/genetics/condition/isolated-lissencephaly-sequence,yet,article,200,OK
+1620,https://medlineplus.gov/genetics/condition/nonbullous-congenital-ichthyosifor,yet,Non-article,404,Not Found
+1621,https://medlineplus.gov/genetics/condition/familial-cold-autoinflammatory-syn,yet,Non-article,404,Not Found
+1622,https://medlineplus.gov/genetics/condition/gorlin-syndrome/https://medlineplus.gov/genetics/condition/cln3-disease,yet,Non-article,404,Not Found
+1623,https://medlineplus.gov/genetics/condition/histiocytosis-lymphadenopathy-plus-syndrome,yet,article,200,OK
+1624,https://medlineplus.gov/genetics/condition/abdominal-wall-defect,yet,article,200,OK
+1625,https://medlineplus.gov/genetics/condition/nijmegen-breakage-syndrome,yet,article,200,OK
+1626,https://medlineplus.gov/genetics/condition/distal-myopathy-2,yet,article,200,OK
+1627,https://medlineplus.gov/genetics/condition/weaver-syndrome,yet,article,200,OK
+1628,https://medlineplus.gov/genetics/condition/schinzel-giedion-syndrome,yet,article,200,OK
+1629,https://cdc.gov/birth-defects/about/down-syndrome.html,yet,article,200,OK
+1630,https://medlineplus.gov/genetics/condition/fbxl4-related-encephalomyopathic-mitochondrial-dna-depletion-syndrome,yet,article,200,OK
+1631,https://medlineplus.gov/genetics/condition/beare-stevenson-cutis-gyrata-syndrome,yet,article,200,OK
+1632,https://medlineplus.gov/genetics/condition/spinal-and-bulbar-muscular-atrophy,yet,article,200,OK
+1633,https://medlineplus.gov/genetics/condition/primary-macronodular-adrenal-hyp,yet,Non-article,404,Not Found
+1634,https://medlineplus.gov/genetics/condition/congenital-leptin-deficiency,yet,article,200,OK
+1635,https://medlineplus.gov/genetics/condition/juvenile-polyposis-syndrome,yet,article,200,OK
+1636,https://medlineplus.gov/genetics/condition/fibromyalgia,yet,article,200,OK
+1637,https://medlineplus.gov/genetics/condition/grin2b-related-neurodevelopmental-disorder,yet,article,200,OK
+1638,https://medlineplus.gov/genetics/condition/adult-onset-leukoencephalopathy-with-axonal-spheroids-and-pigmented-glia,yet,article,200,OK
+1639,https://medlineplus.gov/genetics/condition/arts-syndrome,yet,article,200,OK
+1640,https://medlineplus.gov/genetics/condition/pseudohypoaldosteronism-type-1,yet,article,200,OK
+1641,https://medlineplus.gov/genetics/condition/chylomicron-retention-disease,yet,article,200,OK
+1642,https://medlineplus.gov/genetics/condition/oculopharyngeal-muscular-dystrop,yet,Non-article,404,Not Found
+1643,https://medlineplus.gov/genetics/condition/autosomal-dominant-epilepsy-with-,yet,Non-article,404,Not Found
+1644,https://medlineplus.gov/genetics/condition/obsessive-compulsive-disorder,yet,article,200,OK
+1645,https://medlineplus.gov/genetics/condition/46xx-testicular-difference-of-sex-d,yet,Non-article,404,Not Found
+1646,https://medlineplus.gov/genetics/condition/x-linked-adrenal-hypoplasia-congenita,yet,article,200,OK
+1647,https://medlineplus.gov/genetics/condition/left-ventricular-noncompaction,yet,article,200,OK
+1648,https://medlineplus.gov/genetics/condition/leprosy,yet,article,200,OK
+1649,https://medlineplus.gov/genetics/condition/rigid-spine-muscular-dystrophy,yet,article,200,OK
+1650,https://pmc.ncbi.nlm.nih.gov/articles/PMC11462544,yet,Non-article,403,Forbidden
+1651,https://medlineplus.gov/genetics/condition/dihydropyrimidine-dehydrogenase-,yet,Non-article,404,Not Found
+1652,https://medlineplus.gov/genetics/condition/dolk-congenital-disorder-of-glycosylation,yet,article,200,OK
+1653,https://medlineplus.gov/genetics/condition/opitz-g-bbb-syndrome,yet,article,200,OK
+1654,https://medlineplus.gov/genetics/condition/granulomatosis-with-polyangiitis,yet,article,200,OK
+1655,https://medlineplus.gov/genetics/condition/leigh-syndrome,yet,article,200,OK
+1656,https://medlineplus.gov/geneticdisorders.html,yet,article,200,OK
+1657,https://medlineplus.gov/genetics/condition/unc80-deficiency,yet,article,200,OK
+1658,https://medlineplus.gov/genetics/condition/isolated-hyperchlorhidrosis/https:,yet,Non-article,404,Not Found
+1659,https://medlineplus.gov/genetics/condition/hypohidrotic-ectodermal-dysplasia,yet,article,200,OK
+1660,https://medlineplus.gov/genetics/condition/fucosidosis,yet,article,200,OK
+1661,https://ncbi.nlm.nih.gov/books/NBK1118,yet,article,200,OK
+1662,https://medlineplus.gov/genetics/condition/grin2b-related-neurodevelopmental,yet,Non-article,404,Not Found
+1663,https://medlineplus.gov/genetics/condition/deafness-dystonia-optic-neuronopathy-syndrome,yet,article,200,OK
+1664,https://genome.gov/about-genomics/fact-sheets/Chromosome-Abnormal,yet,Non-article,404,Not Found
+1665,https://medlineplus.gov/genetics/condition/dandy-walker-malformation,yet,article,200,OK
+1666,https://medlineplus.gov/genetics/condition/gordon-holmes-syndrome,yet,article,200,OK
+1667,https://medlineplus.gov/genetics/condition/alpha-n-acetylgalactosaminidase-deficiency,yet,article,200,OK
+1668,https://medlineplus.gov/genetics/condition/noonan-syndrome-with-multiple-le,yet,Non-article,404,Not Found
+1669,https://medlineplus.gov/genetics/condition/adenylosuccinate-lyase-deficiency,yet,article,200,OK
+1670,https://medlineplus.gov/genetics/condition/rapid-onset-dystonia-parkinsonism,yet,article,200,OK
+1671,https://medlineplus.gov/genetics/condition/psoriatic-arthritis,yet,article,200,OK
+1672,https://pmc.ncbi.nlm.nih.gov/articles/PMC10821800,yet,Non-article,403,Forbidden
+1673,https://medlineplus.gov/genetics/condition/autoimmune-polyendocrinopathy-candidiasis-ectodermal-dystrophy,yet,article,200,OK
+1674,https://medlineplus.gov/genetics/condition/kleefstra-syndrome,yet,article,200,OK
+1675,https://medlineplus.gov/genetics/condition/myotonia-congenita,yet,article,200,OK
+1676,https://medlineplus.gov/genetics/condition/popliteal-pterygium-syndrome,yet,article,200,OK
+1677,https://medlineplus.gov/genetics/condition/medullary-cystic-kidney-disease-ty,yet,Non-article,404,Not Found
+1678,https://medlineplus.gov/genetics/condition/acute-necrotizing-encephalopathy-,yet,Non-article,404,Not Found
+1679,https://medlineplus.gov/genetics/condition/generalized-arterial-calcification-of-,yet,Non-article,404,Not Found
+1680,https://medlineplus.gov/genetics/condition/rrm2b-related-mitochondrial-dna-d,yet,Non-article,404,Not Found
+1681,https://medlineplus.gov/genetics/condition/sotos-syndrome,yet,article,200,OK
+1682,https://ncbi.nlm.nih.gov/books/NBK98196,yet,article,200,OK
+1683,https://medlineplus.gov/genetics/condition/polycystic-lipomembranous-osteod,yet,Non-article,404,Not Found
+1684,https://medlineplus.gov/genetics/condition/epilepsy-aphasia-spectrum,yet,article,200,OK
+1685,https://medlineplus.gov/genetics/condition/achromatopsia,yet,article,200,OK
+1686,https://pmc.ncbi.nlm.nih.gov/articles/PMC1950923,yet,Non-article,403,Forbidden
+1687,https://medlineplus.gov/genetics/condition/generalized-arterial-calcification-of-infancy,yet,article,200,OK
+1688,https://medlineplus.gov/genetics/condition/clpb-deficiency,yet,article,200,OK
+1689,https://medlineplus.gov/genetics/condition/autosomal-recessive-axonal-neuropathy-with-neuromyotonia,yet,article,200,OK
+1690,https://medlineplus.gov/genetics/condition/alpha-n-acetylgalactosaminidase-d,yet,Non-article,404,Not Found
+1691,https://medlineplus.gov/genetics/condition/immune-dysregulation-polyendocrinopathy-enteropathy-x-linked-syndrome,yet,article,200,OK
+1692,https://medlineplus.gov/genetics/condition/pdgfra-associated-chronic-eosinophilic-leukemia,yet,article,200,OK
+1693,https://medlineplus.gov/genetics/condition/hyaline-fibromatosis-syndrome,yet,article,200,OK
+1694,https://ncbi.nlm.nih.gov/books/NBK1188,yet,article,200,OK
+1695,https://medlineplus.gov/genetics/condition/ngly1-congenital-disorder-of-degly,yet,Non-article,404,Not Found
+1696,https://medlineplus.gov/genetics/condition/metachromatic-leukodystrophy,yet,article,200,OK
+1697,https://medlineplus.gov/genetics/condition/frontonasal-dysplasia,yet,article,200,OK
+1698,https://medlineplus.gov/genetics/condition/short-qt-syndrome,yet,article,200,OK
+1699,https://medlineplus.gov/genetics/condition/glycoprotein-vi-deficiency,yet,article,200,OK
+1700,https://medlineplus.gov/genetics/condition/spondylocarpotarsal-synostosis-sy,yet,Non-article,404,Not Found
+1701,https://medlineplus.gov/genetics/condition/limb-girdle-muscular-dystrophy,yet,article,200,OK
+1702,https://medlineplus.gov/genetics/condition/craniofrontonasal-syndrome,yet,article,200,OK
+1703,https://medlineplus.gov/genetics/condition/gray-platelet-syndrome,yet,article,200,OK
+1704,https://medlineplus.gov/genetics/condition/cln8-disease,yet,article,200,OK
+1705,https://medlineplus.gov/genetics/condition/lactose-intolerance,yet,article,200,OK
+1706,https://medlineplus.gov/genetics/condition/multiple-pterygium-syndrome,yet,article,200,OK
+1707,https://ncbi.nlm.nih.gov/books/NBK562242,yet,article,200,OK
+1708,https://medlineplus.gov/genetics/condition/alpha-methylacyl-coa-racemase-deficiency,yet,article,200,OK
+1709,https://medlineplus.gov/genetics/condition/warsaw-breakage-syndrome,yet,article,200,OK
+1710,https://medlineplus.gov/genetics/condition/spastic-paraplegia-type-2,yet,article,200,OK
+1711,https://medlineplus.gov/genetics/condition/primary-localized-cutaneous-amyloidosis,yet,article,200,OK
+1712,https://medlineplus.gov/genetics/condition/dilated-cardiomyopathy-with-ataxia,yet,Non-article,404,Not Found
+1713,https://medlineplus.gov/genetics/condition/16p112-deletion-syndrome,yet,article,200,OK
+1714,https://medlineplus.gov/genetics/condition/tangier-disease,yet,article,200,OK
+1715,https://medlineplus.gov/genetics/condition/kaufman-oculocerebrofacial-syndr,yet,Non-article,404,Not Found
+1716,https://medlineplus.gov/genetics/condition/phosphoglycerate-kinase-deficiency,yet,article,200,OK
+1717,https://medlineplus.gov/genetics/condition/hypomyelination-and-congenital-cataract,yet,article,200,OK
+1718,https://medlineplus.gov/genetics/condition/miller-dieker-syndrome,yet,article,200,OK
+1719,https://medlineplus.gov/genetics/condition/sezary-syndrome,yet,article,200,OK
+1720,https://ncbi.nlm.nih.gov/books/NBK1189,yet,article,200,OK
+1721,https://ncbi.nlm.nih.gov/books/NBK131811,yet,article,200,OK
+1722,https://ncbi.nlm.nih.gov/books/NBK545302,yet,article,200,OK
+1723,https://medlineplus.gov/genetics/condition/aminoacylase-1-deficiency,yet,article,200,OK
+1724,https://medlineplus.gov/genetics/condition/fraser-syndrome,yet,article,200,OK
+1725,https://medlineplus.gov/genetics/condition/pulmonary-arterial-hypertension,yet,article,200,OK
+1726,https://medlineplus.gov/genetics/condition/duane-radial-ray-syndrome,yet,article,200,OK
+1727,https://medlineplus.gov/genetics/condition/klippel-feil-syndrome,yet,article,200,OK
+1728,https://pmc.ncbi.nlm.nih.gov/articles/PMC8872351,yet,Non-article,403,Forbidden
+1729,https://medlineplus.gov/genetics/condition/macrozoospermia,yet,article,200,OK
+1730,https://medlineplus.gov/genetics/condition/adenosine-monophosphate-deami,yet,Non-article,404,Not Found
+1731,https://medlineplus.gov/genetics/condition/epidermolysis-bullosa-with-pyloric-,yet,Non-article,404,Not Found
+1732,https://medlineplus.gov/genetics/condition/congenital-hypothyroidism,yet,article,200,OK
+1733,https://medlineplus.gov/genetics/condition/anhidrotic-ectodermal-dysplasia-wi,yet,Non-article,404,Not Found
+1734,https://medlineplus.gov/genetics/condition/neurofibromatosis-type-1,yet,article,200,OK
+1735,https://medlineplus.gov/genetics/condition/legg-calve-perthes-disease,yet,article,200,OK
+1736,https://pmc.ncbi.nlm.nih.gov/articles/PMC2515294,yet,Non-article,403,Forbidden
+1737,https://medlineplus.gov/genetics/condition/farsightedness,yet,article,200,OK
+1738,https://medlineplus.gov/genetics/condition/ppp2r5d-related-intellectual-disability,yet,article,200,OK
+1739,https://medlineplus.gov/genetics/condition/sporadic-hemiplegic-migraine,yet,article,200,OK
+1740,https://medlineplus.gov/genetics/condition/alg1-congenital-disorder-of-glycosylation,yet,article,200,OK
+1741,https://pubmed.ncbi.nlm.nih.gov/6283419,yet,Non-article,403,Forbidden
+1742,https://medlineplus.gov/genetics/condition/benign-recurrent-intrahepatic-cholestasis,yet,article,200,OK
+1743,https://medlineplus.gov/genetics/condition/troyer-syndrome,yet,article,200,OK
+1744,https://medlineplus.gov/genetics/condition/nonsyndromic-congenital-nail-disor,yet,Non-article,404,Not Found
+1745,https://medlineplus.gov/genetics/condition/peutz-jeghers-syndrome,yet,article,200,OK
+1746,https://medlineplus.gov/genetics/condition/pelizaeus-merzbacher-like-disease-type-1,yet,article,200,OK
+1747,https://medlineplus.gov/genetics/condition/grn-related-frontotemporal-lobar-degeneration,yet,article,200,OK
+1748,https://pmc.ncbi.nlm.nih.gov/articles/PMC8968608,yet,Non-article,403,Forbidden
+1749,https://ncbi.nlm.nih.gov/books/NBK99168,yet,article,200,OK
+1750,https://medlineplus.gov/genetics/condition/auriculo-condylar-syndrome,yet,article,200,OK
+1751,https://medlineplus.gov/genetics/condition/progressive-familial-intrahepatic-cholestasis,yet,article,200,OK
+1752,https://pmc.ncbi.nlm.nih.gov/articles/PMC9082376,yet,Non-article,403,Forbidden
+1753,https://medlineplus.gov/genetics/condition/asparagine-synthetase-deficiency,yet,article,200,OK
+1754,https://medlineplus.gov/genetics/condition/bohring-opitz-syndrome,yet,article,200,OK
+1755,https://medlineplus.gov/genetics/condition/infantile-onset-ascending-hereditary-spastic-paralysis,yet,article,200,OK
+1756,https://medlineplus.gov/genetics/condition/mecp2-duplication-syndrome,yet,article,200,OK
+1757,https://ncbi.nlm.nih.gov/books/NBK1874,yet,article,200,OK
+1758,https://ncbi.nlm.nih.gov/books/NBK1406,yet,article,200,OK
+1759,https://medlineplus.gov/genetics/condition/acute-promyelocytic-leukemia,yet,article,200,OK
+1760,https://pmc.ncbi.nlm.nih.gov/articles/PMC6631815,yet,Non-article,403,Forbidden
+1761,https://medlineplus.gov/genetics/condition/congenital-mirror-movement-disorder,yet,article,200,OK
+1762,https://medlineplus.gov/genetics/condition/age-related-macular-degeneration,yet,article,200,OK
+1763,https://medlineplus.gov/genetics/condition/arginase-deficiency,yet,article,200,OK
+1764,https://medlineplus.gov/genetics/condition/clopidogrel-resistance,yet,article,200,OK
+1765,https://medlineplus.gov/genetics/condition/systemic-mastocytosis,yet,article,200,OK
+1766,https://medlineplus.gov/genetics/condition/roberts-syndrome,yet,article,200,OK
+1767,https://medlineplus.gov/genetics/condition/c3-glomerulopathy,yet,article,200,OK
+1768,https://medlineplus.gov/genetics/condition/andermann-syndrome,yet,article,200,OK
+1769,s.gov/genetics/condition/cln3-disease,yet,Non-article,-1,Unknown Error
+1770,https://medlineplus.gov/genetics/condition/jervell-and-lange-nielsen-syndrom,yet,Non-article,404,Not Found
+1771,https://medlineplus.gov/genetics/condition/cardiofaciocutaneous-syndrome,yet,article,200,OK
+1772,https://medlineplus.gov/genetics/condition/autosomal-recessive-spastic-ataxia-of-charlevoix-saguenay,yet,article,200,OK
+1773,https://medlineplus.gov/genetics/condition/alopecia-areata,yet,article,200,OK
+1774,https://medlineplus.gov/genetics/condition/malonyl-coa-decarboxylase-deficie,yet,Non-article,404,Not Found
+1775,https://pmc.ncbi.nlm.nih.gov/articles/PMC10604877,yet,Non-article,403,Forbidden
+1776,https://medlineplus.gov/genetics/condition/idiopathic-inflammatory-myopathy,yet,article,200,OK
+1777,https://ncbi.nlm.nih.gov/books/NBK1366,yet,article,200,OK
+1778,https://medlineplus.gov/genetics/condition/eosinophil-peroxidase-deficiency,yet,article,200,OK
+1779,https://medlineplus.gov/genetics/condition/acromicric-dysplasia,yet,article,200,OK
+1780,https://medlineplus.gov/genetics/condition/megalencephaly-capillary-malformation-syndrome,yet,article,200,OK
+1781,https://medlineplus.gov/genetics/condition/familial-hypertrophic-cardiomyopathy,yet,article,200,OK
+1782,https://ncbi.nlm.nih.gov/books/NBK556151,yet,article,200,OK
+1783,https://medlineplus.gov/genetics/condition/meier-gorlin-syndrome,yet,article,200,OK
+1784,https://ncbi.nlm.nih.gov/books/NBK55062,yet,article,200,OK
+1785,https://medlineplus.gov/genetics/condition/alpha-methylacyl-coa-racemase-d,yet,Non-article,404,Not Found
+1786,https://medlineplus.gov/genetics/condition/autosomal-dominant-epilepsy-with-auditory-features,yet,article,200,OK
+1787,https://medlineplus.gov/genetics/condition/foxg1-syndrome,yet,article,200,OK
+1788,https://ncbi.nlm.nih.gov/books/NBK536994,yet,article,200,OK
+1789,https://medlineplus.gov/genetics/condition/histiocytosis-lymphadenopathy-plu,yet,Non-article,404,Not Found
+1790,https://medlineplus.gov/genetics/condition/fragile-xe-syndrome,yet,article,200,OK
+1791,https://medlineplus.gov/genetics/condition/dupuytren-contracture,yet,article,200,OK
+1792,https://medlineplus.gov/genetics/condition/bannayan-riley-ruvalcaba-syndrom,yet,Non-article,404,Not Found
+1793,https://medlineplus.gov/genetics/condition/x-linked-sideroblastic-anemia,yet,article,200,OK
+1794,https://medlineplus.gov/genetics/condition/guanidinoacetate-methyltransferase-deficiency,yet,article,200,OK
+1795,https://medlineplus.gov/genetics/condition/donnai-barrow-syndrome,yet,article,200,OK
+1796,https://medlineplus.gov/genetics/condition/pyruvate-kinase-deficiency,yet,article,200,OK
+1797,https://medlineplus.gov/genetics/condition/phosphoribosylpyrophosphate-synt,yet,Non-article,404,Not Found
+1798,https://medlineplus.gov/genetics/condition/bradyopsia,yet,article,200,OK
+1799,https://medlineplus.gov/genetics/condition/fg-syndrome,yet,article,200,OK
+1800,https://medlineplus.gov/genetics/condition/kabuki-syndrome,yet,article,200,OK
+1801,https://medlineplus.gov/genetics/condition/permanent-neonatal-diabetes-melli,yet,Non-article,404,Not Found
