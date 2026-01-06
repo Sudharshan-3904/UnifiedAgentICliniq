@@ -78,7 +78,6 @@ def load_existing_csv(csv_filename: str) -> pd.DataFrame:
 def append_new_records(records: list, csv_filename: str):
     """Append new records while avoiding duplicates and continuing IDs."""
     df_existing = load_existing_csv(csv_filename)
-
     existing_links = set(df_existing["link"]) if not df_existing.empty else set()
 
     new_records = [

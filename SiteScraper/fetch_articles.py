@@ -1,8 +1,6 @@
 import cloudscraper
-import requests
 from bs4 import BeautifulSoup
 import csv
-import json
 import os
 import re
 
@@ -289,11 +287,6 @@ def extract_from_ncbi(url, article_id, updated_rows):
         "url": url,
         "sections": []
     }
-
-    # Extract clean text sections from the specialized root
-    # Note: Structure might be flat or nested. We iterate through likely content tags.
-    # Looking for direct children or general flow?
-    # BS4 extract loop similar to medline
     
     sections = content_root.find_all(["h2", "h3", "p", "ul"])
     current_section = None
@@ -355,7 +348,7 @@ def extract_from_ncbi(url, article_id, updated_rows):
     return True
 
 def save_markdown(article_id, title, url, data):
-    markdown_filename = f"{article_id}_{sanitize_filename(title)}.md"
+    markdown_filename = f"{article_id}_{(url.split('/'))[-1]}.md"
     markdown_filepath = os.path.join(STORAGE_DIR, markdown_filename)
     
     with open(markdown_filepath, 'w', encoding='utf-8') as md_file:
@@ -376,8 +369,20 @@ def save_markdown(article_id, title, url, data):
     print(f"Markdown file saved as: {markdown_filepath}")
 
 
+def save_csv(file_path, rows):
+    fieldnames = ['id', 'link', 'status']
+    with open(file_path, mode='w', newline='', encoding='utf-8') as file:
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(rows)
+    print(f"CSV file updated successfully.")
+
+
 if __name__ == "__main__":
     formatted_data, updated_rows = convert_csv_to_list(CSV_FILE)
+
+    BATCH_SIZE = 10
+    count = 0
 
     for article_id, url in formatted_data:
         if "medlineplus.gov" in url:
@@ -390,12 +395,12 @@ if __name__ == "__main__":
         else:
             print(f"No specific extractor for URL: {url}, attempting default Medline extractor.")
             extract_from_medline(url, article_id, updated_rows)
+        
+        count += 1
+        if count % BATCH_SIZE == 0:
+            save_csv(CSV_FILE, updated_rows)
+            print(f"Batch of {BATCH_SIZE} reached. CSV saved.")
 
-    with open(CSV_FILE, mode='w', newline='', encoding='utf-8') as file:
-        fieldnames = ['id', 'link', 'status']
-        writer = csv.DictWriter(file, fieldnames=fieldnames)
-
-        writer.writeheader()
-        writer.writerows(updated_rows)
-
-    print("CSV file updated successfully.")
+    # Final save to ensure any remaining records are updated
+    save_csv(CSV_FILE, updated_rows)
+    print("Final CSV update completed.")

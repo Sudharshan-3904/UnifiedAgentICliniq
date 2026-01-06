@@ -4,7 +4,7 @@ import csv
 import json
 import os
 import re
-from sheets_sync import update_status, update_sheet_with_csv_data
+# from sheets_sync import update_status, update_sheet_with_csv_data
 
 
 CSV_FILE = r"data\url_status.csv"
@@ -173,7 +173,7 @@ def update_csv_file(csv_file, rows):
 def update_sheets_data(rows):
     """Update Google Sheets with current row data."""
     try:
-        update_sheet_with_csv_data(rows)
+        # update_sheet_with_csv_data(rows)
         print("Google Sheets updated successfully.")
     except Exception as e:
         print(f"Error updating Google Sheets: {e}")
@@ -232,7 +232,7 @@ def process_urls(batch_size=10, update_csv=True):
 
 if __name__ == "__main__":
     # Usage examples:
-    # process_urls(batch_size=10, update_csv=True)   # Update CSV only
+    process_urls(batch_size=10, update_csv=True)   # Update CSV only
     # process_urls(batch_size=10, update_csv=False)  # Update Google Sheets only
     # process_urls(batch_size=10, update_csv=None)   # Update both CSV and Sheets
-    process_urls(batch_size=10, update_csv=None)
+    # process_urls(batch_size=10, update_csv=None)
