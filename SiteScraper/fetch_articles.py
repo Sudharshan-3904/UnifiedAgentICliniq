@@ -1,3 +1,4 @@
+import cloudscraper
 import requests
 from bs4 import BeautifulSoup
 import csv
@@ -10,6 +11,8 @@ os.makedirs(STORAGE_DIR, exist_ok=True)
 
 CSV_FILE = r"data\url_status.csv"
 
+# Initialize cloudscraper
+scraper = cloudscraper.create_scraper()
 
 def convert_csv_to_list(input_file):
     result = []
@@ -23,7 +26,7 @@ def convert_csv_to_list(input_file):
             status_value = row['status']
 
             if status_value.lower() == 'extracted':
-                print(f"Skipping already extracted URL: {link_value}")
+                # print(f"Skipping already extracted URL: {link_value}")
                 continue
             
             result.append([int(id_value), link_value])
@@ -38,14 +41,20 @@ def sanitize_filename(text):
 
 def get_headers():
     return {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-        'Accept-Language': 'en-US,en;q=0.5',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+        'Accept-Language': 'en-US,en;q=0.9',
+        'Upgrade-Insecure-Requests': '1',
+        'Sec-Fetch-Dest': 'document',
+        'Sec-Fetch-Mode': 'navigate',
+        'Sec-Fetch-Site': 'none',
+        'Sec-Fetch-User': '?1',
     }
 
 def extract_from_medline(url, article_id, updated_rows):
     try:
-        response = requests.get(url, headers=get_headers(), timeout=30)
+        # Use scraper instead of requests
+        response = scraper.get(url, headers=get_headers(), timeout=30)
     except Exception as e:
         print(f"Error fetching {url}: {e}")
         return False
@@ -149,9 +158,104 @@ def extract_from_medline(url, article_id, updated_rows):
     
     return True
 
+def extract_from_ncbi_articles(url, article_id, updated_rows):
+    try:
+        # Use scraper instead of requests
+        response = scraper.get(url, headers=get_headers(), timeout=30)
+    except Exception as e:
+        print(f"Error fetching {url}: {e}")
+        return False
+    
+    if response.status_code != 200:
+        print(f"Failed to fetch {url} (Status: {response.status_code})")
+        return False
+
+    soup = BeautifulSoup(response.text, "html.parser")
+
+    # Specific DOM path for /articles
+    # article -> section aria-label="Article content" -> section class="body main-article-body"
+    content_root = None
+    article_tag = soup.find("article")
+    if article_tag:
+        article_content_section = article_tag.find("section", attrs={"aria-label": "Article content"})
+        if article_content_section:
+            content_root = article_content_section.find("section", class_="body main-article-body")
+
+    if not content_root:
+        print(f"Main content container (article -> section[aria-label='Article content'] -> section.body.main-article-body) not found for {url}")
+        return False
+
+    title_tag = soup.find("h1")
+    title = title_tag.get_text(strip=True) if title_tag else "Unknown_Title"
+
+    data = {
+        "id": article_id,
+        "title": title,
+        "url": url,
+        "sections": []
+    }
+
+    sections = content_root.find_all(["h2", "h3", "p", "ul"])
+    current_section = None
+
+    for elem in sections:
+        # Skip reference lists and other non-content machinery
+        if elem.find_parent(class_=["ref-list", "ack", "app-group", "fn-group", "back", "reflist"]):
+            continue
+        
+        if elem.name in ["h2", "h3"]:
+            if current_section:
+                data["sections"].append(current_section)
+
+            section_title = elem.get_text(strip=True)
+            current_section = {
+                "section_title": section_title,
+                "content": []
+            }
+        
+        elif elem.name == "p":
+            paragraph_text = elem.get_text(strip=True)
+            if paragraph_text: 
+                if current_section is None:
+                    current_section = {"section_title": "Introduction", "content": []}
+                
+                current_section["content"].append({
+                    "type": "paragraph",
+                    "text": paragraph_text
+                })
+
+        elif elem.name == "ul":
+            list_items = [li.get_text(strip=True) for li in elem.find_all("li")]
+            if list_items:
+                if current_section is None:
+                    current_section = {"section_title": "Introduction", "content": []}
+                
+                current_section["content"].append({
+                    "type": "list",
+                    "items": list_items
+                })
+    
+    if current_section:
+        if current_section not in data["sections"]:
+            data["sections"].append(current_section)
+
+    if not data["sections"]:
+        print(f"No structured content extracted for {url}")
+        return False
+
+    save_markdown(article_id, title, url, data)
+
+    for row in updated_rows:
+        if row['link'] == url:
+            row['status'] = 'extracted'
+            break
+
+    return True
+
 def extract_from_ncbi(url, article_id, updated_rows):
     try:
-        response = requests.get(url, headers=get_headers(), timeout=30)
+        # Use scraper instead of requests
+        response = scraper.get(url, headers=get_headers(), timeout=30)
     except Exception as e:
         print(f"Error fetching {url}: {e}")
         return False
@@ -279,7 +383,10 @@ if __name__ == "__main__":
         if "medlineplus.gov" in url:
             extract_from_medline(url, article_id, updated_rows)
         elif "ncbi.nlm.nih.gov" in url:
-            extract_from_ncbi(url, article_id, updated_rows)
+            if "/articles" in url:
+                extract_from_ncbi_articles(url, article_id, updated_rows)
+            else:
+                extract_from_ncbi(url, article_id, updated_rows)
         else:
             print(f"No specific extractor for URL: {url}, attempting default Medline extractor.")
             extract_from_medline(url, article_id, updated_rows)
