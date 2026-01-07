@@ -264,8 +264,6 @@ def extract_from_ncbi(url, article_id, updated_rows):
 
     soup = BeautifulSoup(response.text, "html.parser")
 
-    # User requested specifically: div.main-content lit-style
-    # We also keep div.document as fallback or alternative
     content_root = soup.select_one("div.main-content.lit-style")
     
     if not content_root:
@@ -348,7 +346,14 @@ def extract_from_ncbi(url, article_id, updated_rows):
     return True
 
 def save_markdown(article_id, title, url, data):
-    markdown_filename = f"{article_id}_{(url.split('/'))[-1]}.md"
+    # Extract the last part of the URL (filename candidate)
+    raw_filename = url.split('/')[-1]
+    # Remove query parameters if present
+    if '?' in raw_filename:
+        raw_filename = raw_filename.split('?')[0]
+        
+    sanitized_name = sanitize_filename(raw_filename)
+    markdown_filename = f"{article_id}_{sanitized_name}.md"
     markdown_filepath = os.path.join(STORAGE_DIR, markdown_filename)
     
     with open(markdown_filepath, 'w', encoding='utf-8') as md_file:
