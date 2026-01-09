@@ -49,20 +49,7 @@ def get_headers():
         'Sec-Fetch-User': '?1',
     }
 
-def extract_from_medline(url, article_id, updated_rows):
-    try:
-        # Use scraper instead of requests
-        response = scraper.get(url, headers=get_headers(), timeout=30)
-    except Exception as e:
-        print(f"Error fetching {url}: {e}")
-        return False
-    
-    if response.status_code != 200:
-        print(f"Failed to fetch {url} (Status: {response.status_code})")
-        return False
-
-    soup = BeautifulSoup(response.text, "html.parser")
-
+def extract_from_medline(soup, url, article_id):
     title_tag = soup.find("h1")
     title = title_tag.get_text(strip=True) if title_tag else "Unknown_Title"
 
@@ -74,24 +61,18 @@ def extract_from_medline(url, article_id, updated_rows):
     }
 
     # MedlinePlus specific content root
-    # Usually it's in <article> or <div id="mplus-content"> or similar, but keeping original logic as a base
-    # removing generic fallbacks that might be NCBI specific if we want strict separation, 
-    # but for safety I will leave the broader search but prioritize Medline structure if known.
-    # The original code searched article -> main -> jig-ncbi-inpagenav -> #maincontent
-    
     content_root = soup.find("article")
     if not content_root:
         content_root = soup.find("main")
     if not content_root:
         content_root = soup.find(id="maincontent") # Common in MedlinePlus
-    
     if not content_root:
         # Fallback to the original broad search just in case
         content_root = soup.find(class_="jig-ncbi-inpagenav")
 
     if not content_root:
         print(f"Main content container not found for {url}")
-        return False
+        return None
 
     sections = content_root.find_all(["h2", "h3", "p", "ul"])
     current_section = None
@@ -145,31 +126,11 @@ def extract_from_medline(url, article_id, updated_rows):
 
     if not data["sections"]:
         print(f"No structured content extracted for {url}")
-        return False
+        return None
 
-    save_markdown(article_id, title, url, data)
-    
-    for row in updated_rows:
-        if row['link'] == url:
-            row['status'] = 'extracted'
-            break
-    
-    return True
+    return data
 
-def extract_from_ncbi_articles(url, article_id, updated_rows):
-    try:
-        # Use scraper instead of requests
-        response = scraper.get(url, headers=get_headers(), timeout=30)
-    except Exception as e:
-        print(f"Error fetching {url}: {e}")
-        return False
-    
-    if response.status_code != 200:
-        print(f"Failed to fetch {url} (Status: {response.status_code})")
-        return False
-
-    soup = BeautifulSoup(response.text, "html.parser")
-
+def extract_from_ncbi_articles(soup, url, article_id):
     # Specific DOM path for /articles
     # article -> section aria-label="Article content" -> section class="body main-article-body"
     content_root = None
@@ -181,7 +142,7 @@ def extract_from_ncbi_articles(url, article_id, updated_rows):
 
     if not content_root:
         print(f"Main content container (article -> section[aria-label='Article content'] -> section.body.main-article-body) not found for {url}")
-        return False
+        return None
 
     title_tag = soup.find("h1")
     title = title_tag.get_text(strip=True) if title_tag else "Unknown_Title"
@@ -239,39 +200,18 @@ def extract_from_ncbi_articles(url, article_id, updated_rows):
 
     if not data["sections"]:
         print(f"No structured content extracted for {url}")
-        return False
+        return None
 
-    save_markdown(article_id, title, url, data)
+    return data
 
-    for row in updated_rows:
-        if row['link'] == url:
-            row['status'] = 'extracted'
-            break
-
-    return True
-
-def extract_from_ncbi(url, article_id, updated_rows):
-    try:
-        # Use scraper instead of requests
-        response = scraper.get(url, headers=get_headers(), timeout=30)
-    except Exception as e:
-        print(f"Error fetching {url}: {e}")
-        return False
-    
-    if response.status_code != 200:
-        print(f"Failed to fetch {url} (Status: {response.status_code})")
-        return False
-
-    soup = BeautifulSoup(response.text, "html.parser")
-
+def extract_from_ncbi(soup, url, article_id):
     content_root = soup.select_one("div.main-content.lit-style")
-    
     if not content_root:
         content_root = soup.find("div", class_="document")
     
     if not content_root:
         print(f"Main content container (div.main-content.lit-style or div.document) not found for {url}")
-        return False
+        return None
 
     title_tag = soup.find("h1")
     if not title_tag:
@@ -294,8 +234,6 @@ def extract_from_ncbi(url, article_id, updated_rows):
         if elem.find_parent(class_=["ref-list", "ack", "app-group", "fn-group", "back", "reflist"]):
             continue
         
-        # Skip if element is inside a table wrapper for now if complicated, but p/ul usually ok.
-        
         if elem.name in ["h2", "h3"]:
             if current_section:
                 data["sections"].append(current_section)
@@ -334,16 +272,9 @@ def extract_from_ncbi(url, article_id, updated_rows):
 
     if not data["sections"]:
         print(f"No structured content extracted for {url}")
-        return False
+        return None
 
-    save_markdown(article_id, title, url, data)
-
-    for row in updated_rows:
-        if row['link'] == url:
-            row['status'] = 'extracted'
-            break
-
-    return True
+    return data
 
 def save_markdown(article_id, title, url, data):
     # Extract the last part of the URL (filename candidate)
@@ -355,6 +286,11 @@ def save_markdown(article_id, title, url, data):
     sanitized_name = sanitize_filename(raw_filename)
     markdown_filename = f"{article_id}_{sanitized_name}.md"
     markdown_filepath = os.path.join(STORAGE_DIR, markdown_filename)
+
+    # Avoid repetition: if the file already exists, do not overwrite
+    if os.path.exists(markdown_filepath):
+        print(f"Markdown file already exists, skipping save: {markdown_filepath}")
+        return 'skipped'
     
     with open(markdown_filepath, 'w', encoding='utf-8') as md_file:
         md_file.write(f"# {title}\n\n")
@@ -372,15 +308,40 @@ def save_markdown(article_id, title, url, data):
                         md_file.write(f"- {item}\n")
 
     print(f"Markdown file saved as: {markdown_filepath}")
+    return 'saved' 
 
 
-def save_csv(file_path, rows):
+def write_status_csv(file_path, rows):
+    """Write the canonical status CSV with only id, link, status columns (overwrite)."""
     fieldnames = ['id', 'link', 'status']
     with open(file_path, mode='w', newline='', encoding='utf-8') as file:
         writer = csv.DictWriter(file, fieldnames=fieldnames)
         writer.writeheader()
-        writer.writerows(rows)
-    print(f"CSV file updated successfully.")
+        for r in rows:
+            writer.writerow({'id': r.get('id'), 'link': r.get('link'), 'status': r.get('status', '')})
+    print(f"CSV file updated successfully: {file_path}")
+
+
+def append_updates_file(updates_file, updates_rows):
+    """Append update rows (may contain extra columns) to a separate updates CSV."""
+    if not updates_rows:
+        return
+    fieldnames = ['id', 'link', 'status', 'status_code', 'status_abbreviation', 'note']
+    exists = os.path.exists(updates_file)
+    with open(updates_file, mode='a', newline='', encoding='utf-8') as file:
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
+        if not exists:
+            writer.writeheader()
+        for u in updates_rows:
+            writer.writerow({
+                'id': u.get('id'),
+                'link': u.get('link'),
+                'status': u.get('status', ''),
+                'status_code': u.get('status_code', ''),
+                'status_abbreviation': u.get('status_abbreviation', ''),
+                'note': u.get('note', '')
+            })
+    print(f"Appended {len(updates_rows)} updates to {updates_file}")
 
 
 if __name__ == "__main__":
@@ -389,23 +350,98 @@ if __name__ == "__main__":
     BATCH_SIZE = 10
     count = 0
 
+    UPDATES_FILE = r"data\url_status_updates.csv"
+    pending_updates = []
+
+    # existing markdown files to help detect duplicates
+    existing_files = set(os.listdir(STORAGE_DIR))
+
     for article_id, url in formatted_data:
+        # Fetch and perform centralized error/status checks
+        try:
+            response = scraper.get(url, headers=get_headers(), timeout=30)
+        except Exception as e:
+            print(f"Error fetching {url}: {e}")
+            # mark as failed in updated_rows and queue update
+            for row in updated_rows:
+                if row['link'] == url:
+                    row['status'] = 'failed'
+                    pending_updates.append({'id': row.get('id'), 'link': row.get('link'), 'status': row['status'], 'note': str(e)})
+                    break
+            count += 1
+            if count % BATCH_SIZE == 0:
+                write_status_csv(CSV_FILE, updated_rows)
+                append_updates_file(UPDATES_FILE, pending_updates)
+                pending_updates = []
+                print(f"Batch of {BATCH_SIZE} reached. CSV saved and updates appended.")
+            continue
+
+        if response.status_code != 200:
+            print(f"Failed to fetch {url} (Status: {response.status_code})")
+            for row in updated_rows:
+                if row['link'] == url:
+                    row['status'] = 'failed'
+                    row['status_code'] = response.status_code
+                    row['status_abbreviation'] = getattr(response, 'reason', '')
+                    pending_updates.append({'id': row.get('id'), 'link': row.get('link'), 'status': row['status'], 'status_code': response.status_code, 'status_abbreviation': getattr(response, 'reason', '')})
+                    break
+            count += 1
+            if count % BATCH_SIZE == 0:
+                write_status_csv(CSV_FILE, updated_rows)
+                append_updates_file(UPDATES_FILE, pending_updates)
+                pending_updates = []
+                print(f"Batch of {BATCH_SIZE} reached. CSV saved and updates appended.")
+            continue
+
+        soup = BeautifulSoup(response.text, "html.parser")
+
+        data = None
         if "medlineplus.gov" in url:
-            extract_from_medline(url, article_id, updated_rows)
+            data = extract_from_medline(soup, url, article_id)
         elif "ncbi.nlm.nih.gov" in url:
             if "/articles" in url:
-                extract_from_ncbi_articles(url, article_id, updated_rows)
+                data = extract_from_ncbi_articles(soup, url, article_id)
             else:
-                extract_from_ncbi(url, article_id, updated_rows)
+                data = extract_from_ncbi(soup, url, article_id)
         else:
             print(f"No specific extractor for URL: {url}, attempting default Medline extractor.")
-            extract_from_medline(url, article_id, updated_rows)
-        
+            data = extract_from_medline(soup, url, article_id)
+
+        if data is None:
+            # extraction failed
+            for row in updated_rows:
+                if row['link'] == url:
+                    row['status'] = 'failed'
+                    pending_updates.append({'id': row.get('id'), 'link': row.get('link'), 'status': row['status'], 'note': 'extraction_failed'})
+                    break
+        else:
+            # Try saving; save_markdown returns 'saved' or 'skipped'
+            save_result = save_markdown(article_id, data['title'], url, data)
+            if save_result in ('saved', 'skipped'):
+                # mark as extracted to avoid reprocessing even if we skipped due to duplicate
+                for row in updated_rows:
+                    if row['link'] == url:
+                        row['status'] = 'extracted'
+                        pending_updates.append({'id': row.get('id'), 'link': row.get('link'), 'status': row['status']})
+                        break
+                # update existing files set if new file was created
+                if save_result == 'saved':
+                    existing_files.add(f"{article_id}_{sanitize_filename(url.split('/')[-1].split('?')[0])}.md")
+            else:
+                for row in updated_rows:
+                    if row['link'] == url:
+                        row['status'] = 'failed'
+                        pending_updates.append({'id': row.get('id'), 'link': row.get('link'), 'status': row['status'], 'note': 'save_failed'})
+                        break
+
         count += 1
         if count % BATCH_SIZE == 0:
-            save_csv(CSV_FILE, updated_rows)
-            print(f"Batch of {BATCH_SIZE} reached. CSV saved.")
+            write_status_csv(CSV_FILE, updated_rows)
+            append_updates_file(UPDATES_FILE, pending_updates)
+            pending_updates = []
+            print(f"Batch of {BATCH_SIZE} reached. CSV saved and updates appended.")
 
     # Final save to ensure any remaining records are updated
-    save_csv(CSV_FILE, updated_rows)
+    write_status_csv(CSV_FILE, updated_rows)
+    append_updates_file(UPDATES_FILE, pending_updates)
     print("Final CSV update completed.")
