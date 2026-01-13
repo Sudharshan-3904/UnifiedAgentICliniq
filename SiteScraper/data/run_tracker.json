@@ -1,0 +1,2630 @@
+[
+  {
+    "run_id": "2026-01-13T21:27:09.127540",
+    "last_run_date": "2026-01-13T21:27:09.127540",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 0,
+    "failed_links_count": 0,
+    "successful_links_count": 0,
+    "stages": {
+      "links_extracted": "2026-01-13T21:27:09.127540"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:27:17.863950",
+    "last_run_date": "2026-01-13T21:27:17.864951",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1431,
+    "failed_links_count": 0,
+    "successful_links_count": 10,
+    "stages": {
+      "batch_saved": "2026-01-13T21:27:17.856949"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:27:29.113189",
+    "last_run_date": "2026-01-13T21:27:29.113189",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1421,
+    "failed_links_count": 0,
+    "successful_links_count": 20,
+    "stages": {
+      "batch_saved": "2026-01-13T21:27:29.103190"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:27:42.124863",
+    "last_run_date": "2026-01-13T21:27:42.124863",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1411,
+    "failed_links_count": 0,
+    "successful_links_count": 30,
+    "stages": {
+      "batch_saved": "2026-01-13T21:27:42.112868"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:27:55.550916",
+    "last_run_date": "2026-01-13T21:27:55.550916",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1401,
+    "failed_links_count": 0,
+    "successful_links_count": 40,
+    "stages": {
+      "batch_saved": "2026-01-13T21:27:55.542917"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:28:08.188342",
+    "last_run_date": "2026-01-13T21:28:08.188342",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1391,
+    "failed_links_count": 0,
+    "successful_links_count": 50,
+    "stages": {
+      "batch_saved": "2026-01-13T21:28:08.181340"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:28:20.258110",
+    "last_run_date": "2026-01-13T21:28:20.258110",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1381,
+    "failed_links_count": 0,
+    "successful_links_count": 60,
+    "stages": {
+      "batch_saved": "2026-01-13T21:28:20.250107"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:28:35.194789",
+    "last_run_date": "2026-01-13T21:28:35.194789",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1371,
+    "failed_links_count": 0,
+    "successful_links_count": 70,
+    "stages": {
+      "batch_saved": "2026-01-13T21:28:35.187788"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:28:47.510702",
+    "last_run_date": "2026-01-13T21:28:47.510702",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1361,
+    "failed_links_count": 0,
+    "successful_links_count": 80,
+    "stages": {
+      "batch_saved": "2026-01-13T21:28:47.501703"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:28:58.838356",
+    "last_run_date": "2026-01-13T21:28:58.838356",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1351,
+    "failed_links_count": 0,
+    "successful_links_count": 90,
+    "stages": {
+      "batch_saved": "2026-01-13T21:28:58.831354"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:29:12.101010",
+    "last_run_date": "2026-01-13T21:29:12.101010",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1342,
+    "failed_links_count": 1,
+    "successful_links_count": 99,
+    "stages": {
+      "batch_saved": "2026-01-13T21:29:12.092007"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:29:25.040364",
+    "last_run_date": "2026-01-13T21:29:25.040364",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1332,
+    "failed_links_count": 1,
+    "successful_links_count": 109,
+    "stages": {
+      "batch_saved": "2026-01-13T21:29:25.028365"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:29:37.093809",
+    "last_run_date": "2026-01-13T21:29:37.093809",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1322,
+    "failed_links_count": 1,
+    "successful_links_count": 119,
+    "stages": {
+      "batch_saved": "2026-01-13T21:29:37.085808"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:29:49.391899",
+    "last_run_date": "2026-01-13T21:29:49.391899",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1312,
+    "failed_links_count": 1,
+    "successful_links_count": 129,
+    "stages": {
+      "batch_saved": "2026-01-13T21:29:49.383901"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:30:02.253906",
+    "last_run_date": "2026-01-13T21:30:02.253906",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1302,
+    "failed_links_count": 1,
+    "successful_links_count": 139,
+    "stages": {
+      "batch_saved": "2026-01-13T21:30:02.245915"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:30:14.605589",
+    "last_run_date": "2026-01-13T21:30:14.605589",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1292,
+    "failed_links_count": 1,
+    "successful_links_count": 149,
+    "stages": {
+      "batch_saved": "2026-01-13T21:30:14.596590"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:30:28.185320",
+    "last_run_date": "2026-01-13T21:30:28.185320",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1282,
+    "failed_links_count": 1,
+    "successful_links_count": 159,
+    "stages": {
+      "batch_saved": "2026-01-13T21:30:28.170320"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:30:40.979239",
+    "last_run_date": "2026-01-13T21:30:40.979239",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1272,
+    "failed_links_count": 1,
+    "successful_links_count": 169,
+    "stages": {
+      "batch_saved": "2026-01-13T21:30:40.972237"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:30:54.633389",
+    "last_run_date": "2026-01-13T21:30:54.633389",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1262,
+    "failed_links_count": 1,
+    "successful_links_count": 179,
+    "stages": {
+      "batch_saved": "2026-01-13T21:30:54.625385"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:31:07.394245",
+    "last_run_date": "2026-01-13T21:31:07.394245",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1252,
+    "failed_links_count": 1,
+    "successful_links_count": 189,
+    "stages": {
+      "batch_saved": "2026-01-13T21:31:07.386247"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:31:19.121941",
+    "last_run_date": "2026-01-13T21:31:19.121941",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1242,
+    "failed_links_count": 1,
+    "successful_links_count": 199,
+    "stages": {
+      "batch_saved": "2026-01-13T21:31:19.114938"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:31:31.068892",
+    "last_run_date": "2026-01-13T21:31:31.068892",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1232,
+    "failed_links_count": 1,
+    "successful_links_count": 209,
+    "stages": {
+      "batch_saved": "2026-01-13T21:31:31.060895"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:31:43.539341",
+    "last_run_date": "2026-01-13T21:31:43.539341",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1222,
+    "failed_links_count": 1,
+    "successful_links_count": 219,
+    "stages": {
+      "batch_saved": "2026-01-13T21:31:43.530345"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:31:55.917212",
+    "last_run_date": "2026-01-13T21:31:55.917212",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1212,
+    "failed_links_count": 1,
+    "successful_links_count": 229,
+    "stages": {
+      "batch_saved": "2026-01-13T21:31:55.908768"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:32:08.421356",
+    "last_run_date": "2026-01-13T21:32:08.421356",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1202,
+    "failed_links_count": 1,
+    "successful_links_count": 239,
+    "stages": {
+      "batch_saved": "2026-01-13T21:32:08.413842"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:32:21.340937",
+    "last_run_date": "2026-01-13T21:32:21.340937",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1192,
+    "failed_links_count": 1,
+    "successful_links_count": 249,
+    "stages": {
+      "batch_saved": "2026-01-13T21:32:21.333924"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:32:33.454229",
+    "last_run_date": "2026-01-13T21:32:33.454229",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1182,
+    "failed_links_count": 1,
+    "successful_links_count": 259,
+    "stages": {
+      "batch_saved": "2026-01-13T21:32:33.447230"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:32:45.629940",
+    "last_run_date": "2026-01-13T21:32:45.629940",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1172,
+    "failed_links_count": 1,
+    "successful_links_count": 269,
+    "stages": {
+      "batch_saved": "2026-01-13T21:32:45.621939"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:32:58.845641",
+    "last_run_date": "2026-01-13T21:32:58.845641",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1162,
+    "failed_links_count": 1,
+    "successful_links_count": 279,
+    "stages": {
+      "batch_saved": "2026-01-13T21:32:58.837637"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:33:10.948905",
+    "last_run_date": "2026-01-13T21:33:10.948905",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1152,
+    "failed_links_count": 1,
+    "successful_links_count": 289,
+    "stages": {
+      "batch_saved": "2026-01-13T21:33:10.941905"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:33:23.417133",
+    "last_run_date": "2026-01-13T21:33:23.417133",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1142,
+    "failed_links_count": 1,
+    "successful_links_count": 299,
+    "stages": {
+      "batch_saved": "2026-01-13T21:33:23.409131"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:33:35.610629",
+    "last_run_date": "2026-01-13T21:33:35.610629",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1132,
+    "failed_links_count": 1,
+    "successful_links_count": 309,
+    "stages": {
+      "batch_saved": "2026-01-13T21:33:35.603565"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:33:48.731404",
+    "last_run_date": "2026-01-13T21:33:48.731404",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1122,
+    "failed_links_count": 1,
+    "successful_links_count": 319,
+    "stages": {
+      "batch_saved": "2026-01-13T21:33:48.724405"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:34:01.396851",
+    "last_run_date": "2026-01-13T21:34:01.396851",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1112,
+    "failed_links_count": 1,
+    "successful_links_count": 329,
+    "stages": {
+      "batch_saved": "2026-01-13T21:34:01.389852"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:34:13.797173",
+    "last_run_date": "2026-01-13T21:34:13.797173",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1102,
+    "failed_links_count": 1,
+    "successful_links_count": 339,
+    "stages": {
+      "batch_saved": "2026-01-13T21:34:13.790179"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:34:26.850100",
+    "last_run_date": "2026-01-13T21:34:26.850100",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1092,
+    "failed_links_count": 1,
+    "successful_links_count": 349,
+    "stages": {
+      "batch_saved": "2026-01-13T21:34:26.843100"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:34:38.855795",
+    "last_run_date": "2026-01-13T21:34:38.855795",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1082,
+    "failed_links_count": 1,
+    "successful_links_count": 359,
+    "stages": {
+      "batch_saved": "2026-01-13T21:34:38.847795"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:34:50.209770",
+    "last_run_date": "2026-01-13T21:34:50.209770",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1072,
+    "failed_links_count": 1,
+    "successful_links_count": 369,
+    "stages": {
+      "batch_saved": "2026-01-13T21:34:50.199776"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:35:01.511845",
+    "last_run_date": "2026-01-13T21:35:01.511845",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1062,
+    "failed_links_count": 1,
+    "successful_links_count": 379,
+    "stages": {
+      "batch_saved": "2026-01-13T21:35:01.503844"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:35:14.803879",
+    "last_run_date": "2026-01-13T21:35:14.803879",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1053,
+    "failed_links_count": 2,
+    "successful_links_count": 388,
+    "stages": {
+      "batch_saved": "2026-01-13T21:35:14.795876"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:35:27.502376",
+    "last_run_date": "2026-01-13T21:35:27.502376",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1043,
+    "failed_links_count": 2,
+    "successful_links_count": 398,
+    "stages": {
+      "batch_saved": "2026-01-13T21:35:27.495376"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:35:40.053971",
+    "last_run_date": "2026-01-13T21:35:40.053971",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1033,
+    "failed_links_count": 2,
+    "successful_links_count": 408,
+    "stages": {
+      "batch_saved": "2026-01-13T21:35:40.046971"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:35:52.807819",
+    "last_run_date": "2026-01-13T21:35:52.807819",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1023,
+    "failed_links_count": 2,
+    "successful_links_count": 418,
+    "stages": {
+      "batch_saved": "2026-01-13T21:35:52.799820"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:36:05.393965",
+    "last_run_date": "2026-01-13T21:36:05.393965",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1013,
+    "failed_links_count": 2,
+    "successful_links_count": 428,
+    "stages": {
+      "batch_saved": "2026-01-13T21:36:05.385970"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:36:18.299962",
+    "last_run_date": "2026-01-13T21:36:18.299962",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 1003,
+    "failed_links_count": 2,
+    "successful_links_count": 438,
+    "stages": {
+      "batch_saved": "2026-01-13T21:36:18.291961"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:36:31.549592",
+    "last_run_date": "2026-01-13T21:36:31.549592",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 994,
+    "failed_links_count": 3,
+    "successful_links_count": 447,
+    "stages": {
+      "batch_saved": "2026-01-13T21:36:31.540593"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:36:43.314072",
+    "last_run_date": "2026-01-13T21:36:43.314072",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 984,
+    "failed_links_count": 3,
+    "successful_links_count": 457,
+    "stages": {
+      "batch_saved": "2026-01-13T21:36:43.306072"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:36:55.051381",
+    "last_run_date": "2026-01-13T21:36:55.051381",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 974,
+    "failed_links_count": 3,
+    "successful_links_count": 467,
+    "stages": {
+      "batch_saved": "2026-01-13T21:36:55.042367"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:37:08.008488",
+    "last_run_date": "2026-01-13T21:37:08.008488",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 964,
+    "failed_links_count": 3,
+    "successful_links_count": 477,
+    "stages": {
+      "batch_saved": "2026-01-13T21:37:08.000487"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:37:19.685284",
+    "last_run_date": "2026-01-13T21:37:19.685284",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 954,
+    "failed_links_count": 3,
+    "successful_links_count": 487,
+    "stages": {
+      "batch_saved": "2026-01-13T21:37:19.677283"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:37:33.140337",
+    "last_run_date": "2026-01-13T21:37:33.140337",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 944,
+    "failed_links_count": 3,
+    "successful_links_count": 497,
+    "stages": {
+      "batch_saved": "2026-01-13T21:37:33.132335"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:37:44.881833",
+    "last_run_date": "2026-01-13T21:37:44.881833",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 934,
+    "failed_links_count": 3,
+    "successful_links_count": 507,
+    "stages": {
+      "batch_saved": "2026-01-13T21:37:44.874832"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:37:56.636574",
+    "last_run_date": "2026-01-13T21:37:56.636574",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 924,
+    "failed_links_count": 3,
+    "successful_links_count": 517,
+    "stages": {
+      "batch_saved": "2026-01-13T21:37:56.628569"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:38:08.223059",
+    "last_run_date": "2026-01-13T21:38:08.223059",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 914,
+    "failed_links_count": 3,
+    "successful_links_count": 527,
+    "stages": {
+      "batch_saved": "2026-01-13T21:38:08.216060"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:38:20.724772",
+    "last_run_date": "2026-01-13T21:38:20.724772",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 904,
+    "failed_links_count": 3,
+    "successful_links_count": 537,
+    "stages": {
+      "batch_saved": "2026-01-13T21:38:20.716772"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:38:32.969229",
+    "last_run_date": "2026-01-13T21:38:32.969229",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 894,
+    "failed_links_count": 3,
+    "successful_links_count": 547,
+    "stages": {
+      "batch_saved": "2026-01-13T21:38:32.961226"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:38:45.530235",
+    "last_run_date": "2026-01-13T21:38:45.530235",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 884,
+    "failed_links_count": 3,
+    "successful_links_count": 557,
+    "stages": {
+      "batch_saved": "2026-01-13T21:38:45.522717"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:38:56.981190",
+    "last_run_date": "2026-01-13T21:38:56.981190",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 874,
+    "failed_links_count": 3,
+    "successful_links_count": 567,
+    "stages": {
+      "batch_saved": "2026-01-13T21:38:56.973191"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:39:08.775889",
+    "last_run_date": "2026-01-13T21:39:08.775889",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 864,
+    "failed_links_count": 3,
+    "successful_links_count": 577,
+    "stages": {
+      "batch_saved": "2026-01-13T21:39:08.768887"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:39:21.345573",
+    "last_run_date": "2026-01-13T21:39:21.345573",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 854,
+    "failed_links_count": 3,
+    "successful_links_count": 587,
+    "stages": {
+      "batch_saved": "2026-01-13T21:39:21.338070"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:39:33.809966",
+    "last_run_date": "2026-01-13T21:39:33.809966",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 844,
+    "failed_links_count": 3,
+    "successful_links_count": 597,
+    "stages": {
+      "batch_saved": "2026-01-13T21:39:33.802967"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:39:46.404600",
+    "last_run_date": "2026-01-13T21:39:46.404600",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 834,
+    "failed_links_count": 3,
+    "successful_links_count": 607,
+    "stages": {
+      "batch_saved": "2026-01-13T21:39:46.396598"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:39:58.689142",
+    "last_run_date": "2026-01-13T21:39:58.689142",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 824,
+    "failed_links_count": 3,
+    "successful_links_count": 617,
+    "stages": {
+      "batch_saved": "2026-01-13T21:39:58.682142"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:40:10.266925",
+    "last_run_date": "2026-01-13T21:40:10.266925",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 814,
+    "failed_links_count": 3,
+    "successful_links_count": 627,
+    "stages": {
+      "batch_saved": "2026-01-13T21:40:10.259922"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:40:22.290195",
+    "last_run_date": "2026-01-13T21:40:22.290195",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 804,
+    "failed_links_count": 3,
+    "successful_links_count": 637,
+    "stages": {
+      "batch_saved": "2026-01-13T21:40:22.283196"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:40:34.680650",
+    "last_run_date": "2026-01-13T21:40:34.680650",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 794,
+    "failed_links_count": 3,
+    "successful_links_count": 647,
+    "stages": {
+      "batch_saved": "2026-01-13T21:40:34.673651"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:40:47.897727",
+    "last_run_date": "2026-01-13T21:40:47.897727",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 784,
+    "failed_links_count": 3,
+    "successful_links_count": 657,
+    "stages": {
+      "batch_saved": "2026-01-13T21:40:47.890707"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:41:01.344343",
+    "last_run_date": "2026-01-13T21:41:01.344343",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 774,
+    "failed_links_count": 3,
+    "successful_links_count": 667,
+    "stages": {
+      "batch_saved": "2026-01-13T21:41:01.337343"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:41:13.865464",
+    "last_run_date": "2026-01-13T21:41:13.865464",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 764,
+    "failed_links_count": 3,
+    "successful_links_count": 677,
+    "stages": {
+      "batch_saved": "2026-01-13T21:41:13.857462"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:41:25.964269",
+    "last_run_date": "2026-01-13T21:41:25.964269",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 754,
+    "failed_links_count": 3,
+    "successful_links_count": 687,
+    "stages": {
+      "batch_saved": "2026-01-13T21:41:25.956266"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:41:38.287341",
+    "last_run_date": "2026-01-13T21:41:38.287341",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 744,
+    "failed_links_count": 3,
+    "successful_links_count": 697,
+    "stages": {
+      "batch_saved": "2026-01-13T21:41:38.279348"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:41:51.168401",
+    "last_run_date": "2026-01-13T21:41:51.168401",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 734,
+    "failed_links_count": 3,
+    "successful_links_count": 707,
+    "stages": {
+      "batch_saved": "2026-01-13T21:41:51.159405"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:42:03.756025",
+    "last_run_date": "2026-01-13T21:42:03.756025",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 724,
+    "failed_links_count": 3,
+    "successful_links_count": 717,
+    "stages": {
+      "batch_saved": "2026-01-13T21:42:03.748021"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:42:15.091435",
+    "last_run_date": "2026-01-13T21:42:15.091435",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 714,
+    "failed_links_count": 3,
+    "successful_links_count": 727,
+    "stages": {
+      "batch_saved": "2026-01-13T21:42:15.084434"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:42:27.641426",
+    "last_run_date": "2026-01-13T21:42:27.641426",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 704,
+    "failed_links_count": 3,
+    "successful_links_count": 737,
+    "stages": {
+      "batch_saved": "2026-01-13T21:42:27.634428"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:42:39.400444",
+    "last_run_date": "2026-01-13T21:42:39.400444",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 694,
+    "failed_links_count": 3,
+    "successful_links_count": 747,
+    "stages": {
+      "batch_saved": "2026-01-13T21:42:39.393446"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:42:51.737494",
+    "last_run_date": "2026-01-13T21:42:51.737494",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 684,
+    "failed_links_count": 3,
+    "successful_links_count": 757,
+    "stages": {
+      "batch_saved": "2026-01-13T21:42:51.729490"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:43:04.351038",
+    "last_run_date": "2026-01-13T21:43:04.351038",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 674,
+    "failed_links_count": 3,
+    "successful_links_count": 767,
+    "stages": {
+      "batch_saved": "2026-01-13T21:43:04.344040"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:43:16.789818",
+    "last_run_date": "2026-01-13T21:43:16.789818",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 664,
+    "failed_links_count": 3,
+    "successful_links_count": 777,
+    "stages": {
+      "batch_saved": "2026-01-13T21:43:16.782815"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:43:29.778630",
+    "last_run_date": "2026-01-13T21:43:29.778630",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 654,
+    "failed_links_count": 3,
+    "successful_links_count": 787,
+    "stages": {
+      "batch_saved": "2026-01-13T21:43:29.770630"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:43:42.581416",
+    "last_run_date": "2026-01-13T21:43:42.581416",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 644,
+    "failed_links_count": 3,
+    "successful_links_count": 797,
+    "stages": {
+      "batch_saved": "2026-01-13T21:43:42.574417"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:43:54.739541",
+    "last_run_date": "2026-01-13T21:43:54.739541",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 634,
+    "failed_links_count": 3,
+    "successful_links_count": 807,
+    "stages": {
+      "batch_saved": "2026-01-13T21:43:54.732542"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:44:07.386868",
+    "last_run_date": "2026-01-13T21:44:07.386868",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 624,
+    "failed_links_count": 3,
+    "successful_links_count": 817,
+    "stages": {
+      "batch_saved": "2026-01-13T21:44:07.379867"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:44:19.540238",
+    "last_run_date": "2026-01-13T21:44:19.540238",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 614,
+    "failed_links_count": 3,
+    "successful_links_count": 827,
+    "stages": {
+      "batch_saved": "2026-01-13T21:44:19.532238"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:44:31.545569",
+    "last_run_date": "2026-01-13T21:44:31.545569",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 604,
+    "failed_links_count": 3,
+    "successful_links_count": 837,
+    "stages": {
+      "batch_saved": "2026-01-13T21:44:31.537569"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:44:44.634000",
+    "last_run_date": "2026-01-13T21:44:44.634000",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 594,
+    "failed_links_count": 3,
+    "successful_links_count": 847,
+    "stages": {
+      "batch_saved": "2026-01-13T21:44:44.623003"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:44:56.746019",
+    "last_run_date": "2026-01-13T21:44:56.746019",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 584,
+    "failed_links_count": 3,
+    "successful_links_count": 857,
+    "stages": {
+      "batch_saved": "2026-01-13T21:44:56.736019"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:45:08.718319",
+    "last_run_date": "2026-01-13T21:45:08.718319",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 575,
+    "failed_links_count": 4,
+    "successful_links_count": 866,
+    "stages": {
+      "batch_saved": "2026-01-13T21:45:08.709812"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:45:20.889041",
+    "last_run_date": "2026-01-13T21:45:20.889041",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 565,
+    "failed_links_count": 4,
+    "successful_links_count": 876,
+    "stages": {
+      "batch_saved": "2026-01-13T21:45:20.881046"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:45:33.217927",
+    "last_run_date": "2026-01-13T21:45:33.217927",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 555,
+    "failed_links_count": 4,
+    "successful_links_count": 886,
+    "stages": {
+      "batch_saved": "2026-01-13T21:45:33.208923"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:45:45.127691",
+    "last_run_date": "2026-01-13T21:45:45.127691",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 545,
+    "failed_links_count": 4,
+    "successful_links_count": 896,
+    "stages": {
+      "batch_saved": "2026-01-13T21:45:45.120685"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:45:57.229803",
+    "last_run_date": "2026-01-13T21:45:57.229803",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 535,
+    "failed_links_count": 4,
+    "successful_links_count": 906,
+    "stages": {
+      "batch_saved": "2026-01-13T21:45:57.221802"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:46:09.823862",
+    "last_run_date": "2026-01-13T21:46:09.823862",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 525,
+    "failed_links_count": 4,
+    "successful_links_count": 916,
+    "stages": {
+      "batch_saved": "2026-01-13T21:46:09.815862"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:46:23.102334",
+    "last_run_date": "2026-01-13T21:46:23.102334",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 515,
+    "failed_links_count": 4,
+    "successful_links_count": 926,
+    "stages": {
+      "batch_saved": "2026-01-13T21:46:23.095334"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:46:35.379360",
+    "last_run_date": "2026-01-13T21:46:35.379360",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 505,
+    "failed_links_count": 4,
+    "successful_links_count": 936,
+    "stages": {
+      "batch_saved": "2026-01-13T21:46:35.370354"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:46:47.447344",
+    "last_run_date": "2026-01-13T21:46:47.447344",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 495,
+    "failed_links_count": 4,
+    "successful_links_count": 946,
+    "stages": {
+      "batch_saved": "2026-01-13T21:46:47.440347"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:46:59.210450",
+    "last_run_date": "2026-01-13T21:46:59.210450",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 485,
+    "failed_links_count": 4,
+    "successful_links_count": 956,
+    "stages": {
+      "batch_saved": "2026-01-13T21:46:59.200448"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:47:11.416249",
+    "last_run_date": "2026-01-13T21:47:11.416249",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 475,
+    "failed_links_count": 4,
+    "successful_links_count": 966,
+    "stages": {
+      "batch_saved": "2026-01-13T21:47:11.409250"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:47:23.747807",
+    "last_run_date": "2026-01-13T21:47:23.747807",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 465,
+    "failed_links_count": 4,
+    "successful_links_count": 976,
+    "stages": {
+      "batch_saved": "2026-01-13T21:47:23.740805"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:47:36.926952",
+    "last_run_date": "2026-01-13T21:47:36.926952",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 455,
+    "failed_links_count": 4,
+    "successful_links_count": 986,
+    "stages": {
+      "batch_saved": "2026-01-13T21:47:36.918949"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:47:49.616745",
+    "last_run_date": "2026-01-13T21:47:49.616745",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 445,
+    "failed_links_count": 4,
+    "successful_links_count": 996,
+    "stages": {
+      "batch_saved": "2026-01-13T21:47:49.609747"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:48:02.477526",
+    "last_run_date": "2026-01-13T21:48:02.477526",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 435,
+    "failed_links_count": 4,
+    "successful_links_count": 1006,
+    "stages": {
+      "batch_saved": "2026-01-13T21:48:02.470525"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:48:15.211658",
+    "last_run_date": "2026-01-13T21:48:15.211658",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 425,
+    "failed_links_count": 4,
+    "successful_links_count": 1016,
+    "stages": {
+      "batch_saved": "2026-01-13T21:48:15.203658"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:48:27.586634",
+    "last_run_date": "2026-01-13T21:48:27.586634",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 415,
+    "failed_links_count": 4,
+    "successful_links_count": 1026,
+    "stages": {
+      "batch_saved": "2026-01-13T21:48:27.577631"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:48:39.743113",
+    "last_run_date": "2026-01-13T21:48:39.743113",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 405,
+    "failed_links_count": 4,
+    "successful_links_count": 1036,
+    "stages": {
+      "batch_saved": "2026-01-13T21:48:39.735113"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:48:52.044661",
+    "last_run_date": "2026-01-13T21:48:52.044661",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 395,
+    "failed_links_count": 4,
+    "successful_links_count": 1046,
+    "stages": {
+      "batch_saved": "2026-01-13T21:48:52.036659"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:49:04.150647",
+    "last_run_date": "2026-01-13T21:49:04.150647",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 385,
+    "failed_links_count": 4,
+    "successful_links_count": 1056,
+    "stages": {
+      "batch_saved": "2026-01-13T21:49:04.143647"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:49:17.111374",
+    "last_run_date": "2026-01-13T21:49:17.111374",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 375,
+    "failed_links_count": 4,
+    "successful_links_count": 1066,
+    "stages": {
+      "batch_saved": "2026-01-13T21:49:17.102374"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:49:29.488037",
+    "last_run_date": "2026-01-13T21:49:29.488037",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 365,
+    "failed_links_count": 4,
+    "successful_links_count": 1076,
+    "stages": {
+      "batch_saved": "2026-01-13T21:49:29.479036"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:49:41.344264",
+    "last_run_date": "2026-01-13T21:49:41.344264",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 355,
+    "failed_links_count": 4,
+    "successful_links_count": 1086,
+    "stages": {
+      "batch_saved": "2026-01-13T21:49:41.336266"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:49:54.047660",
+    "last_run_date": "2026-01-13T21:49:54.047660",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 345,
+    "failed_links_count": 4,
+    "successful_links_count": 1096,
+    "stages": {
+      "batch_saved": "2026-01-13T21:49:54.039660"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:50:06.384308",
+    "last_run_date": "2026-01-13T21:50:06.384308",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 335,
+    "failed_links_count": 4,
+    "successful_links_count": 1106,
+    "stages": {
+      "batch_saved": "2026-01-13T21:50:06.376308"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:50:19.506257",
+    "last_run_date": "2026-01-13T21:50:19.506257",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 325,
+    "failed_links_count": 4,
+    "successful_links_count": 1116,
+    "stages": {
+      "batch_saved": "2026-01-13T21:50:19.498259"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:50:31.760404",
+    "last_run_date": "2026-01-13T21:50:31.760404",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 315,
+    "failed_links_count": 4,
+    "successful_links_count": 1126,
+    "stages": {
+      "batch_saved": "2026-01-13T21:50:31.752404"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:50:44.051454",
+    "last_run_date": "2026-01-13T21:50:44.051454",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 305,
+    "failed_links_count": 4,
+    "successful_links_count": 1136,
+    "stages": {
+      "batch_saved": "2026-01-13T21:50:44.043454"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:50:56.495450",
+    "last_run_date": "2026-01-13T21:50:56.495450",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 295,
+    "failed_links_count": 4,
+    "successful_links_count": 1146,
+    "stages": {
+      "batch_saved": "2026-01-13T21:50:56.486450"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:51:08.545379",
+    "last_run_date": "2026-01-13T21:51:08.545379",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 285,
+    "failed_links_count": 4,
+    "successful_links_count": 1156,
+    "stages": {
+      "batch_saved": "2026-01-13T21:51:08.537376"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:51:20.477756",
+    "last_run_date": "2026-01-13T21:51:20.477756",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 275,
+    "failed_links_count": 4,
+    "successful_links_count": 1166,
+    "stages": {
+      "batch_saved": "2026-01-13T21:51:20.469755"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:51:32.605583",
+    "last_run_date": "2026-01-13T21:51:32.605583",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 265,
+    "failed_links_count": 4,
+    "successful_links_count": 1176,
+    "stages": {
+      "batch_saved": "2026-01-13T21:51:32.597583"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:51:45.135882",
+    "last_run_date": "2026-01-13T21:51:45.135882",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 255,
+    "failed_links_count": 4,
+    "successful_links_count": 1186,
+    "stages": {
+      "batch_saved": "2026-01-13T21:51:45.127883"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:51:58.014430",
+    "last_run_date": "2026-01-13T21:51:58.014430",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 245,
+    "failed_links_count": 4,
+    "successful_links_count": 1196,
+    "stages": {
+      "batch_saved": "2026-01-13T21:51:58.005430"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:52:09.887707",
+    "last_run_date": "2026-01-13T21:52:09.887707",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 235,
+    "failed_links_count": 4,
+    "successful_links_count": 1206,
+    "stages": {
+      "batch_saved": "2026-01-13T21:52:09.879707"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:52:21.281836",
+    "last_run_date": "2026-01-13T21:52:21.281836",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 225,
+    "failed_links_count": 4,
+    "successful_links_count": 1216,
+    "stages": {
+      "batch_saved": "2026-01-13T21:52:21.273837"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:52:30.798169",
+    "last_run_date": "2026-01-13T21:52:30.798169",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 215,
+    "failed_links_count": 4,
+    "successful_links_count": 1226,
+    "stages": {
+      "batch_saved": "2026-01-13T21:52:30.790170"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:52:39.808234",
+    "last_run_date": "2026-01-13T21:52:39.808234",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 205,
+    "failed_links_count": 4,
+    "successful_links_count": 1236,
+    "stages": {
+      "batch_saved": "2026-01-13T21:52:39.799234"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:52:48.456021",
+    "last_run_date": "2026-01-13T21:52:48.456021",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 195,
+    "failed_links_count": 4,
+    "successful_links_count": 1246,
+    "stages": {
+      "batch_saved": "2026-01-13T21:52:48.448021"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:52:57.393830",
+    "last_run_date": "2026-01-13T21:52:57.393830",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 185,
+    "failed_links_count": 4,
+    "successful_links_count": 1256,
+    "stages": {
+      "batch_saved": "2026-01-13T21:52:57.383826"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:53:06.297391",
+    "last_run_date": "2026-01-13T21:53:06.297391",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 175,
+    "failed_links_count": 4,
+    "successful_links_count": 1266,
+    "stages": {
+      "batch_saved": "2026-01-13T21:53:06.289392"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:53:19.269090",
+    "last_run_date": "2026-01-13T21:53:19.269090",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 166,
+    "failed_links_count": 5,
+    "successful_links_count": 1275,
+    "stages": {
+      "batch_saved": "2026-01-13T21:53:19.261586"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:53:27.916245",
+    "last_run_date": "2026-01-13T21:53:27.916245",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 156,
+    "failed_links_count": 5,
+    "successful_links_count": 1285,
+    "stages": {
+      "batch_saved": "2026-01-13T21:53:27.908245"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:53:36.517006",
+    "last_run_date": "2026-01-13T21:53:36.517006",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 146,
+    "failed_links_count": 5,
+    "successful_links_count": 1295,
+    "stages": {
+      "batch_saved": "2026-01-13T21:53:36.508005"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:53:45.753048",
+    "last_run_date": "2026-01-13T21:53:45.753048",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 136,
+    "failed_links_count": 5,
+    "successful_links_count": 1305,
+    "stages": {
+      "batch_saved": "2026-01-13T21:53:45.745047"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:53:54.239759",
+    "last_run_date": "2026-01-13T21:53:54.239759",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 126,
+    "failed_links_count": 5,
+    "successful_links_count": 1315,
+    "stages": {
+      "batch_saved": "2026-01-13T21:53:54.230761"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:54:10.164605",
+    "last_run_date": "2026-01-13T21:54:10.164605",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 116,
+    "failed_links_count": 5,
+    "successful_links_count": 1325,
+    "stages": {
+      "batch_saved": "2026-01-13T21:54:10.156601"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:54:37.599425",
+    "last_run_date": "2026-01-13T21:54:37.599425",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 106,
+    "failed_links_count": 5,
+    "successful_links_count": 1335,
+    "stages": {
+      "batch_saved": "2026-01-13T21:54:37.591425"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:55:09.249094",
+    "last_run_date": "2026-01-13T21:55:09.249094",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 98,
+    "failed_links_count": 7,
+    "successful_links_count": 1343,
+    "stages": {
+      "batch_saved": "2026-01-13T21:55:09.240094"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:55:41.414247",
+    "last_run_date": "2026-01-13T21:55:41.414247",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 90,
+    "failed_links_count": 9,
+    "successful_links_count": 1351,
+    "stages": {
+      "batch_saved": "2026-01-13T21:55:41.406247"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:56:21.210045",
+    "last_run_date": "2026-01-13T21:56:21.210045",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 80,
+    "failed_links_count": 9,
+    "successful_links_count": 1361,
+    "stages": {
+      "batch_saved": "2026-01-13T21:56:21.202045"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:56:50.447889",
+    "last_run_date": "2026-01-13T21:56:50.447889",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 73,
+    "failed_links_count": 12,
+    "successful_links_count": 1368,
+    "stages": {
+      "batch_saved": "2026-01-13T21:56:50.434888"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:57:25.831331",
+    "last_run_date": "2026-01-13T21:57:25.831331",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 63,
+    "failed_links_count": 12,
+    "successful_links_count": 1378,
+    "stages": {
+      "batch_saved": "2026-01-13T21:57:25.823331"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:57:59.097821",
+    "last_run_date": "2026-01-13T21:57:59.097821",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 54,
+    "failed_links_count": 13,
+    "successful_links_count": 1387,
+    "stages": {
+      "batch_saved": "2026-01-13T21:57:59.089822"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:58:45.722162",
+    "last_run_date": "2026-01-13T21:58:45.722162",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 45,
+    "failed_links_count": 14,
+    "successful_links_count": 1396,
+    "stages": {
+      "batch_saved": "2026-01-13T21:58:45.713162"
+    }
+  },
+  {
+    "run_id": "2026-01-13T21:59:31.102275",
+    "last_run_date": "2026-01-13T21:59:31.102275",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 36,
+    "failed_links_count": 15,
+    "successful_links_count": 1405,
+    "stages": {
+      "batch_saved": "2026-01-13T21:59:31.090770"
+    }
+  },
+  {
+    "run_id": "2026-01-13T22:00:13.476741",
+    "last_run_date": "2026-01-13T22:00:13.476741",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 26,
+    "failed_links_count": 15,
+    "successful_links_count": 1415,
+    "stages": {
+      "batch_saved": "2026-01-13T22:00:13.466740"
+    }
+  },
+  {
+    "run_id": "2026-01-13T22:00:50.077808",
+    "last_run_date": "2026-01-13T22:00:50.077808",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 20,
+    "failed_links_count": 19,
+    "successful_links_count": 1421,
+    "stages": {
+      "batch_saved": "2026-01-13T22:00:50.065810"
+    }
+  },
+  {
+    "run_id": "2026-01-13T22:00:50.153316",
+    "last_run_date": "2026-01-13T22:00:50.153316",
+    "pdf_files": [
+      "Conditioned Tes - Knowledge Source - Links (1).pdf",
+      "Conditioned Tes - Knowledge Source - Links.pdf",
+      "Unified Tes - References - Cardiovascular System.pdf"
+    ],
+    "new_links_identified_count": 1441,
+    "duplicate_links_count": 0,
+    "unsuccessful_links_from_prev_run_count": 0,
+    "total_links_to_be_scraped_count": 20,
+    "failed_links_count": 20,
+    "successful_links_count": 1421,
+    "stages": {
+      "scraping_completed": "2026-01-13T22:00:50.141813"
+    }
+  }
+]

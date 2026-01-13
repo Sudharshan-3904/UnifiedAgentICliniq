@@ -1,50 +1,61 @@
+from importlib.metadata import files
 import os
 import pandas as pd
 import pdfx
+import hashlib
+import pathlib
 from urllib.parse import urlparse, urlunparse
-
-PDF_FILES = [
-    "data\\Conditioned Tes - Knowledge Source - Links.pdf",
-    "data\\Conditioned Tes - Knowledge Source - Links (1).pdf",
-    "data\\Unified Tes - References - Cardiovascular System.pdf"
-]
 
 CSV_FILE = "data\\url_status.csv"
 MAPPING_FILE = "data\\link_file_status_map.csv"
+LINKS_SRC_DIR = "src_lib"
 
 
 def normalize_url(url: str) -> list:
     """
     Normalize URL string. Returns a LIST of cleaned URLs (handling concatenated cases).
-    - Removes newlines/whitespace.
-    - Splist cases like 'url1/http://url2'.
+    - Removes newlines/whitespace and invisible characters (soft hyphen, zero-width spaces).
+    - Removes enclosing brackets/quotes like <...>, (...), or "...".
+    - Fixes common PDF-extraction artifacts (leading missing 'h' in 'https'/'http').
+    - Splits concatenated cases like 'url1/http://url2'.
     - Lowercases scheme/netloc.
     - Removes www.
-    - Strips trailing slash/backslash.
+    - Strips trailing slash/backslash and common punctuation.
     """
     if not url:
         return []
         
-    # Initial cleanup
-    clean_text = url.strip().replace('\n', '').replace('\r', '').replace(' ', '')
-    
-    # Check for concatenated URLs (e.g. multiple http/https occurrences)
-    # We'll split by 'http' but need to preserve the scheme.
-    
+    # initial cleanup: preserve original characters until we've removed invisible/hyphenation artifacts
+    clean_text = url.strip()
+
+    # remove soft-hyphen and zero-width / BOM / non-breaking space characters that often come from PDFs
+    for ch in ['\u00ad', '\u200b', '\ufeff', '\u200c', '\u200d', '\xa0']:
+        clean_text = clean_text.replace(ch, '')
+
+    # remove line breaks and surrounding whitespace within the URL text
+    clean_text = clean_text.replace('\n', '').replace('\r', '').replace(' ', '')
+
+    # trim common trailing punctuation that may be adjacent to links in text
+    clean_text = clean_text.rstrip('.,;:)]}\'"')
+
+    # strip enclosing angle brackets, parentheses or quotes that sometimes wrap links
+    if (clean_text.startswith('<') and clean_text.endswith('>')) or (clean_text.startswith('(') and clean_text.endswith(')')) or (clean_text.startswith('"') and clean_text.endswith('"')):
+        clean_text = clean_text[1:-1]
+
+    # fix common missing leading 'h' (e.g., 'ttps://...') introduced by PDF extraction
+    if clean_text.lower().startswith(('ttp://', 'ttps://')):
+        clean_text = 'h' + clean_text
+
     urls_to_process = []
     
-    # Simple split heuristic: if "http" occurs more than once
     lower_text = clean_text.lower()
     if lower_text.count("http") > 1:
-        # Split carefully. 
-        # "https://site.com/https://site2.com" -> ["https://site.com/", "https://site2.com"]
         indices = []
         start = 0
         while True:
             idx = lower_text.find("http", start)
             if idx == -1:
                 break
-            # heuristic: ensure valid start (not just 'http' in a random word, though rare in scraped urls)
             indices.append(idx)
             start = idx + 1
             
@@ -52,8 +63,6 @@ def normalize_url(url: str) -> list:
             start_idx = indices[i]
             end_idx = indices[i+1] if i + 1 < len(indices) else len(clean_text)
             segment = clean_text[start_idx:end_idx]
-            # remove leading slash/garbage if any (e.g. from "...com/https...")
-            # usually the previous url end includes the slash, but the new one starts at 'http'
             urls_to_process.append(segment)
     else:
         urls_to_process.append(clean_text)
@@ -61,18 +70,13 @@ def normalize_url(url: str) -> list:
     normalized_urls = []
     
     for raw in urls_to_process:
-        # Strip trailing slashes/backslashes
-        # Also, check if it ends with a weird char
         raw = raw.rstrip('/\\')
         
         try:
             parsed = urlparse(raw)
-            # Basic validation: must have scheme and netloc to be useful
             if not parsed.scheme or not parsed.netloc:
-                # heuristic: if it looks like a url (contains .com, .gov, etc), maybe try prepending http if missing?
-                # For now, simplistic approach: discard if really garbage.
                 if "http" in raw:
-                     normalized_urls.append(raw)
+                    normalized_urls.append(raw)
                 continue
 
             netloc = parsed.netloc.lower()
@@ -91,9 +95,34 @@ def normalize_url(url: str) -> list:
             
         except Exception:
             if "http" in raw:
-                 normalized_urls.append(raw)
+                normalized_urls.append(raw)
 
     return normalized_urls
+
+
+def _filter_truncated_urls(urls: list) -> list:
+    """Remove URLs that are strict prefixes of other (longer) URLs from the same host.
+    Heuristic: if url A is a strict prefix of url B, B has same scheme+netloc and len(B)-len(A) >= 3, drop A.
+    """
+    from urllib.parse import urlparse
+    if not urls:
+        return []
+
+    # sort by length descending so we consider longest URLs first
+    urls_sorted = sorted(set(urls), key=len, reverse=True)
+    kept = []
+    for u in urls_sorted:
+        parsed_u = urlparse(u)
+        is_prefix_of_kept = False
+        for v in kept:
+            parsed_v = urlparse(v)
+            if parsed_u.scheme == parsed_v.scheme and parsed_u.netloc == parsed_v.netloc and v.startswith(u) and (len(v) > len(u)):
+                is_prefix_of_kept = True
+                break
+        if not is_prefix_of_kept:
+            kept.append(u)
+    # return in original-ish order (longest-first is fine)
+    return kept
 
 
 def extract_urls_from_pdf(pdf_path: str) -> list:
@@ -110,17 +139,24 @@ def extract_urls_from_pdf(pdf_path: str) -> list:
         print(f"Error reading {pdf_path}: {e}")
         return []
 
-    records = []
     filename = os.path.basename(pdf_path)
-    
+    norm_links = []
+
     for url in raw_urls:
         norm_list = normalize_url(url)
         for norm_url in norm_list:
-            if norm_url:  # Filter out empty strings
-                records.append({
-                    "link": norm_url,
-                    "source_file": filename
-                })
+            if norm_url:
+                norm_links.append(norm_url)
+
+    # filter out truncated prefixes that are likely artifacts
+    filtered_links = _filter_truncated_urls(norm_links)
+
+    records = []
+    for link in filtered_links:
+        records.append({
+            "link": link,
+            "source_file": filename
+        })
 
     print(f"Read '{pdf_path}' - {len(records)} links found")
     return records
@@ -143,14 +179,12 @@ def load_existing_csv(csv_filename: str) -> pd.DataFrame:
             return pd.read_csv(csv_filename)
         except Exception as e:
             print(f"Error loading {csv_filename}: {e}")
-    return pd.DataFrame(columns=["id", "link", "status"])
-
+    return pd.DataFrame(columns=["id", "link", "progress", "status_code", "status_abbreviation"])
 
 def append_new_records(records: list, csv_filename: str):
-    """Append new records while avoiding duplicates and continuing IDs."""
+    """Append new records while avoiding duplicates and continuing IDs. Returns (new_count, duplicate_count)."""
     df_existing = load_existing_csv(csv_filename)
     
-    # Existing links set for fast lookup
     if not df_existing.empty and "link" in df_existing.columns:
         existing_links = set(df_existing["link"].dropna().astype(str))
     else:
@@ -158,7 +192,6 @@ def append_new_records(records: list, csv_filename: str):
 
     new_rows = []
     
-    # Start ID (handle empty case safely)
     if not df_existing.empty and "id" in df_existing.columns and not df_existing["id"].dropna().empty:
         try:
             next_id = int(df_existing["id"].max()) + 1
@@ -167,38 +200,40 @@ def append_new_records(records: list, csv_filename: str):
     else:
         next_id = 1
 
-    # Deduplicate input records based on link, keeping first occurrence
-    unique_input_records = {} # link -> record
+    unique_input_records = {}
     for r in records:
         if r["link"] not in unique_input_records:
             unique_input_records[r["link"]] = r
     
-    # Determine which are truly new
     for link, record in unique_input_records.items():
         if link not in existing_links:
             new_rows.append({
                 "id": next_id,
                 "link": link,
-                "status": "yet"
+                "progress": "yet"
             })
             existing_links.add(link)
             next_id += 1
 
+    duplicate_count = max(0, len(unique_input_records) - len(new_rows))
+
     if not new_rows:
         print("No new unique links to add to status CSV.")
+        return 0, duplicate_count
     else:
         df_new = pd.DataFrame(new_rows)
         df_final = pd.concat([df_existing, df_new], ignore_index=True)
-        # Ensure ID is integer
         df_final["id"] = df_final["id"].astype(int)
         df_final.to_csv(csv_filename, index=False)
         print(f"Added {len(df_new)} new links to {csv_filename}. Total records: {len(df_final)}")
+        return len(df_new), duplicate_count
 
 
 def update_mapping_file(records: list, mapping_filename: str):
     """
     Update the mapping file with source information.
-    Ensures that every link in records has its 'source_file' recorded.
+    Ensures that every link in records has its 'id', 'source_file', 'link_hash', and 'category' recorded.
+    If possible, the 'id' is obtained from the status CSV (`CSV_FILE`).
     """
     if os.path.exists(mapping_filename):
         try:
@@ -208,13 +243,19 @@ def update_mapping_file(records: list, mapping_filename: str):
     else:
         df_map = pd.DataFrame()
 
-    # Ensure required columns exist
-    if "link" not in df_map.columns:
-        df_map["link"] = pd.Series(dtype='str')
-    if "source_file" not in df_map.columns:
-        df_map["source_file"] = pd.Series(dtype='str')
+    link_to_id = {}
+    if os.path.exists(CSV_FILE):
+        try:
+            df_status = pd.read_csv(CSV_FILE, dtype={"id": object, "link": object})
+            link_to_id = dict(zip(df_status['link'].astype(str), df_status['id'].astype(str)))
+        except Exception:
+            link_to_id = {}
 
-    # Convert records to link -> [sources]
+    required_cols = ["link", "id", "source_file", "link_hash", "category"]
+    for c in required_cols:
+        if c not in df_map.columns:
+            df_map[c] = pd.Series(dtype='str')
+
     link_sources = {}
     for r in records:
         l = r["link"]
@@ -225,12 +266,24 @@ def update_mapping_file(records: list, mapping_filename: str):
         else:
             link_sources[l] = [s]
             
-    # Prepare update data
     updates = []
     for link, sources in link_sources.items():
+        link_hash = hashlib.sha256(link.encode('utf-8')).hexdigest()
+        first_source = sources[0] if sources else ''
+        category = 'uncategorized'
+        if first_source:
+            base = os.path.splitext(os.path.basename(first_source))[0]
+            if '-' in base:
+                category = base.split('-')[0].strip()
+
+        id_val = link_to_id.get(link, '')
+
         updates.append({
+            "id": id_val,
             "link": link,
-            "source_file": "; ".join(sources)
+            "source_file": "; ".join(sources),
+            "link_hash": link_hash,
+            "category": category
         })
     
     if not updates:
@@ -242,18 +295,11 @@ def update_mapping_file(records: list, mapping_filename: str):
     if df_map.empty:
         df_final = df_updates
     else:
-        # We merge df_updates into df_map
-        # If link exists, update source_file. If not, append.
-        
-        # Set index to link
         df_map = df_map.set_index("link")
         df_updates = df_updates.set_index("link")
         
-        # Update existing rows
         df_map.update(df_updates)
         
-        # Identify new rows
-        # Index difference
         new_links = df_updates.index.difference(df_map.index)
         if not new_links.empty:
             df_to_add = df_updates.loc[new_links]
@@ -265,12 +311,86 @@ def update_mapping_file(records: list, mapping_filename: str):
     df_final.to_csv(mapping_filename, index=False)
     print(f"Mapping file {mapping_filename} updated with source files.")
 
+def get_files_list(path:str=""):
+    files_list = []
+
+    for item in pathlib.Path(path).iterdir():
+        files_list.append(str(item.absolute()))
+
+    return files_list
+
+
+def remove_truncated_links(csv_filename: str, mapping_filename: str = MAPPING_FILE) -> dict:
+    """Clean up existing CSV/mapping by removing links that are strict prefixes of longer links on same host.
+    Returns a summary dict: {'removed': int, 'before': int, 'after': int}.
+
+    Note: This will reassign sequential IDs starting at 1 for the CSV and update mapping file IDs accordingly.
+    """
+    if not os.path.exists(csv_filename):
+        print(f"CSV file not found: {csv_filename}")
+        return {"removed": 0, "before": 0, "after": 0}
+
+    try:
+        df = pd.read_csv(csv_filename, dtype={"id": object, "link": object})
+    except Exception as e:
+        print(f"Error reading CSV: {e}")
+        return {"removed": 0, "before": 0, "after": 0}
+
+    before = len(df)
+    links = df["link"].astype(str).tolist()
+
+    # detect truncated prefixes
+    from urllib.parse import urlparse
+    to_remove = set()
+    for i, a in enumerate(links):
+        pa = urlparse(a)
+        for j, b in enumerate(links):
+            if i == j:
+                continue
+            pb = urlparse(b)
+            if pa.scheme == pb.scheme and pa.netloc == pb.netloc and b.startswith(a) and len(b) > len(a):
+                to_remove.add(a)
+                break
+
+    if not to_remove:
+        print("No truncated-prefix links detected to remove.")
+        return {"removed": 0, "before": before, "after": before}
+
+    df_clean = df[~df["link"].isin(to_remove)].copy()
+
+    # reassign sequential ids
+    df_clean = df_clean.reset_index(drop=True)
+    df_clean["id"] = (df_clean.index + 1).astype(int)
+
+    try:
+        df_clean.to_csv(csv_filename, index=False)
+    except Exception as e:
+        print(f"Error writing cleaned CSV: {e}")
+        return {"removed": 0, "before": before, "after": before}
+
+    # update mapping file: drop rows with removed links
+    if os.path.exists(mapping_filename):
+        try:
+            df_map = pd.read_csv(mapping_filename, dtype={"link": object, "id": object})
+            df_map = df_map[~df_map["link"].isin(list(to_remove))].copy()
+            # update ids in mapping based on cleaned csv
+            link_to_id = dict(zip(df_clean['link'].astype(str), df_clean['id'].astype(str)))
+            df_map['id'] = df_map['link'].map(link_to_id).fillna('')
+            df_map.to_csv(mapping_filename, index=False)
+        except Exception as e:
+            print(f"Warning: could not update mapping file cleanly: {e}")
+
+    after = len(df_clean)
+    removed = before - after
+    print(f"Removed {removed} truncated links from {csv_filename}. Rows: {before} -> {after}")
+    return {"removed": removed, "before": before, "after": after}
 
 if __name__ == "__main__":
-    extracted_records = extract_urls_from_pdfs(PDF_FILES)
+    pdf_files_list = get_files_list(LINKS_SRC_DIR)
+
+    extracted_records = extract_urls_from_pdfs(pdf_files_list)
     
-    # 1. Update status CSV (Unique links only)
-    append_new_records(extracted_records, CSV_FILE)
+    new_count, dup_count = append_new_records(extracted_records, CSV_FILE)
+    print(f"Links added: {new_count} | duplicates: {dup_count}")
     
-    # 2. Update Mapping CSV (Link -> Source File)
     update_mapping_file(extracted_records, MAPPING_FILE)
