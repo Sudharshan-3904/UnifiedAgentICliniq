@@ -5,6 +5,8 @@ import os
 import re
 import json
 import hashlib
+import io
+import PyPDF2
 from datetime import datetime
 from links_to_csv import extract_urls_from_pdfs, append_new_records, update_mapping_file, get_files_list, MAPPING_FILE
 
@@ -66,6 +68,79 @@ def get_headers():
         'Sec-Fetch-Site': 'none',
         'Sec-Fetch-User': '?1',
     }
+
+def extract_date(soup, url):
+    """Extract last updated/published/reviewed date based on the URL domain."""
+    date_str = "N/A"
+    
+    # Try generic meta tags first as they are often very reliable for medical/academic articles
+    meta_date = (
+        soup.find("meta", {"name": "citation_publication_date"}) or 
+        soup.find("meta", {"name": "citation_date"}) or 
+        soup.find("meta", {"name": "DC.Date.Modified"}) or
+        soup.find("meta", {"name": "dc.date"}) or
+        soup.find("meta", {"property": "article:modified_time"}) or
+        soup.find("meta", {"property": "og:updated_time"})
+    )
+    if meta_date:
+        date_str = meta_date.get("content", "N/A")
+        if date_str and date_str != "N/A":
+            return date_str
+
+    if "medlineplus.gov" in url:
+        # MedlinePlus uses span#lastupdate
+        date_tag = soup.find("span", id="lastupdate")
+        if date_tag:
+            date_str = date_tag.get_text(strip=True).replace("Last updated ", "").replace("Last updated: ", "")
+    
+    elif "ncbi.nlm.nih.gov/pmc/articles" in url or "pmc.ncbi.nlm.nih.gov/articles" in url:
+        # PMC Articles
+        date_tag = soup.select_one(".reporting-year, .article-source-item, .fm-update-date, .article-meta span.date, .pmc-layout__citation")
+        if date_tag:
+            text = date_tag.get_text(strip=True)
+            # Look for year patterns like 2023 or 2023 Jan
+            match = re.search(r'\b(19|20)\d{2}\b', text)
+            if match:
+                # Try to capture more context if it looks like a citation (e.g. "2018 Jun")
+                extended_match = re.search(r'\b\d{4}\s+[A-Z][a-z]{2}\b', text)
+                if extended_match:
+                    date_str = extended_match.group(0)
+                else:
+                    date_str = match.group(0)
+
+    elif "ncbi.nlm.nih.gov/books" in url:
+        # NCBI Bookshelf
+        date_tag = soup.select_one("span.publish-date")
+        if not date_tag:
+            small_p = soup.find("p", class_="small")
+            if small_p:
+                text = small_p.get_text(strip=True)
+                if "Last Update:" in text:
+                    match = re.search(r"Last Update:\s*([^;.]+)", text)
+                    if match:
+                        date_str = match.group(1).strip()
+        else:
+            date_str = date_tag.get_text(strip=True)
+
+    elif "pubmed.ncbi.nlm.nih.gov" in url:
+        # PubMed
+        date_tag = soup.select_one(".cit, .chapter-contribution-date-value, time")
+        if date_tag:
+            date_str = date_tag.get_text(strip=True)
+            
+    elif "rarediseases.info.nih.gov" in url:
+        # GARD
+        date_tag = soup.select_one("app-bottom-sources-date-information p.text-xl-end")
+        if date_tag:
+            date_str = date_tag.get_text(strip=True).replace("Last Updated:", "").strip()
+            
+    elif "genome.gov" in url:
+        # Genome.gov
+        date_tag = soup.select_one(".last-updated p")
+        if date_tag:
+            date_str = date_tag.get_text(strip=True).replace("Last updated:", "").strip()
+
+    return date_str
 
 def ensure_data_files():
     os.makedirs(MD_FILE_STORAGE, exist_ok=True)
@@ -180,9 +255,103 @@ def update_run_tracker(**kwargs):
     return entry
 
 
+def extract_from_pdf(url, article_id):
+    """Extract text content from PDF files."""
+    try:
+        response = scraper.get(url, headers=get_headers(), timeout=30)
+        if response.status_code != 200:
+            print(f"Failed to fetch PDF {url} (Status: {response.status_code})")
+            return None
+            
+        pdf_file = io.BytesIO(response.content)
+        reader = PyPDF2.PdfReader(pdf_file)
+        
+        title = url.split('/')[-1].replace('.pdf', '')
+        text = ""
+        for page in reader.pages:
+            text += page.extract_text() + "\n"
+            
+        data = {
+            "id": article_id,
+            "title": title,
+            "url": url,
+            "sections": [
+                {
+                    "section_title": "Full PDF Content",
+                    "content": [{"type": "paragraph", "text": text.strip()}]
+                }
+            ],
+            "extracted_date": datetime.now()
+        }
+        
+        return data
+    except Exception as e:
+        print(f"Error extracting PDF {url}: {e}")
+        return None
+
+
+def extract_from_pubmed(soup, url, article_id):
+    """Extract content from PubMed articles."""
+    try:
+        title_tag = soup.select_one("h1.heading-title")
+        title = title_tag.get_text(strip=True) if title_tag else "Unknown_PubMed_Title"
+        
+        last_updated = extract_date(soup, url)
+        
+        data = {
+            "id": article_id,
+            "title": title,
+            "url": url,
+            "sections": []
+        }
+        
+        # Abstract is usually the main thing
+        abstract_div = soup.select_one("#abstract")
+        if abstract_div:
+            # PubMed abstracts often have structured sub-sections
+            abstract_subsections = abstract_div.find_all("p")
+            if not abstract_subsections:
+                # Fallback to pure text
+                abstract_text = abstract_div.get_text(strip=True)
+                data["sections"].append({
+                    "section_title": "Abstract",
+                    "content": [{"type": "paragraph", "text": abstract_text}]
+                })
+            else:
+                for p_idx, p in enumerate(abstract_subsections):
+                    strong = p.find("strong")
+                    sec_title = strong.get_text(strip=True) if strong else f"Section {p_idx+1}"
+                    p_text = p.get_text(strip=True).replace(sec_title, "", 1).strip()
+                    data["sections"].append({
+                        "section_title": sec_title if sec_title else "Abstract",
+                        "content": [{"type": "paragraph", "text": p_text if p_text else p.get_text(strip=True)}]
+                    })
+        
+        if not data["sections"]:
+            # Fallback for full view or other content
+            article_details = soup.select_one("#article-details")
+            if article_details:
+                text = article_details.get_text(separator="\n", strip=True)
+                data["sections"].append({
+                    "section_title": "Article Details",
+                    "content": [{"type": "paragraph", "text": text}]
+                })
+
+        if not data["sections"]:
+            return None
+
+        data["extracted_date"] = datetime.now()
+        return data
+    except Exception as e:
+        print(f"Error extracting PubMed {url}: {e}")
+        return None
+
+
 def extract_from_medline(soup, url, article_id):
     title_tag = soup.find("h1")
     title = title_tag.get_text(strip=True) if title_tag else "Unknown_Title"
+
+    last_updated = extract_date(soup, url)
 
     data = {
         "id": article_id,
@@ -191,21 +360,31 @@ def extract_from_medline(soup, url, article_id):
         "sections": []
     }
 
+    # MedlinePlus specific content root or common fallbacks for other domains
     content_root = soup.find("article")
     if not content_root:
         content_root = soup.find("main")
     if not content_root:
-        content_root = soup.find(id="maincontent")
+        content_root = soup.find(id="maincontent") # Common in MedlinePlus and NCBI MedGen
     if not content_root:
+        content_root = soup.find(id="main-content") # Common in Genome.gov
+    if not content_root:
+        content_root = soup.find(id="disease") # Common in rarediseases.info.nih.gov
+    if not content_root:
+        content_root = soup.find("app-disease-about") # Fallback for GARD
+    
+    if not content_root:
+        # Fallback to the original broad search just in case
         content_root = soup.find(class_="jig-ncbi-inpagenav")
 
     if not content_root:
         print(f"Main content container not found for {url}")
         return None
 
-    sections = content_root.find_all(["h2", "h3", "p", "ul"])
+    sections = content_root.find_all(["h1", "h2", "h3", "h4", "p", "ul", "div", "dd", "dt"])
     current_section = None
 
+    # MedlinePlus abstract check
     abstract_div = soup.select_one(".abstract, #abstract, .abstract-content")
     if abstract_div:
         data["sections"].append({
@@ -214,29 +393,37 @@ def extract_from_medline(soup, url, article_id):
         })
 
     for elem in sections:
-        if elem.find_parent(class_=["ref-list", "ack", "app-group", "fn-group"]):
+        if elem.find_parent(class_=["ref-list", "ack", "app-group", "fn-group", "back", "reflist"]):
             continue
 
-        if elem.name in ["h2", "h3"]:
-            if current_section:
+        if elem.name in ["h1", "h2", "h3", "h4"]:
+            if current_section and current_section["content"]:
                 data["sections"].append(current_section)
 
             section_title = elem.get_text(strip=True)
+            if not section_title:
+                continue
             current_section = {
                 "section_title": section_title,
                 "content": []
             }
         
-        elif elem.name == "p":
+        elif elem.name in ["p", "div", "dd"]:
+            # Only treat div as paragraph if it has direct text or significant text content and no children headings
+            if elem.name == "div" and (elem.find(["h1", "h2", "h3", "h4", "p"])):
+                continue
+                
             paragraph_text = elem.get_text(strip=True)
-            if paragraph_text:
+            if paragraph_text and len(paragraph_text) > 20: # Filter out noise
                 if current_section is None:
                     current_section = {"section_title": "Introduction", "content": []}
                 
-                current_section["content"].append({
-                    "type": "paragraph",
-                    "text": paragraph_text
-                })
+                # Avoid duplicates
+                if not any(c.get("text") == paragraph_text for c in current_section["content"]):
+                    current_section["content"].append({
+                        "type": "paragraph",
+                        "text": paragraph_text
+                    })
 
         elif elem.name == "ul":
             list_items = [li.get_text(strip=True) for li in elem.find_all("li")]
@@ -249,11 +436,21 @@ def extract_from_medline(soup, url, article_id):
                     "items": list_items
                 })
 
-    if current_section:
+    if current_section and current_section["content"]:
         data["sections"].append(current_section)
 
     if not data["sections"]:
-        print(f"No structured content extracted for {url}")
+        # Ultimate fallback: Get all text from content_root if no structure found
+        print(f"No structured content extracted for {url}, attempting grab-all fallback.")
+        all_text = content_root.get_text(separator="\n\n", strip=True)
+        if all_text:
+            data["sections"].append({
+                "section_title": "Main Content",
+                "content": [{"type": "paragraph", "text": all_text}]
+            })
+    
+    if not data["sections"]:
+        print(f"Completely failed to extract content for {url}")
         return None
 
     data["extracted_date"] = datetime.now()
@@ -508,10 +705,11 @@ if __name__ == "__main__":
     # Build cache of links already extracted (from saved metadata) to skip re-fetching
     md_meta = load_json_file(MD_FILES_METADATA_FILE, {})
     extracted_links = set()
-    for v in md_meta.values():
-        link_val = v.get('link')
-        if link_val:
-            extracted_links.add(link_val)
+    if isinstance(md_meta, dict):
+        for v in md_meta.values():
+            link_val = v.get('link')
+            if link_val:
+                extracted_links.add(link_val)
 
     prev_failed_count = sum(1 for r in updated_rows if (r.get('progress') or r.get('status') or '').lower() == 'failed')
 
@@ -531,10 +729,54 @@ if __name__ == "__main__":
                     row['progress'] = 'extracted'
                     row['status_code'] = ''
                     row['status_abbreviation'] = ''
-                    md_entry = next((v for v in md_meta.values() if v.get('link') == url), {})
+                    md_entry = {}
+                    if isinstance(md_meta, dict):
+                        md_entry = next((v for v in md_meta.values() if v.get('link') == url), {})
                     row['extracted_date'] = md_entry.get('extraction_date') or datetime.now().isoformat()
                     pending_updates.append({'id': row.get('id'), 'link': row.get('link'), 'progress': row['progress'], 'note': 'already_extracted'})
                     break
+            count += 1
+            if count % BATCH_SIZE == 0:
+                write_status_csv(CSV_STATUS_FILE, updated_rows)
+                append_updates_file(UPDATES_FILE, pending_updates)
+                succeeded = sum(1 for r in updated_rows if (r.get('progress') or '').lower() == 'extracted')
+                failed = sum(1 for r in updated_rows if (r.get('progress') or '').lower() == 'failed')
+                total = len([r for r in updated_rows if (r.get('progress') or '').lower() != 'extracted'])
+                update_run_tracker(pdf_files=[os.path.basename(p) for p in PDF_FILES], new_links=new_count, duplicates=dup_count, prev_failed=prev_failed_count, total=total, failed=failed, succeeded=succeeded, stages={'batch_saved': datetime.now().isoformat()})
+                pending_updates = []
+                print(f"Batch of {BATCH_SIZE} reached. CSV saved and updates appended.")
+            continue
+
+        # Handle PDF files
+        if url.lower().endswith(".pdf") or "/download/" in url.lower():
+            print(f"Processing PDF/Download URL: {url}")
+            data = extract_from_pdf(url, article_id)
+            if data is None:
+                for row in updated_rows:
+                    if row.get('link') == url:
+                        row['progress'] = 'failed'
+                        pending_updates.append({'id': row.get('id'), 'link': row.get('link'), 'progress': row['progress'], 'note': 'pdf_extraction_failed'})
+                        break
+            else:
+                save_result, md_path, file_hash = save_markdown(article_id, data['title'], url, data)
+                if save_result in ('saved', 'skipped'):
+                    for row in updated_rows:
+                        if row.get('link') == url:
+                            row['progress'] = 'extracted'
+                            row['extracted_date'] = datetime.now().isoformat()
+                            pending_updates.append({'id': row.get('id'), 'link': row.get('link'), 'progress': row['progress']})
+                            break
+                    if save_result == 'saved':
+                        existing_files.add(os.path.basename(md_path))
+                        source_file = get_link_source(url)
+                        category = get_category_from_source(str(source_file or ''))
+                        update_md_metadata(article_id, url, source_file, md_path, category, datetime.now(), file_hash)
+                else:
+                    for row in updated_rows:
+                        if row.get('link') == url:
+                            row['progress'] = 'failed'
+                            pending_updates.append({'id': row.get('id'), 'link': row.get('link'), 'progress': row['progress'], 'note': 'pdf_save_failed'})
+                            break
             count += 1
             if count % BATCH_SIZE == 0:
                 write_status_csv(CSV_STATUS_FILE, updated_rows)
@@ -596,11 +838,17 @@ if __name__ == "__main__":
         data = None
         if "medlineplus.gov" in url:
             data = extract_from_medline(soup, url, article_id)
-        elif "ncbi.nlm.nih.gov" in url:
+        elif "pubmed.ncbi.nlm.nih.gov" in url:
+            data = extract_from_pubmed(soup, url, article_id)
+        elif "ncbi.nlm.nih.gov" in url or "pmc.ncbi.nlm.nih.gov" in url:
             if "/articles" in url:
                 data = extract_from_ncbi_articles(soup, url, article_id)
             else:
                 data = extract_from_ncbi(soup, url, article_id)
+        elif "rarediseases.info.nih.gov" in url:
+            data = extract_from_medline(soup, url, article_id)
+        elif "genome.gov" in url:
+            data = extract_from_medline(soup, url, article_id)
         else:
             print(f"No specific extractor for URL: {url}, attempting default Medline extractor.")
             data = extract_from_medline(soup, url, article_id)
