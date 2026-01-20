@@ -4,7 +4,6 @@ import re
 SOURCE_DIR = "md_files"
 DEST_DIR = "md_files_trimmed"
 
-
 STOP_HEADERS = [
     "References",
     "Bibliography",

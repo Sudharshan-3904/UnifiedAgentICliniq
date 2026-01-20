@@ -11,12 +11,60 @@ from datetime import datetime
 from links_to_csv import extract_urls_from_pdfs, append_new_records, update_mapping_file, get_files_list, MAPPING_FILE
 
 MD_FILE_STORAGE = "md_files"
+MD_FILES_TRIMMED = "md_files_trimmed"
 CSV_STATUS_FILE = r"data\update_progress.csv"
 RUN_TRACKER_FILE = r"data\run_tracker.json"
 MD_FILES_METADATA_FILE = r"data\md_files_metadata.json"
 MAPPING_FILE = r"data\link_file_status_map.csv"
 SCRAPING_LINKS_DIR = "src_lib"
 PDF_FILES = get_files_list(SCRAPING_LINKS_DIR)
+
+# Trim markdown configuration
+STOP_HEADERS = [
+    "References",
+    "Bibliography",
+    "Citations",
+    "Author Contributions",
+    "Authors' contributions",
+    "Related Resources",
+    "Review Questions",
+    "Images",
+    "Clinical Trials Accepting Patients",
+    "Research Results and Related Resources",
+    "Contributor Information",
+    "Availability of data and materials",
+    "Ethics approval and consent to participate",
+    "Consent for publication",
+    "Competing interests",
+    "Funding",
+    "Institutional Review Board Statement",
+    "Informed Consent Statement",
+    "Data Availability Statement",
+    "Conflicts of Interest",
+    "Conflict of Interest",
+    "Funding Statement",
+    "Associated Data",
+    "Acknowledgments",
+    "Genetic Testing Information",
+    "Genetic and Rare Diseases Information Center",
+    "Patient Support and Advocacy Resources",
+    "Patient Support",
+    "Clinical Trials",
+    "Catalog of Genes and Diseases from OMIM",
+    "Scientific Articles on PubMed",
+    "Medical Encyclopedia",
+    "Understanding Genetics",
+    "Related Health Topics",
+    "Disclaimers",
+    "Disclaimer",
+    "Reuse of NCI Information",
+    "Syndication Services"
+]
+
+STOP_PHRASES = [
+    "If you would like to reproduce some or all of this content",
+    "Want to use this content on your website"
+]
 
 os.makedirs(MD_FILE_STORAGE, exist_ok=True)
 os.makedirs(os.path.dirname(CSV_STATUS_FILE), exist_ok=True)
@@ -56,6 +104,113 @@ def convert_csv_to_list(input_file):
 
 def sanitize_filename(text):
     return re.sub(r'[^a-zA-Z0-9_-]', '_', text)
+
+
+def extract_pmc_fulltext_content(soup, url):
+    """
+    Extracts article content from PMC articles with logic to handle redirects to full text.
+    Specifically targets NCBI/PMC article structures.
+    """
+    content_root = None
+    
+    article_tag = soup.find("article")
+    if article_tag:
+        article_content_section = article_tag.find("section", attrs={"aria-label": "Article content"})
+        if article_content_section:
+            content_root = article_content_section.find("section", class_="body main-article-body")
+    
+    if not content_root:
+        content_root = soup.select_one("div.main-content.lit-style")
+    if not content_root:
+        content_root = soup.find("div", class_="document")
+    if not content_root:
+        content_root = soup.find("main")
+    if not content_root:
+        return None
+
+    title_tag = soup.find("h1")
+    if not title_tag and content_root:
+        title_tag = content_root.find("h1")
+    title = title_tag.get_text(strip=True) if title_tag else "Unknown_Title"
+
+    data = {
+        "title": title,
+        "url": url,
+        "sections": [],
+        "extracted_date": datetime.now().isoformat()
+    }
+
+    # Extract sections (H2, H3, P, UL)
+    sections = content_root.find_all(["h2", "h3", "p", "ul"])
+    current_section = None
+
+    for elem in sections:
+        # Skip references and acknowledgments often found at the bottom
+        if elem.find_parent(class_=["ref-list", "ack", "app-group", "fn-group", "back", "reflist"]):
+            continue
+        
+        if elem.name in ["h2", "h3"]:
+            if current_section:
+                data["sections"].append(current_section)
+
+            section_title = elem.get_text(strip=True)
+            current_section = {
+                "section_title": section_title,
+                "content": []
+            }
+        
+        elif elem.name == "p":
+            paragraph_text = elem.get_text(strip=True)
+            if paragraph_text: 
+                if current_section is None:
+                    current_section = {"section_title": "Introduction", "content": []}
+                
+                current_section["content"].append({
+                    "type": "paragraph",
+                    "text": paragraph_text
+                })
+
+        elif elem.name == "ul":
+            list_items = [li.get_text(strip=True) for li in elem.find_all("li")]
+            if list_items:
+                if current_section is None:
+                    current_section = {"section_title": "Introduction", "content": []}
+                
+                current_section["content"].append({
+                    "type": "list",
+                    "items": list_items
+                })
+    
+    if current_section:
+        if current_section not in data["sections"]:
+            data["sections"].append(current_section)
+            
+    return data if data["sections"] else None
+
+
+def handle_pmc_fulltext_redirect(scraper, url):
+    """
+    Checks if a PMC article has a full text version available and returns the target URL.
+    Returns the full text URL if found, otherwise returns the original URL.
+    """
+    try:
+        response = scraper.get(url, headers=get_headers(), timeout=30)
+        if response.status_code != 200:
+            return url
+        
+        soup = BeautifulSoup(response.content, 'html.parser')
+        pmc_link = soup.select_one("a.link-item.pmc")
+        
+        if pmc_link and pmc_link.get('href'):
+            from urllib.parse import urljoin
+            rel_href = pmc_link.get('href')
+            target_url = urljoin(url, rel_href)
+            print(f"Found PMC Full Text link. Will scrape from: {target_url}")
+            return target_url
+    except Exception as e:
+        print(f"Error checking PMC fulltext redirect: {e}")
+    
+    return url
 
 def get_headers():
     return {
@@ -688,6 +843,74 @@ def append_updates_file(updates_file, updates_rows):
     print(f"Appended {len(updates_rows)} updates to {updates_file}")
 
 
+def should_stop_trimming(line):
+    """
+    Determine if trimming should stop at this line based on headers and phrases.
+    """
+    line_stripped = line.strip()
+    
+    # Check for header format (# or ## followed by text)
+    if line_stripped.startswith('#'):
+        header_text = line_stripped.lstrip('#').strip()
+        for stop_header in STOP_HEADERS:
+            if header_text.lower() == stop_header.lower():
+                return True
+    
+    # Check for footer phrases
+    for phrase in STOP_PHRASES:
+        if line_stripped.startswith(phrase):
+            return True
+            
+    # Check for Updated line (e.g. "- Updated:May 15") at start
+    if re.match(r'^[-*\s]*Updated\s*:', line_stripped, re.IGNORECASE):
+        return True
+
+    return False
+
+
+def trim_markdown_files(source_dir, dest_dir):
+    """
+    Process markdown files to remove content after stop headers and phrases.
+    Applies logic from trim_md_files.py.
+    """
+    os.makedirs(dest_dir, exist_ok=True)
+    
+    files = [f for f in os.listdir(source_dir) if f.endswith('.md')]
+    if not files:
+        print(f"No markdown files found in {source_dir}")
+        return
+    
+    print(f"Found {len(files)} markdown files to trim.")
+    
+    for i, filename in enumerate(files):
+        source_path = os.path.join(source_dir, filename)
+        dest_path = os.path.join(dest_dir, filename)
+        
+        try:
+            with open(source_path, 'r', encoding='utf-8') as f:
+                lines = f.readlines()
+            
+            kept_lines = []
+            
+            for line in lines:
+                if should_stop_trimming(line):
+                    print(f"[{filename}] Cutting off at: {line.strip()[:50]}...")
+                    break
+                kept_lines.append(line)
+            
+            # Write to destination
+            with open(dest_path, 'w', encoding='utf-8') as f:
+                f.writelines(kept_lines)
+        
+        except Exception as e:
+            print(f"Error trimming {filename}: {e}")
+        
+        if (i + 1) % 100 == 0:
+            print(f"Trimmed {i + 1}/{len(files)} files...")
+    
+    print(f"Trimming complete. Files saved to {dest_dir}")
+
+
 if __name__ == "__main__":
     ensure_data_files()
 
@@ -836,22 +1059,44 @@ if __name__ == "__main__":
         soup = BeautifulSoup(response.text, "html.parser")
 
         data = None
-        if "medlineplus.gov" in url:
-            data = extract_from_medline(soup, url, article_id)
-        elif "pubmed.ncbi.nlm.nih.gov" in url:
-            data = extract_from_pubmed(soup, url, article_id)
-        elif "ncbi.nlm.nih.gov" in url or "pmc.ncbi.nlm.nih.gov" in url:
-            if "/articles" in url:
-                data = extract_from_ncbi_articles(soup, url, article_id)
+        actual_url = url
+        
+        # Check for PMC fulltext redirect
+        if "ncbi.nlm.nih.gov/pmc" in url or "pmc.ncbi.nlm.nih.gov" in url:
+            print(f"Checking for PMC full text redirect: {url}")
+            actual_url = handle_pmc_fulltext_redirect(scraper, url)
+            if actual_url != url:
+                # Fetch the full text version
+                try:
+                    response = scraper.get(actual_url, headers=get_headers(), timeout=30)
+                    if response.status_code == 200:
+                        soup = BeautifulSoup(response.text, "html.parser")
+                    else:
+                        actual_url = url
+                        soup = BeautifulSoup(response.text, "html.parser")
+                except Exception as e:
+                    print(f"Error fetching PMC fulltext: {e}")
+                    actual_url = url
+        
+        if "medlineplus.gov" in actual_url:
+            data = extract_from_medline(soup, actual_url, article_id)
+        elif "pubmed.ncbi.nlm.nih.gov" in actual_url:
+            data = extract_from_pubmed(soup, actual_url, article_id)
+        elif "ncbi.nlm.nih.gov" in actual_url or "pmc.ncbi.nlm.nih.gov" in actual_url:
+            if "/articles" in actual_url:
+                # Try PMC-specific extraction first
+                data = extract_pmc_fulltext_content(soup, actual_url)
+                if not data:
+                    data = extract_from_ncbi_articles(soup, actual_url, article_id)
             else:
-                data = extract_from_ncbi(soup, url, article_id)
-        elif "rarediseases.info.nih.gov" in url:
-            data = extract_from_medline(soup, url, article_id)
-        elif "genome.gov" in url:
-            data = extract_from_medline(soup, url, article_id)
+                data = extract_from_ncbi(soup, actual_url, article_id)
+        elif "rarediseases.info.nih.gov" in actual_url:
+            data = extract_from_medline(soup, actual_url, article_id)
+        elif "genome.gov" in actual_url:
+            data = extract_from_medline(soup, actual_url, article_id)
         else:
-            print(f"No specific extractor for URL: {url}, attempting default Medline extractor.")
-            data = extract_from_medline(soup, url, article_id)
+            print(f"No specific extractor for URL: {actual_url}, attempting default Medline extractor.")
+            data = extract_from_medline(soup, actual_url, article_id)
 
         if data is None:
             for row in updated_rows:
@@ -860,7 +1105,7 @@ if __name__ == "__main__":
                     pending_updates.append({'id': row.get('id'), 'link': row.get('link'), 'progress': row['progress'], 'note': 'extraction_failed'})
                     break
         else:
-            save_result, md_path, file_hash = save_markdown(article_id, data['title'], url, data)
+            save_result, md_path, file_hash = save_markdown(article_id, data['title'], actual_url, data)
             if save_result in ('saved', 'skipped'):
                 for row in updated_rows:
                     if row.get('link') == url:
@@ -902,3 +1147,10 @@ if __name__ == "__main__":
     update_run_tracker(pdf_files=[os.path.basename(p) for p in PDF_FILES], new_links=new_count, duplicates=dup_count, prev_failed=prev_failed_count, total=total, failed=failed, succeeded=succeeded, stages={'scraping_completed': datetime.now().isoformat()},)
 
     print("Final CSV update completed.")
+    
+    # Trim markdown files to remove references, acknowledgments, and footer content
+    print("\nStarting markdown trimming process...")
+    trim_markdown_files(MD_FILE_STORAGE, MD_FILES_TRIMMED)
+    print("Markdown trimming completed.")
+    
+    update_run_tracker(pdf_files=[os.path.basename(p) for p in PDF_FILES], new_links=new_count, duplicates=dup_count, prev_failed=prev_failed_count, total=total, failed=failed, succeeded=succeeded, stages={'scraping_completed': datetime.now().isoformat(), 'trimming_completed': datetime.now().isoformat()})

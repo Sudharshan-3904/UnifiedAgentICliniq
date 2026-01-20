@@ -92,8 +92,7 @@ def extract_article_content(soup, url):
     if not content_root:
         content_root = soup.find("div", class_="document")
     if not content_root:
-         content_root = soup.find("main")
-         
+        content_root = soup.find("main")
     if not content_root:
         return {"error": "Main content container not found"}
 
@@ -179,8 +178,8 @@ def process_url(url):
 
             res = scraper.get(target_url, headers=get_headers())
             if res.status_code != 200:
-                 print(f"Error fetching target URL: {res.status_code}")
-                 return
+                print(f"Error fetching target URL: {res.status_code}")
+                return
             soup = BeautifulSoup(res.content, 'html.parser')
         else:
             print("PMC Full Text link (a.link-item.pmc) not found. Attempting to scrape current page.")
