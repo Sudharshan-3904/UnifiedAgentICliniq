@@ -1077,7 +1077,7 @@ if __name__ == "__main__":
                 except Exception as e:
                     print(f"Error fetching PMC fulltext: {e}")
                     actual_url = url
-        
+
         if "medlineplus.gov" in actual_url:
             data = extract_from_medline(soup, actual_url, article_id)
         elif "pubmed.ncbi.nlm.nih.gov" in actual_url:
@@ -1152,5 +1152,5 @@ if __name__ == "__main__":
     print("\nStarting markdown trimming process...")
     trim_markdown_files(MD_FILE_STORAGE, MD_FILES_TRIMMED)
     print("Markdown trimming completed.")
-    
+
     update_run_tracker(pdf_files=[os.path.basename(p) for p in PDF_FILES], new_links=new_count, duplicates=dup_count, prev_failed=prev_failed_count, total=total, failed=failed, succeeded=succeeded, stages={'scraping_completed': datetime.now().isoformat(), 'trimming_completed': datetime.now().isoformat()})
