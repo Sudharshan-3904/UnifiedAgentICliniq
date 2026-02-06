@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT - BMI Health Advisor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <button class="new-chat-btn">
+                <span class="icon">+</span> New Chat
+            </button>
+            <div class="history-list">
+                <div class="history-item active">BMI Calculation</div>
+                <div class="history-item">Health History</div>
+                <div class="history-item">Nutrition Guide</div>
+            </div>
+            <div class="user-profile">
+                <div class="avatar">J</div>
+                <span class="user-name">Demo</span>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="main-content">
+            <div id="chat-messages" class="chat-container">
+                <!-- Welcome Message -->
+                <div class="message assistant">
+                    <div class="avatar bot">H</div>
+                    <div class="content">
+                        <p>Hello! I'm your BMI Health Advisor. How can I help you today?</p>
+                        <p>You can ask me to calculate your BMI by providing your weight (kg) and height (m).</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <footer class="input-area">
+                <div class="input-container">
+                    <input type="text" id="user-input" placeholder="Message Health Advisor..." autocomplete="off">
+                    <button id="send-btn" class="send-button">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="disclaimer">BMI is a screening tool. Always consult with a healthcare professional.</div>
+            </footer>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
