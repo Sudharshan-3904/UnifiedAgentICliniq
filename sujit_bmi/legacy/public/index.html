@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sujit BMI | Premium Health Advisor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div class="blob-bg"></div>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i data-lucide="activity" class="logo-icon"></i>
+                <h1>Sujit<span>BMI</span></h1>
+            </div>
+            <div class="status-badge" id="mcp-status">
+                <span class="dot"></span>
+                <span class="status-text">Connecting...</span>
+            </div>
+        </header>
+
+        <main>
+            <div class="chat-container">
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message assistant animate-in">
+                        <div class="avatar"><i data-lucide="sparkles"></i></div>
+                        <div class="content">
+                            Hello! I'm your premium BMI Health Advisor.
+                            Tell me your **height** (e.g., 1.75m or 175cm) and **weight** (e.g., 70kg) to get started.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-input-wrapper">
+                    <div class="input-area">
+                        <input type="text" id="user-input" placeholder="Type your height and weight (e.g. 1.8m 75kg)..."
+                            autocomplete="off">
+                        <button id="send-btn" aria-label="Send">
+                            <i data-lucide="send"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="info-sidebar">
+                <div class="glass-card info-card">
+                    <h3><i data-lucide="info"></i> Quick Tips</h3>
+                    <ul>
+                        <li><span class="label">BMI</span> measures body fat based on height and weight.</li>
+                        <li><span class="label">Formula</span>: Weight (kg) / Height (m)²</li>
+                        <li>Accurate measurements lead to better insights!</li>
+                    </ul>
+                </div>
+                <div class="glass-card history-card">
+                    <h3><i data-lucide="history"></i> Protocol State</h3>
+                    <div id="protocol-logs" class="logs">
+                        <p>> Handshake initiated...</p>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
