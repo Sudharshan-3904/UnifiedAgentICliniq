@@ -2,5 +2,5 @@
 __pycache__
 node_modules
 service_account.zip
-
+credentials.json
 **.env
