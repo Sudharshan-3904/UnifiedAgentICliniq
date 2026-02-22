@@ -1,26 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BMI Calculator Chatbot</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="chat-container">
-      <div class="chat-header">
-        <h1>BMI Calculator Bot</h1>
-      </div>
-      <div class="chat-messages" id="chat-messages">
-        <div class="message bot-message">
-          <div class="message-content">Hello! I'm your BMI Calculator. Type something like "calculate bmi height 1.75 weight 70" to get started.</div>
-        </div>
-      </div>
-      <div class="chat-input">
-        <input type="text" id="user-input" placeholder="Type your message..." />
-        <button id="send-button">Send</button>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator - ChatGPT App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app" class="glass-container">
+        <header>
+            <div class="logo-icon">⚖️</div>
+            <h1>Body Mass Index</h1>
+            <p class="subtitle">Personal Health Metrics</p>
+        </header>
+
+        <main id="content">
+            <div id="result-view" class="fade-in hidden">
+                <div class="bmi-badge">
+                    <span class="bmi-value" id="bmi-display">--</span>
+                    <span class="bmi-label">BMI</span>
+                </div>
+                <h2 id="category-display">Calculating...</h2>
+                <div class="advice-card">
+                    <p id="advice-display"></p>
+                </div>
+            </div>
+
+            <div id="loading-view" class="loading-state hidden">
+                <div class="spinner"></div>
+                <p>Ollama is thinking...</p>
+            </div>
+
+            <div class="input-section">
+                <input type="text" id="user-input" placeholder="e.g. I weigh 70kg and 1.75m tall">
+                <button id="send-btn">Ask AI</button>
+            </div>
+            
+            <div class="history-note">
+                <small>Connected to Local Model (Llama/Gemma)</small>
+            </div>
+        </main>
     </div>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
