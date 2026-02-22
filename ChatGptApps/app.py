@@ -2,8 +2,9 @@ import ollama
 import json
 from fastapi import FastAPI, HTTPException
 from fastapi.staticfiles import StaticFiles
+from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
-from mcp_server import calculate_bmi_logic
+from mcp_server import calculate_bmi_logic, render_external_app_logic
 import uvicorn
 
 app = FastAPI()
@@ -30,6 +31,24 @@ tools = [
                 "required": ["weight_kg", "height_m"],
             },
         },
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "render_external_app",
+            "description": "Render an external application (map, wiki, health info) in an iframe.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "app_name": {
+                        "type": "string",
+                        "enum": ["map", "wiki", "bmi_info"],
+                        "description": "The app to display."
+                    },
+                },
+                "required": ["app_name"],
+            },
+        },
     }
 ]
 
@@ -47,10 +66,10 @@ async def chat_endpoint(request: ChatRequest):
         if response.get('message', {}).get('tool_calls'):
             for call in response['message']['tool_calls']:
                 args = call['function']['arguments']
-                # Execute the shared logic
-                result = calculate_bmi_logic(args['weight_kg'], args['height_m'])
-                # Return the structured data directly to the frontend
-                return result
+                if call['function']['name'] == "calculate_bmi":
+                    return calculate_bmi_logic(args['weight_kg'], args['height_m'])
+                elif call['function']['name'] == "render_external_app":
+                    return render_external_app_logic(args['app_name'])
         
         # If no tool was called, return error or generic response
         raise HTTPException(status_code=400, detail="The AI didn't detect weight/height values.")
@@ -58,6 +77,40 @@ async def chat_endpoint(request: ChatRequest):
     except Exception as e:
         print(f"Error: {e}")
         raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/chat/stream")
+async def chat_stream(prompt: str):
+    """
+    Stream the chat result back as Server-Sent Events (SSE).
+    Client should connect via EventSource to `/chat/stream?prompt=...`.
+    """
+
+    async def event_generator():
+        try:
+            response = ollama.chat(
+                model=MODEL,
+                messages=[{"role": "user", "content": prompt}],
+                tools=tools,
+            )
+
+            if response.get("message", {}).get("tool_calls"):
+                for call in response["message"]["tool_calls"]:
+                    args = call["function"]["arguments"]
+                    if call["function"]["name"] == "calculate_bmi":
+                        result = calculate_bmi_logic(args["weight_kg"], args["height_m"])
+                    elif call["function"]["name"] == "render_external_app":
+                        result = render_external_app_logic(args["app_name"])
+                    
+                    # Send a single SSE "data:" event containing the JSON result
+                    yield f"data: {json.dumps(result)}\n\n"
+            else:
+                yield f"data: {json.dumps({"error": "AI did not detect weight/height values"})}\n\n"
+
+        except Exception as e:
+            yield f"data: {json.dumps({"error": str(e)})}\n\n"
+
+    return StreamingResponse(event_generator(), media_type="text/event-stream")
 
 # 3. Serve the frontend static files
 app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")

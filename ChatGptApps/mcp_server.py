@@ -28,6 +28,19 @@ def calculate_bmi_logic(weight_kg: float, height_m: float):
         "advice": advice
     }
 
+def render_external_app_logic(app_name: str):
+    apps = {
+        "map": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15000!2d-122.084!3d37.422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1625060000000",
+        "wiki": "https://en.m.wikipedia.org/wiki/Body_mass_index",
+        "bmi_info": "https://www.cdc.gov/healthyweight/assessing/bmi/index.html"
+    }
+    url = apps.get(app_name, "https://www.wikipedia.org")
+    return {
+        "type": "iframe",
+        "url": url,
+        "title": f"External App: {app_name}"
+    }
+
 @mcp.tool()
 async def calculate_bmi(weight_kg: float, height_m: float) -> dict:
     """
@@ -54,6 +67,31 @@ async def calculate_bmi(weight_kg: float, height_m: float) -> dict:
         "_meta": {
             "ui": {
                 "resourceUri": "http://localhost:8000/index.html"
+            }
+        }
+    }
+
+@mcp.tool()
+async def render_external_app(app_name: str) -> dict:
+    """
+    Render an external specialized application within the UI.
+    
+    Args:
+        app_name: Name of the application to render (e.g., 'map', 'wiki', 'bmi_info')
+    """
+    result = render_external_app_logic(app_name)
+    
+    return {
+        "content": [
+            {
+                "type": "text",
+                "text": f"Launching external {app_name} component..."
+            }
+        ],
+        "structuredContent": result,
+        "_meta": {
+            "ui": {
+                "resourceUri": result["url"]
             }
         }
     }

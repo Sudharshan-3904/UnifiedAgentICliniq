@@ -27,6 +27,14 @@
                 </div>
             </div>
 
+            <div id="iframe-view" class="fade-in hidden">
+                <div class="iframe-header">
+                    <span id="iframe-title">External Component</span>
+                    <button class="close-iframe" onclick="closeIframe()">✕</button>
+                </div>
+                <iframe id="external-app-frame" src="" frameborder="0"></iframe>
+            </div>
+
             <div id="loading-view" class="loading-state hidden">
                 <div class="spinner"></div>
                 <p>Ollama is thinking...</p>
