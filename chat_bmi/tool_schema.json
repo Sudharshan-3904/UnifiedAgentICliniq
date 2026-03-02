@@ -1,0 +1,23 @@
+{
+  "name": "calculate_bmi",
+  "description": "Calculate BMI and return health category.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "height": {
+        "type": "number",
+        "description": "The height of the user."
+      },
+      "weight": {
+        "type": "number",
+        "description": "The weight of the user."
+      },
+      "unit": {
+        "type": "string",
+        "enum": ["metric", "imperial"],
+        "description": "The unit system to use."
+      }
+    },
+    "required": ["height", "weight", "unit"]
+  }
+}
