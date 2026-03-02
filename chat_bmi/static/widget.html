@@ -1,308 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMI Calculator Widget</title>
+    <title>BMI Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --button-gradient: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-            --bg-color: #f0f2f5;
-            --card-bg: #ffffff;
-            --text-main: #2d3436;
-            --text-secondary: #636e72;
-            --shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            --accent-blue: #3498db;
+            --accent-green: #2ecc71;
+            --accent-yellow: #f1c40f;
+            --accent-red: #e74c3c;
+            --bg-glass: rgba(255, 255, 255, 0.1);
+            --border-glass: rgba(255, 255, 255, 0.2);
         }
 
         body {
-            background: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+            font-family: 'Outfit', sans-serif;
+            background: transparent;
+            color: #fff;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            padding: 20px;
+            overflow: hidden;
         }
 
         .widget-card {
-            background: var(--card-bg);
-            border-radius: 20px;
-            box-shadow: var(--shadow);
-            width: 100%;
-            max-width: 400px;
-            padding: 30px;
+            width: 320px;
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 28px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.4);
+            position: relative;
             text-align: center;
-            transition: var(--transition);
         }
 
-        .widget-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-        }
-
-        h1 {
-            font-size: 24px;
+        .header-text {
+            font-size: 0.8rem;
             font-weight: 700;
-            margin-bottom: 10px;
-            background: var(--primary-gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        p.subtitle {
-            font-size: 14px;
-            color: var(--text-secondary);
-            margin-bottom: 25px;
-        }
-
-        .input-group {
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.8);
             margin-bottom: 20px;
             text-align: left;
         }
 
-        label {
-            display: block;
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 8px;
-            color: var(--text-main);
-        }
-
-        input, select {
-            width: 100%;
-            padding: 12px 15px;
-            border: 2px solid #edf2f7;
-            border-radius: 12px;
-            font-size: 16px;
-            transition: var(--transition);
-            outline: none;
-        }
-
-        input:focus, select:focus {
-            border-color: #764ba2;
-            box-shadow: 0 0 0 3px rgba(118, 75, 162, 0.1);
-        }
-
-        .btn-calc {
-            width: 100%;
-            padding: 14px;
-            border: none;
-            border-radius: 12px;
-            background: var(--button-gradient);
-            color: white;
-            font-size: 16px;
-            font-weight: 700;
-            cursor: pointer;
-            transition: var(--transition);
-            box-shadow: 0 4px 15px rgba(79, 172, 254, 0.4);
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .btn-calc:hover {
-            transform: scale(1.02);
-            filter: brightness(1.05);
-        }
-
-        .btn-calc:active {
-            transform: scale(0.98);
-        }
-
-        .btn-calc:disabled {
-            background: #cbd5e0;
-            cursor: not-allowed;
-            box-shadow: none;
-        }
-
-        .loader {
-            width: 20px;
-            height: 20px;
-            border: 3px solid rgba(255, 255, 255, 0.3);
-            border-radius: 50%;
-            border-top-color: #fff;
-            animation: spin 1s ease-in-out infinite;
-            display: none;
-            margin-left: 10px;
-        }
-
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-
-        #result-container {
-            margin-top: 25px;
-            padding: 20px;
-            border-radius: 15px;
-            background: #f8fafc;
-            display: none;
-            opacity: 0;
-            transform: translateY(10px);
-            transition: var(--transition);
-        }
-
-        #result-container.show {
-            display: block;
-            opacity: 1;
-            transform: translateY(0);
-        }
-
         .bmi-value {
-            font-size: 32px;
-            font-weight: 800;
-            color: #764ba2;
-            margin-bottom: 5px;
+            font-size: 5rem;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1;
+            transition: color 0.5s ease;
         }
 
-        .bmi-category {
-            font-size: 18px;
+        .bmi-status {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
             font-weight: 600;
-            color: var(--text-main);
-            margin-bottom: 10px;
+            margin: 10px 0 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        .bmi-interpretation {
-            font-size: 14px;
-            color: var(--text-secondary);
-            line-height: 1.5;
+        .check-icon {
+            margin-right: 8px;
+            width: 18px;
+            height: 18px;
+            background: currentColor;
+            -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E") no-repeat center;
+            mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E") no-repeat center;
         }
 
-        .error-msg {
-            color: #e53e3e;
-            font-size: 14px;
-            margin-top: 10px;
-            display: none;
+        .stats-row {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
         }
 
-        /* Mobile Adjustments */
-        @media (max-width: 480px) {
-            .widget-card {
-                padding: 20px;
-            }
+        .stat-box {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--border-glass);
+            border-radius: 15px;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .stat-title {
+            font-size: 0.65rem;
+            color: rgba(255, 255, 255, 0.5);
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .stat-val {
+            font-size: 1.2rem;
+            font-weight: 600;
         }
     </style>
 </head>
+
 <body>
     <div class="widget-card">
-        <h1>BMI Calculator</h1>
-        <p class="subtitle">Enter your details to check your health category</p>
-        
-        <form id="bmi-form">
-            <div class="input-group">
-                <label for="unit">Measurement System</label>
-                <select id="unit">
-                    <option value="metric">Metric (kg / meters)</option>
-                    <option value="imperial">Imperial (lbs / inches)</option>
-                </select>
+        <div class="header-text">BMI Calculator</div>
+
+        <div class="bmi-value" id="bmi-val">--</div>
+
+        <div class="bmi-status" id="bmi-status-box">
+            <span class="check-icon"></span>
+            <span id="label-text">Calculating...</span>
+        </div>
+
+        <div class="stats-row">
+            <div class="stat-box">
+                <div class="stat-title">Height</div>
+                <div class="stat-val" id="h-val">--</div>
             </div>
-
-            <div class="input-group">
-                <label for="weight" id="weight-label">Weight (kg)</label>
-                <input type="number" id="weight" step="0.1" placeholder="e.g. 70" required>
+            <div class="stat-box">
+                <div class="stat-title">Weight</div>
+                <div class="stat-val" id="w-val">--</div>
             </div>
-
-            <div class="input-group">
-                <label for="height" id="height-label">Height (meters)</label>
-                <input type="number" id="height" step="0.01" placeholder="e.g. 1.75" required>
-            </div>
-
-            <button type="submit" class="btn-calc" id="submit-btn">
-                <span>Calculate BMI</span>
-                <div class="loader" id="loader"></div>
-            </button>
-        </form>
-
-        <div id="error-msg" class="error-msg">Something went wrong. Please try again.</div>
-
-        <div id="result-container">
-            <div class="bmi-value" id="bmi-val">--</div>
-            <div class="bmi-category" id="bmi-cat">--</div>
-            <div class="bmi-interpretation" id="bmi-int">--</div>
         </div>
     </div>
 
     <script>
-        const form = document.getElementById('bmi-form');
-        const unitSelect = document.getElementById('unit');
-        const weightLabel = document.getElementById('weight-label');
-        const heightLabel = document.getElementById('height-label');
-        const submitBtn = document.getElementById('submit-btn');
-        const loader = document.getElementById('loader');
-        const resultContainer = document.getElementById('result-container');
-        const errorMsg = document.getElementById('error-msg');
+        function render(data) {
+            if (!data) return;
 
-        unitSelect.addEventListener('change', (e) => {
-            if (e.target.value === 'metric') {
-                weightLabel.textContent = 'Weight (kg)';
-                heightLabel.textContent = 'Height (meters)';
-                document.getElementById('weight').placeholder = 'e.g. 70';
-                document.getElementById('height').placeholder = 'e.g. 1.75';
+            const bmi = parseFloat(data.bmi);
+            const status = data.category || data.status;
+            // Handle both unified and split height/weight inputs
+            const h = data.heightM ? (data.heightM * 100).toFixed(0) : data.height;
+            const w = data.weightKg ? data.weightKg.toFixed(0) : data.weight;
+            const hUnit = data.heightM ? 'cm' : (data.unit === 'metric' ? 'm' : 'in');
+            const wUnit = data.weightKg ? 'kg' : (data.unit === 'metric' ? 'kg' : 'lb');
+
+            // Set text
+            document.getElementById('bmi-val').textContent = bmi.toFixed(1);
+            document.getElementById('label-text').textContent = status;
+            document.getElementById('h-val').textContent = h + ' ' + hUnit;
+            document.getElementById('w-val').textContent = w + ' ' + wUnit;
+
+            // Colors
+            let color = '#2ecc71';
+
+            if (bmi < 18.5) {
+                color = '#3498db';
+            } else if (bmi < 25) {
+                color = '#2ecc71';
+            } else if (bmi < 30) {
+                color = '#f1c40f';
             } else {
-                weightLabel.textContent = 'Weight (lbs)';
-                heightLabel.textContent = 'Height (inches)';
-                document.getElementById('weight').placeholder = 'e.g. 154';
-                document.getElementById('height').placeholder = 'e.g. 69';
+                color = '#e74c3c';
             }
-        });
 
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            
-            // Reset UI
-            errorMsg.style.display = 'none';
-            resultContainer.classList.remove('show');
-            submitBtn.disabled = true;
-            loader.style.display = 'block';
+            // Apply styling
+            const bmiText = document.getElementById('bmi-val');
+            const statusBox = document.getElementById('bmi-status-box');
 
-            const payload = {
-                unit: unitSelect.value,
-                weight: parseFloat(document.getElementById('weight').value),
-                height: parseFloat(document.getElementById('height').value)
-            };
+            bmiText.style.color = color;
+            statusBox.style.color = color;
+        }
 
-            try {
-                // Using relative path for ChatGPT App environment
-                const response = await fetch('/bmi', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(payload)
-                });
+        if (window.openai?.toolOutput) {
+            render(window.openai.toolOutput);
+        }
 
-                if (!response.ok) throw new Error('API Error');
-
-                const data = await response.json();
-
-                // Wait a tiny bit for effect
-                setTimeout(() => {
-                    document.getElementById('bmi-val').textContent = data.bmi;
-                    document.getElementById('bmi-cat').textContent = data.category;
-                    document.getElementById('bmi-int').textContent = data.interpretation;
-                    
-                    resultContainer.style.display = 'block';
-                    setTimeout(() => resultContainer.classList.add('show'), 10);
-                    
-                    loader.style.display = 'none';
-                    submitBtn.disabled = false;
-                }, 500);
-
-            } catch (err) {
-                console.error(err);
-                errorMsg.style.display = 'block';
-                loader.style.display = 'none';
-                submitBtn.disabled = false;
+        window.addEventListener("openai:set_globals", (event) => {
+            if (event.detail?.globals?.toolOutput) {
+                render(event.detail.globals.toolOutput);
             }
         });
     </script>
 </body>
+
 </html>

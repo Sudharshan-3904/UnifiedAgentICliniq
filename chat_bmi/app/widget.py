@@ -17,8 +17,13 @@ async def get_widget():
         
     # Standard widget serving with headers to allow iframing in ChatGPT
     headers = {
-        "Content-Security-Policy": "frame-ancestors https://chatgpt.com https://*.chatgpt.com",
-        "X-Frame-Options": "ALLOWALL" # Legacy fallback for some clients
+        "Content-Security-Policy": "frame-ancestors https://chatgpt.com https://*.chatgpt.com;",
+        "X-Frame-Options": "ALLOWALL", # Legacy fallback
+        "Access-Control-Allow-Origin": "*" # Required for some cross-origin scenarios
     }
         
+    import logging
+    logger = logging.getLogger(__name__)
+    logger.info("Serving BMI Widget to ChatGPT")
+
     return HTMLResponse(content=content, headers=headers)

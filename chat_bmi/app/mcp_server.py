@@ -1,15 +1,39 @@
 from mcp.server import Server
-from mcp.types import Tool, TextContent
+from mcp.types import Tool, TextContent, Resource
 from .schemas import BMIRequest
 from .service import calculate_bmi_logic
 import json
+import os
 
 # Create the MCP Server
 bmi_server = Server("bmi-mcp-server")
 
+@bmi_server.list_resources()
+async def list_resources() -> list[Resource]:
+    """List available resources (like the interactive widget)."""
+    return [
+        Resource(
+            uri="ui://widget/bmi-dashboard.html",
+            name="BMI Widget",
+            mimeType="text/html+skybridge",
+            description="Interactive BMI calculator dashboard"
+        )
+    ]
+
+@bmi_server.read_resource()
+async def read_resource(uri: str) -> str:
+    """Read the content of a resource."""
+    if str(uri) == "ui://widget/bmi-dashboard.html":
+        # Get the path relative to the current working directory
+        widget_path = os.path.join(os.getcwd(), "static", "widget.html")
+        if os.path.exists(widget_path):
+            with open(widget_path, "r", encoding="utf-8") as f:
+                return f.read()
+    raise ValueError(f"Resource not found: {uri}")
+
 @bmi_server.list_tools()
 async def list_tools() -> list[Tool]:
-    """List available BMI tools."""
+    """List available BMI tools with OpenAI-specific metadata."""
     return [
         Tool(
             name="calculate_bmi",
@@ -22,6 +46,12 @@ async def list_tools() -> list[Tool]:
                     "unit": {"type": "string", "enum": ["metric", "imperial"], "description": "Unit system"}
                 },
                 "required": ["height", "weight", "unit"]
+            },
+            # MCP meta field (serializes to _meta)
+            meta={
+                "openai/outputTemplate": "ui://widget/bmi-dashboard.html",
+                "openai/toolInvocation/invoking": "Calculating BMI...",
+                "openai/toolInvocation/invoked": "BMI calculated."
             }
         )
     ]
@@ -35,16 +65,35 @@ async def call_tool(name: str, arguments: dict) -> list[TextContent]:
             request = BMIRequest(**arguments)
             response = calculate_bmi_logic(request)
             
-            # Format result for MCP with a prompt for the interactive widget
             result_text = (
                 f"BMI Calculation Results:\n"
                 f"- BMI: {response.bmi}\n"
                 f"- Category: {response.category}\n"
                 f"- Interpretation: {response.interpretation}\n\n"
-                f"You can also use the interactive calculator here: [Open BMI Widget](/widget)"
+                f"The interactive BMI dashboard has been rendered above with the full visual breakdown."
             )
-            return [TextContent(type="text", text=result_text)]
+            
+            structured_data = {
+                "bmi": response.bmi,
+                "category": response.category,
+                "interpretation": response.interpretation,
+                "height": request.height,
+                "weight": request.weight,
+                "unit": request.unit
+            }
+
+            # Return TextContent with the meta field
+            return [
+                TextContent(
+                    type="text",
+                    text=result_text,
+                    meta={
+                        "openai/outputTemplate": "ui://widget/bmi-dashboard.html",
+                        "structuredContent": structured_data
+                    }
+                )
+            ]
         except Exception as e:
-            return [TextContent(type="text", text=f"Error: {str(e)}")]
+            return [TextContent(type="text", text=f"Error during calculation: {str(e)}")]
             
     raise ValueError(f"Tool not found: {name}")
