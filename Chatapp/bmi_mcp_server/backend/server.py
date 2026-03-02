@@ -44,11 +44,11 @@ class BMIResult:
                 <div style="display: flex; justify-content: space-around; margin-top: 20px; border-top: 1px solid #eee; padding-top: 15px;">
                     <div>
                         <div style="font-size: 0.7rem; color: #999; text-transform: uppercase;">Height</div>
-                        <div style="font-weight: 600;">{self.height}m</div>
+                            <div style="font-weight: 600;">{self.height:.2f}m</div>
                     </div>
                     <div>
                         <div style="font-size: 0.7rem; color: #999; text-transform: uppercase;">Weight</div>
-                        <div style="font-weight: 600;">{self.weight}kg</div>
+                        <div style="font-weight: 600;">{self.weight:.1f}kg</div>
                     </div>
                 </div>
             </div>
@@ -58,12 +58,15 @@ class BMIResult:
 def calculate_bmi_core(height: float, weight: float) -> BMIResult:
     if height <= 0 or weight <= 0:
         raise ValueError("Height and weight must be positive.")
-    bmi = weight / (height**2)
+    # Normalize height: if a user (or client) supplied height in centimeters
+    # (e.g. 167) we should convert to meters for BMI calculation.
+    height_m = (height / 100.0) if height > 10 else height
+    bmi = weight / (height_m ** 2)
     if bmi < 18.5: cat = BMICategory.UNDERWEIGHT
     elif bmi < 25: cat = BMICategory.NORMAL
     elif bmi < 30: cat = BMICategory.OVERWEIGHT
     else: cat = BMICategory.OBESE
-    return BMIResult(bmi, cat, height, weight)
+    return BMIResult(bmi, cat, height_m, weight)
 
 # --- 2. MCP Server Definition ---
 

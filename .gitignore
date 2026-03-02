@@ -4,5 +4,6 @@ __pycache__
 **.env
 service_account.zip
 crendentials.json
-SiteScraper\credentials.json
+credentials.json
+
 node_modules
