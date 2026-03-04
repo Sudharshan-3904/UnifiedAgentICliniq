@@ -98,4 +98,4 @@ async def render_external_app(app_name: str) -> dict:
 
 if __name__ == "__main__":
     # Start the server (FastMCP handles SSE/Stdio)
-    mcp.run()
+    mcp.run(transport='sse')
