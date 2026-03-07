@@ -23,7 +23,7 @@ def calculate_bmi_logic(weight_kg: float, height_m: float):
         advice = "It's highly recommended to consult a doctor for a personalized health plan."
     
     return {
-        "bmi": bmi,
+        "bmi": bmi, 
         "category": category,
         "advice": advice
     }
